@@ -109,28 +109,7 @@
   if (!collectionCell) {
     collectionCell = [[OPContentCell alloc] initWithFrame:self.view.frame];
   }
-  collectionCell.lblTitle.text = [[self.delegate.contentArray safeDicObjectAtIndex:indexPath.row] safeStringObjectForKey:@"title"];
-  
-  CGRect titleRect = [collectionCell.lblTitle.text boundingRectWithSize:CGSizeMake(300, 50)
-                                                                options:NSStringDrawingUsesLineFragmentOrigin
-                                                             attributes:@{NSFontAttributeName:collectionCell.lblTitle.font}
-                                                                context:nil];
-  collectionCell.lblTitle.frame = CGRectMake(10, 20+64, titleRect.size.width, titleRect.size.height);
-  
-  collectionCell.imagePreview.frame = CGRectMake(10, collectionCell.lblTitle.bottom+20, 300, 225);
-  
-  NSString *url = [[[self.delegate.contentArray safeDicObjectAtIndex:indexPath.row] safeDicObjectForKey:@"images"] safeStringObjectForKey:@"screen"];
-  
-  [collectionCell.imagePreview setImageWithURL:[NSURL URLWithString:url]];
-  
-  collectionCell.lblContent.text = [[self.delegate.contentArray safeDicObjectAtIndex:indexPath.row] safeStringObjectForKey:@"content"];
-  CGRect contentRect = [collectionCell.lblContent.text boundingRectWithSize:CGSizeMake(300, 10000)
-                                                                    options:NSStringDrawingUsesLineFragmentOrigin
-                                                                 attributes:@{NSFontAttributeName:collectionCell.lblContent.font}
-                                                                    context:nil];
-  
-  collectionCell.lblContent.frame = CGRectMake(10, collectionCell.imagePreview.bottom+30, contentRect.size.width, contentRect.size.height);
-  
+  [collectionCell refreshContentView:[self.delegate.contentArray safeDicObjectAtIndex:indexPath.row]];
   
   return collectionCell;
 }

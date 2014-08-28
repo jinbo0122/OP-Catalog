@@ -10,6 +10,10 @@
 
 @interface OPContentCell : UICollectionViewCell
 @property(nonatomic, strong)UILabel *lblTitle;
+@property(nonatomic, strong)UILabel *lblPublishTime;
+@property(nonatomic, strong)UILabel *lblEpisodeInfo;
 @property(nonatomic, strong)UILabel *lblContent;
 @property(nonatomic, strong)UIImageView *imagePreview;
+
+- (void)refreshContentView:(NSDictionary *)sources;
 @end
