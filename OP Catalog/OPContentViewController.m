@@ -35,15 +35,7 @@
   
   self.view.backgroundColor = [UIColor colorWithRGBHex:0x273552];
   
-  UILabel *titleLabel = [[UILabel alloc] initWithFrame:CGRectZero];
-  titleLabel.backgroundColor = [UIColor clearColor];
-  titleLabel.textColor = [UIColor whiteColor];
-  titleLabel.text = @"One Piece分集介绍";
-  titleLabel.textAlignment = NSTextAlignmentCenter;
-  titleLabel.font = [UIFont boldSystemFontOfSize:18];
-  [titleLabel sizeToFit];
-  
-  self.navigationItem.titleView = titleLabel;
+  [self setTitleView];
   
   self.bgImageView = [[UIImageView alloc] initWithFrame:self.view.bounds];
   self.bgImageView.image = [UIImage imageNamedNoCache:@"bg"];
@@ -123,6 +115,18 @@
   self.index = self.collectionView.contentOffset.x / self.collectionView.frame.size.width;
   
   [self setRightNavigationBarButton];
+  [self setTitleView];
+}
+
+- (void)setTitleView{
+  UILabel *titleLabel = [[UILabel alloc] initWithFrame:CGRectZero];
+  titleLabel.backgroundColor = [UIColor clearColor];
+  titleLabel.textColor = [UIColor whiteColor];
+  titleLabel.text = [[self.delegate.contentArray safeDicObjectAtIndex:self.index] safeStringObjectForKey:@"generalTitle"];
+  titleLabel.textAlignment = NSTextAlignmentCenter;
+  titleLabel.font = [UIFont boldSystemFontOfSize:18];
+  [titleLabel sizeToFit];
+  self.navigationItem.titleView = titleLabel;
 }
 
 - (void)setRightNavigationBarButton{

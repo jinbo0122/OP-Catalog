@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface OPContentCell : UICollectionViewCell
+@property(nonatomic, strong)UILabel *lblGeneralTitle;
 @property(nonatomic, strong)UILabel *lblTitle;
 @property(nonatomic, strong)UILabel *lblPublishTime;
 @property(nonatomic, strong)UILabel *lblEpisodeInfo;

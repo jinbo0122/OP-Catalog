@@ -14,6 +14,14 @@
   self = [super initWithFrame:frame];
   if (self) {
     // Initialization code
+//    self.lblGeneralTitle = [UILabel initWithFrame:CGRectMake(10, 64+20, 300, 18)
+//                                   bgColor:[UIColor clearColor]
+//                                 textColor:[UIColor whiteColor]
+//                                      text:@""
+//                             textAlignment:NSTextAlignmentCenter
+//                                      font:[UIFont systemFontOfSize:17]
+//                             numberOfLines:0];
+    
     self.lblTitle = [UILabel initWithFrame:CGRectZero
                                    bgColor:[UIColor clearColor]
                                  textColor:[UIColor whiteColor]
@@ -48,6 +56,7 @@
     
     self.imagePreview = [[UIImageView alloc] initWithFrame:CGRectZero];
     
+//    [self.contentView addSubview:self.lblGeneralTitle];
     [self.contentView addSubview:self.lblContent];
     [self.contentView addSubview:self.lblTitle];
     [self.contentView addSubview:self.lblEpisodeInfo];
@@ -59,27 +68,30 @@
 
 
 - (void)refreshContentView:(NSDictionary *)sources{
+  
+//  self.lblGeneralTitle.text = [sources safeStringObjectForKey:@"generalTitle"];
+  
   self.lblTitle.text = [sources safeStringObjectForKey:@"title"];
   
   CGRect titleRect = [self.lblTitle.text boundingRectWithSize:CGSizeMake(300, 50)
                                                                 options:NSStringDrawingUsesLineFragmentOrigin
                                                              attributes:@{NSFontAttributeName:self.lblTitle.font}
                                                                 context:nil];
-  self.lblTitle.frame = CGRectMake(10, 20+64, titleRect.size.width, titleRect.size.height);
+  self.lblTitle.frame = CGRectMake(10, 10+64, titleRect.size.width, titleRect.size.height);
   
   
   NSString *strEpisodeInfo = [NSString stringWithFormat:@"S%@-E%@",[sources safeNumberObjectForKey:@"season"],[sources safeNumberObjectForKey:@"episode"]];
   
   self.lblEpisodeInfo.text = strEpisodeInfo;
-  self.lblEpisodeInfo.frame = CGRectMake(10, self.lblTitle.bottom+5, 300, 16);
+  self.lblEpisodeInfo.frame = CGRectMake(10, self.lblTitle.bottom+10, 300, 16);
   
   
   self.lblPublishTime.text = [@"播出时间:" stringByAppendingString:[NSString timeString:[[sources safeNumberObjectForKey:@"first_aired"] doubleValue]+3600
                                                                              format:MHPrettyDateFormatNoTime]] ;
-  self.lblPublishTime.frame = CGRectMake(10, self.lblTitle.bottom+5, 300, 16);
+  self.lblPublishTime.frame = CGRectMake(10, self.lblEpisodeInfo.top, 300, 16);
 
   
-  self.imagePreview.frame = CGRectMake(10, self.lblPublishTime.bottom+10, 300, 225);
+  self.imagePreview.frame = CGRectMake(10, self.lblPublishTime.bottom+15, 300, 225);
   
   NSString *url = [[sources safeDicObjectForKey:@"images"] safeStringObjectForKey:@"screen"];
   
