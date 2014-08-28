@@ -68,7 +68,7 @@
   self.lblTitle.frame = CGRectMake(10, 20+64, titleRect.size.width, titleRect.size.height);
   
   
-  NSString *strEpisodeInfo = [NSString stringWithFormat:@"S%@/E%@",[sources safeNumberObjectForKey:@"season"],[sources safeNumberObjectForKey:@"episode"]];
+  NSString *strEpisodeInfo = [NSString stringWithFormat:@"S%@-E%@",[sources safeNumberObjectForKey:@"season"],[sources safeNumberObjectForKey:@"episode"]];
   
   self.lblEpisodeInfo.text = strEpisodeInfo;
   self.lblEpisodeInfo.frame = CGRectMake(10, self.lblTitle.bottom+5, 300, 16);
