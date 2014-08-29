@@ -37,7 +37,12 @@
 
 - (NSUInteger)supportedInterfaceOrientations
 {
-  return UIInterfaceOrientationMaskPortrait;
+  if (isIPad) {
+    return UIInterfaceOrientationLandscapeLeft|UIInterfaceOrientationLandscapeRight;
+  }
+  else{
+    return UIInterfaceOrientationMaskPortrait;
+  }
 }
 /*
  #pragma mark - Navigation

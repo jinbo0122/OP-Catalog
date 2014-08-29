@@ -176,29 +176,7 @@
     cell = [[OPTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
   }
   // Configure the cell...
-  NSInteger titleStartIndex = 4;
-  
-  if (indexPath.row+1<10) {
-    cell.lblIndex.text = [NSString stringWithFormat:@"00%d.",(int)indexPath.row+1];
-    titleStartIndex+=0;
-  }
-  else if (indexPath.row+1<100){
-    cell.lblIndex.text = [NSString stringWithFormat:@"0%d.",(int)indexPath.row+1];
-    titleStartIndex+=1;
-  }
-  else{
-    cell.lblIndex.text = [NSString stringWithFormat:@"%d.",(int)indexPath.row+1];
-    titleStartIndex+=2;
-  }
-  
-  if ([[[[self.contentArray safeDicObjectAtIndex:indexPath.row] safeStringObjectForKey:@"title"] substringToIndex:1] isEqualToString:@"第"]) {
-    cell.lblTitle.text = [[[self.contentArray safeDicObjectAtIndex:indexPath.row] safeStringObjectForKey:@"title"] substringFromIndex:titleStartIndex];
-  }
-  else{
-    cell.lblTitle.text = [[self.contentArray safeDicObjectAtIndex:indexPath.row] safeStringObjectForKey:@"title"];
-  }
-  
-  
+  [cell refreshOPTableViewCell:[self.contentArray safeDicObjectAtIndex:indexPath.row] row:indexPath.row];
   
   [cell.btnChecked setBackgroundImage:[UIImage imageWithColor:[[self.checkArray safeNumberObjectAtIndex:indexPath.row] boolValue]?[UIColor whiteColor]:[UIColor clearColor] size:cell.btnChecked.frame.size] forState:UIControlStateNormal];
   
@@ -206,6 +184,7 @@
                    forState:UIControlStateNormal];
   cell.btnChecked.tag = indexPath.row;
   [cell.btnChecked addTarget:self action:@selector(onCheckClicked:) forControlEvents:UIControlEventTouchUpInside];
+
   
   return cell;
 }
@@ -217,11 +196,5 @@
                                                                           index:indexPath.row];
   vc.delegate = self;
   [self.navigationController pushViewController:vc animated:YES];
-}
-
-
-- (NSUInteger)supportedInterfaceOrientations
-{
-  return UIInterfaceOrientationMaskPortrait;
 }
 @end

@@ -112,7 +112,12 @@
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-  return CGSizeMake(310, self.view.height);
+  if (isIPad) {
+    return CGSizeMake(758, self.view.height);
+  }
+  else{
+    return CGSizeMake(310, self.view.height);
+  }
 }
 
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView{
@@ -253,11 +258,6 @@
 
 - (void)dealloc{
   [[NSNotificationCenter defaultCenter] removeObserver:self];
-}
-
-- (NSUInteger)supportedInterfaceOrientations
-{
-  return UIInterfaceOrientationMaskPortrait;
 }
 /*
  #pragma mark - Navigation
