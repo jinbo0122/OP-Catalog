@@ -192,15 +192,44 @@
 
 
 - (void)onPlayTapped:(UITapGestureRecognizer*)tapGesture{
-  NSURL *movieURL = [NSURL URLWithString:@"http://hot.vrs.sohu.com/ipad1355994_4610501916771_4566215.m3u8?plat=h5"];
-  [[OPEpisodePlayerVC sharedMPVC].moviePlayer setContentURL:movieURL];
-  [self presentMoviePlayerViewControllerAnimated:[OPEpisodePlayerVC sharedMPVC]];
-  [[OPEpisodePlayerVC sharedMPVC].moviePlayer play];
+  MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+  hud.removeFromSuperViewOnHide = YES;
+  
+  dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+    NSString *movieURL = [[NSArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"url" ofType:@"plist"]]
+                          safeStringObjectAtIndex:self.index];
+    NSString *m3u8 = [self getM3U8ByUrl:movieURL byStandrad:@"superVid"];//@"highVid",@"norVid"
+    
+    dispatch_async(dispatch_get_main_queue(), ^{
+      [hud hide:YES];
+      [[OPEpisodePlayerVC sharedMPVC].moviePlayer setContentURL:[NSURL URLWithString:m3u8]];
+      [self presentMoviePlayerViewControllerAnimated:[OPEpisodePlayerVC sharedMPVC]];
+      [[OPEpisodePlayerVC sharedMPVC].moviePlayer play];
+    });
+  });
+  
 }
 
 
 -(void)mpDoneButtonClick:(NSNotification*)aNotification{
   [self dismissMoviePlayerViewControllerAnimated];
+}
+
+- (NSString *)getM3U8ByUrl:(NSString *)movieURL byStandrad:(NSString *)standard{
+  NSMutableString *movieUrlNew = [movieURL mutableCopy];
+  [movieUrlNew insertString:@"pad." atIndex:7];
+  NSURL *url = [NSURL URLWithString:movieUrlNew];
+  
+  NSString *html = [NSString stringWithContentsOfURL:url
+                                            encoding:NSUTF8StringEncoding error:nil];
+  NSRange range = [html rangeOfString:standard];
+  
+  NSString *superVidURL = [html substringWithRange:NSMakeRange(range.location, 100)];
+  
+  NSRange m3u8Range = [superVidURL rangeOfString:@"m3u8"];
+  
+  NSString *finalURL = [superVidURL substringWithRange:NSMakeRange(11, m3u8Range.location+m3u8Range.length-11)];
+  return finalURL;
 }
 
 - (void)dealloc{
