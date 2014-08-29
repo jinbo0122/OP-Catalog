@@ -15,6 +15,6 @@
 @property(nonatomic, strong)UILabel *lblEpisodeInfo;
 @property(nonatomic, strong)UILabel *lblContent;
 @property(nonatomic, strong)UIImageView *imagePreview;
-
+@property(nonatomic, strong)UITapGestureRecognizer *tapGesture;
 - (void)refreshContentView:(NSDictionary *)sources;
 @end

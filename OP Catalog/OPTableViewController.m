@@ -219,4 +219,9 @@
   [self.navigationController pushViewController:vc animated:YES];
 }
 
+
+- (NSUInteger)supportedInterfaceOrientations
+{
+  return UIInterfaceOrientationMaskPortrait;
+}
 @end

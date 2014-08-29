@@ -55,8 +55,9 @@
                                    numberOfLines:1];
     
     self.imagePreview = [[UIImageView alloc] initWithFrame:CGRectZero];
-    
-//    [self.contentView addSubview:self.lblGeneralTitle];
+    self.tapGesture = [[UITapGestureRecognizer alloc] init];
+    [self.imagePreview addGestureRecognizer:self.tapGesture];
+    self.imagePreview.userInteractionEnabled = YES;
     [self.contentView addSubview:self.lblContent];
     [self.contentView addSubview:self.lblTitle];
     [self.contentView addSubview:self.lblEpisodeInfo];

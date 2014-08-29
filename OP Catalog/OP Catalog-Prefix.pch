@@ -17,4 +17,7 @@
 #import "UILabel+ALExtension.h"
 #import <AssetsLibrary/AssetsLibrary.h>
 #import "OPNetworkEngine.h"
+#import <MediaPlayer/MediaPlayer.h>
+#import "OPEpisodePlayerVC.h"
+#import "OPNavigationViewController.h"
 #endif

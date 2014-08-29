@@ -12,5 +12,5 @@
 
 @property (strong, nonatomic) UIWindow *window;
 @property (strong, nonatomic) OPTableViewController  *opTBC;
-@property (strong, nonatomic) UINavigationController *nav;
+@property (strong, nonatomic) OPNavigationViewController *nav;
 @end

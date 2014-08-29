@@ -24,6 +24,9 @@
 		4B346C2519AD99AA0034ED25 /* OPTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B346C2419AD99AA0034ED25 /* OPTableViewController.m */; };
 		4B346D6319AD9C590034ED25 /* libALExtension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B346D6219AD9C480034ED25 /* libALExtension.a */; };
 		4B346D7319ADA22E0034ED25 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B346D7219ADA22E0034ED25 /* libsqlite3.dylib */; };
+		4B73A76B19B02591004F65A5 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B73A76A19B02591004F65A5 /* MediaPlayer.framework */; };
+		4B73A77219B029EF004F65A5 /* OPEpisodePlayerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B73A77119B029EF004F65A5 /* OPEpisodePlayerVC.m */; };
+		4B73A77619B02DC4004F65A5 /* OPNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B73A77519B02DC4004F65A5 /* OPNavigationViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +67,11 @@
 		4B346C2419AD99AA0034ED25 /* OPTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OPTableViewController.m; sourceTree = "<group>"; };
 		4B346D5D19AD9C480034ED25 /* ALExtension.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ALExtension.xcodeproj; path = ../../ALExtension/ALExtension.xcodeproj; sourceTree = "<group>"; };
 		4B346D7219ADA22E0034ED25 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		4B73A76A19B02591004F65A5 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		4B73A77019B029EF004F65A5 /* OPEpisodePlayerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OPEpisodePlayerVC.h; sourceTree = "<group>"; };
+		4B73A77119B029EF004F65A5 /* OPEpisodePlayerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OPEpisodePlayerVC.m; sourceTree = "<group>"; };
+		4B73A77419B02DC4004F65A5 /* OPNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OPNavigationViewController.h; sourceTree = "<group>"; };
+		4B73A77519B02DC4004F65A5 /* OPNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OPNavigationViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B73A76B19B02591004F65A5 /* MediaPlayer.framework in Frameworks */,
 				4B1862C519ADC32B008C326A /* AssetsLibrary.framework in Frameworks */,
 				4B346D7319ADA22E0034ED25 /* libsqlite3.dylib in Frameworks */,
 				4B346D6319AD9C590034ED25 /* libALExtension.a in Frameworks */,
@@ -103,6 +112,7 @@
 		4B346BF319AD94F90034ED25 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4B73A76A19B02591004F65A5 /* MediaPlayer.framework */,
 				4B1862C419ADC32B008C326A /* AssetsLibrary.framework */,
 				4B346D7219ADA22E0034ED25 /* libsqlite3.dylib */,
 				4B346BF419AD94F90034ED25 /* Foundation.framework */,
@@ -120,6 +130,8 @@
 				4B346C0419AD94F90034ED25 /* OPAppDelegate.m */,
 				4B346C0619AD94F90034ED25 /* Images.xcassets */,
 				4B346D5D19AD9C480034ED25 /* ALExtension.xcodeproj */,
+				4B73A77419B02DC4004F65A5 /* OPNavigationViewController.h */,
+				4B73A77519B02DC4004F65A5 /* OPNavigationViewController.m */,
 				4B346C2319AD99AA0034ED25 /* OPTableViewController.h */,
 				4B346C2419AD99AA0034ED25 /* OPTableViewController.m */,
 				4B1862CA19ADCA2C008C326A /* OPTableViewCell.h */,
@@ -128,6 +140,8 @@
 				4B1862C019ADB5B0008C326A /* OPContentViewController.m */,
 				4B1862C719ADC841008C326A /* OPContentCell.h */,
 				4B1862C819ADC841008C326A /* OPContentCell.m */,
+				4B73A77019B029EF004F65A5 /* OPEpisodePlayerVC.h */,
+				4B73A77119B029EF004F65A5 /* OPEpisodePlayerVC.m */,
 				4B1862CD19ADECAC008C326A /* OPNetworkEngine.h */,
 				4B1862CE19ADECAC008C326A /* OPNetworkEngine.m */,
 				4B346BFB19AD94F90034ED25 /* Supporting Files */,
@@ -242,9 +256,11 @@
 				4B1862C119ADB5B0008C326A /* OPContentViewController.m in Sources */,
 				4B1862CC19ADCA2C008C326A /* OPTableViewCell.m in Sources */,
 				4B346C0119AD94F90034ED25 /* main.m in Sources */,
+				4B73A77219B029EF004F65A5 /* OPEpisodePlayerVC.m in Sources */,
 				4B1862CF19ADECAC008C326A /* OPNetworkEngine.m in Sources */,
 				4B1862C919ADC841008C326A /* OPContentCell.m in Sources */,
 				4B346C2519AD99AA0034ED25 /* OPTableViewController.m in Sources */,
+				4B73A77619B02DC4004F65A5 /* OPNavigationViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

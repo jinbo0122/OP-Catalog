@@ -13,7 +13,7 @@
 @property (nonatomic, assign)NSInteger     index;
 @property (nonatomic, strong)UIImageView  *bgImageView;
 @property (nonatomic, strong)UICollectionView *collectionView;
-
+@property (nonatomic, strong)MPMoviePlayerController *moviePlayer;
 @end
 
 @implementation OPContentViewController
@@ -25,6 +25,10 @@
     // Custom initialization
     self.source = [source copy];
     self.index = index;
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(mpDoneButtonClick:)
+                                                 name:MPMoviePlayerWillExitFullscreenNotification
+                                               object:nil];
   }
   return self;
 }
@@ -102,7 +106,7 @@
     collectionCell = [[OPContentCell alloc] initWithFrame:self.view.frame];
   }
   [collectionCell refreshContentView:[self.delegate.contentArray safeDicObjectAtIndex:indexPath.row]];
-  
+  [collectionCell.tapGesture addTarget:self action:@selector(onPlayTapped:)];
   return collectionCell;
 }
 
@@ -184,6 +188,28 @@
     [self.delegate.tableView reloadData];
   }
 
+}
+
+
+- (void)onPlayTapped:(UITapGestureRecognizer*)tapGesture{
+  NSURL *movieURL = [NSURL URLWithString:@"http://hot.vrs.sohu.com/ipad1355994_4610501916771_4566215.m3u8?plat=h5"];
+  [[OPEpisodePlayerVC sharedMPVC].moviePlayer setContentURL:movieURL];
+  [self presentMoviePlayerViewControllerAnimated:[OPEpisodePlayerVC sharedMPVC]];
+  [[OPEpisodePlayerVC sharedMPVC].moviePlayer play];
+}
+
+
+-(void)mpDoneButtonClick:(NSNotification*)aNotification{
+  [self dismissMoviePlayerViewControllerAnimated];
+}
+
+- (void)dealloc{
+  [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+
+- (NSUInteger)supportedInterfaceOrientations
+{
+  return UIInterfaceOrientationMaskPortrait;
 }
 /*
  #pragma mark - Navigation

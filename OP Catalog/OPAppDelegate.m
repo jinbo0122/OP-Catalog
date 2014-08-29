@@ -18,10 +18,11 @@
   [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
   
   self.opTBC = [[OPTableViewController alloc] initWithStyle:UITableViewStylePlain];
-  self.nav = [[UINavigationController alloc] initWithRootViewController:self.opTBC];
+  self.nav = [[OPNavigationViewController alloc] initWithRootViewController:self.opTBC];
   self.window.backgroundColor = [UIColor whiteColor];
   self.window.rootViewController = self.nav;
   [self.window makeKeyAndVisible];
+  
   return YES;
 }
 
@@ -51,5 +52,4 @@
 {
   // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
-
 @end
