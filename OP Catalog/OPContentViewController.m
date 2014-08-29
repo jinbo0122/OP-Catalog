@@ -187,18 +187,43 @@
     [checkArray writeToPlistFileSync:@"OPCheckArray"];
     [self.delegate.tableView reloadData];
   }
-
+  
 }
 
 
 - (void)onPlayTapped:(UITapGestureRecognizer*)tapGesture{
+  [[[UIActionSheet alloc] initWithTitle:@"请选择画质"
+                       cancelButtonItem:[RIButtonItem itemWithLabel:@"取消"]
+                  destructiveButtonItem:nil
+                       otherButtonItems:
+    [RIButtonItem itemWithLabel:@"超清"
+                         action:^{
+                           [self playEpisodeByStarndard:@"superVid"];
+                         }],
+    [RIButtonItem itemWithLabel:@"高清"
+                         action:^{
+                           [self playEpisodeByStarndard:@"highVid"];
+                         }],
+    [RIButtonItem itemWithLabel:@"标清"
+                         action:^{
+                           [self playEpisodeByStarndard:@"norVid"];
+                         }], nil] showInView:self.view];
+  
+}
+
+
+-(void)mpDoneButtonClick:(NSNotification*)aNotification{
+  [self dismissMoviePlayerViewControllerAnimated];
+}
+
+- (void)playEpisodeByStarndard:(NSString *)standard{
   MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
   hud.removeFromSuperViewOnHide = YES;
   
   dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
     NSString *movieURL = [[NSArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"url" ofType:@"plist"]]
                           safeStringObjectAtIndex:self.index];
-    NSString *m3u8 = [self getM3U8ByUrl:movieURL byStandrad:@"superVid"];//@"highVid",@"norVid"
+    NSString *m3u8 = [self getM3U8ByUrl:movieURL byStandrad:standard];//@"superVid",@"highVid",@"norVid"
     
     dispatch_async(dispatch_get_main_queue(), ^{
       [hud hide:YES];
@@ -207,12 +232,6 @@
       [[OPEpisodePlayerVC sharedMPVC].moviePlayer play];
     });
   });
-  
-}
-
-
--(void)mpDoneButtonClick:(NSNotification*)aNotification{
-  [self dismissMoviePlayerViewControllerAnimated];
 }
 
 - (NSString *)getM3U8ByUrl:(NSString *)movieURL byStandrad:(NSString *)standard{
@@ -224,11 +243,11 @@
                                             encoding:NSUTF8StringEncoding error:nil];
   NSRange range = [html rangeOfString:standard];
   
-  NSString *superVidURL = [html substringWithRange:NSMakeRange(range.location, 100)];
+  NSString *vidURL = [html substringWithRange:NSMakeRange(range.location, 80)];
   
-  NSRange m3u8Range = [superVidURL rangeOfString:@"m3u8"];
+  NSRange m3u8Range = [vidURL rangeOfString:@"m3u8"];
   
-  NSString *finalURL = [superVidURL substringWithRange:NSMakeRange(11, m3u8Range.location+m3u8Range.length-11)];
+  NSString *finalURL = [vidURL substringWithRange:NSMakeRange(standard.length+3, m3u8Range.location+m3u8Range.length-standard.length-3)];
   return finalURL;
 }
 
