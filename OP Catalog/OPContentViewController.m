@@ -25,10 +25,6 @@
     // Custom initialization
     self.source = [source copy];
     self.index = index;
-    [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(mpDoneButtonClick:)
-                                                 name:MPMoviePlayerWillExitFullscreenNotification
-                                               object:nil];
   }
   return self;
 }
@@ -65,6 +61,15 @@
                               atScrollPosition:UICollectionViewScrollPositionLeft animated:NO];
   
   [self setRightNavigationBarButton];
+  
+  
+  __block typeof(self)wSelf = self;
+  [[NSNotificationCenter defaultCenter] addObserverForName:MPMoviePlayerDidExitFullscreenNotification
+                                                    object:nil
+                                                     queue:[NSOperationQueue mainQueue]
+                                                usingBlock:^(NSNotification *note) {
+                                                  [wSelf mpDoneButtonClick:note];
+                                                }];
 }
 
 //- (void)requestEpisodes{
@@ -214,6 +219,22 @@
 
 
 -(void)mpDoneButtonClick:(NSNotification*)aNotification{
+  NSTimeInterval currentPlaybackTime = [[OPEpisodePlayerVC sharedMPVC].moviePlayer currentPlaybackTime];
+  if (currentPlaybackTime>0) {
+    NSMutableDictionary *playbacTimeDic = [[NSMutableDictionary readFromPlistFile:@"PlaybackTimeDic"] mutableCopy];
+    if (!playbacTimeDic) {
+      playbacTimeDic = [NSMutableDictionary dictionary];
+    }
+    
+    currentPlaybackTime-=3;
+    if (currentPlaybackTime<=0) {
+      currentPlaybackTime = 0;
+    }
+    
+    [playbacTimeDic setSafeObject:[NSNumber numberWithDouble:currentPlaybackTime] forKey:[[NSNumber numberWithInteger:self.index] stringValue]];
+    [playbacTimeDic writeToPlistFileSync:@"PlaybackTimeDic"];
+    
+  }
   [self dismissMoviePlayerViewControllerAnimated];
 }
 
@@ -228,9 +249,41 @@
     
     dispatch_async(dispatch_get_main_queue(), ^{
       [hud hide:YES];
+      [[NSNotificationCenter defaultCenter] removeObserver:[OPEpisodePlayerVC sharedMPVC]
+                                                      name:MPMoviePlayerPlaybackDidFinishNotification object:[OPEpisodePlayerVC sharedMPVC].moviePlayer];
+      [[NSNotificationCenter defaultCenter] addObserver:self
+                                               selector:@selector(mpDoneButtonClick:)
+                                                   name:MPMoviePlayerPlaybackDidFinishNotification
+                                                 object:[OPEpisodePlayerVC sharedMPVC].moviePlayer];
+      
       [[OPEpisodePlayerVC sharedMPVC].moviePlayer setContentURL:[NSURL URLWithString:m3u8]];
-      [self presentMoviePlayerViewControllerAnimated:[OPEpisodePlayerVC sharedMPVC]];
-      [[OPEpisodePlayerVC sharedMPVC].moviePlayer play];
+      [[OPEpisodePlayerVC sharedMPVC].moviePlayer prepareToPlay];
+      NSDictionary *dic = [NSDictionary readFromPlistFile:@"PlaybackTimeDic"];
+      if (!dic) {
+        dic = [NSDictionary dictionary];
+      }
+      
+      NSTimeInterval initialPlaybackTime = [[dic safeNumberObjectForKey:[[NSNumber numberWithInteger:self.index] stringValue]] doubleValue];
+      
+      if (initialPlaybackTime>0) {
+        [[[UIActionSheet alloc] initWithTitle:@"是否继续播放"
+                             cancelButtonItem:[RIButtonItem itemWithLabel:@"取消播放"]
+                        destructiveButtonItem:nil
+                             otherButtonItems:
+          [RIButtonItem itemWithLabel:@"继续播放" action:^{
+          [[OPEpisodePlayerVC sharedMPVC].moviePlayer play];
+          [[OPEpisodePlayerVC sharedMPVC].moviePlayer setCurrentPlaybackTime:initialPlaybackTime];
+          [self presentMoviePlayerViewControllerAnimated:[OPEpisodePlayerVC sharedMPVC]];
+        }],
+          [RIButtonItem itemWithLabel:@"从头播放" action:^{
+          [[OPEpisodePlayerVC sharedMPVC].moviePlayer play];
+          [self presentMoviePlayerViewControllerAnimated:[OPEpisodePlayerVC sharedMPVC]];
+        }],nil] showInView:self.view];
+      }
+      else{
+        [[OPEpisodePlayerVC sharedMPVC].moviePlayer play];
+        [self presentMoviePlayerViewControllerAnimated:[OPEpisodePlayerVC sharedMPVC]];
+      }
     });
   });
 }
