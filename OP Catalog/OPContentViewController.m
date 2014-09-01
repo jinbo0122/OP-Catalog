@@ -41,7 +41,8 @@
   
   [self setTitleView];
   
-  self.bgImageView = [[UIImageView alloc] initWithFrame:self.view.bounds];
+  self.bgImageView = [[UIImageView alloc] initWithFrame:UIInterfaceOrientationIsPortrait([UIApplication sharedApplication].statusBarOrientation)?self.view.bounds:
+                      CGRectMake(0, 0, 1024, 768)];
   self.bgImageView.image = [UIImage imageNamedNoCache:@"bg"];
   
   UICollectionViewFlowLayout *layout=[[UICollectionViewFlowLayout alloc] init];
@@ -112,12 +113,7 @@
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-  if (isIPad) {
-    return CGSizeMake(758, self.view.height);
-  }
-  else{
-    return CGSizeMake(310, self.view.height);
-  }
+  return CGSizeMake(self.view.width-10, self.view.height);
 }
 
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView{
@@ -258,6 +254,16 @@
 
 - (void)dealloc{
   [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+
+
+- (void)willAnimateRotationToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation duration:(NSTimeInterval)duration{
+  self.bgImageView.frame = self.view.bounds;
+  NSArray* visibleCells = [self.collectionView visibleCells];
+  for (OPContentCell *cell in visibleCells) {
+    NSIndexPath *indexPath = [self.collectionView indexPathForCell:cell];
+    [cell refreshContentView:[self.delegate.contentArray safeDicObjectAtIndex:indexPath.row]];
+  }
 }
 /*
  #pragma mark - Navigation

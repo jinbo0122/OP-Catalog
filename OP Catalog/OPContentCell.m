@@ -74,11 +74,11 @@
   
   self.lblTitle.text = [sources safeStringObjectForKey:@"title"];
   
-  CGRect titleRect = [self.lblTitle.text boundingRectWithSize:CGSizeMake(isIPad?768:300, 50)
+  CGRect titleRect = [self.lblTitle.text boundingRectWithSize:CGSizeMake(isIPad?self.contentView.width:300, 50)
                                                                 options:NSStringDrawingUsesLineFragmentOrigin
                                                              attributes:@{NSFontAttributeName:self.lblTitle.font}
                                                                 context:nil];
-  self.lblTitle.frame = CGRectMake(10, 10+64,isIPad?748:titleRect.size.width, titleRect.size.height);
+  self.lblTitle.frame = CGRectMake(10, 10+64,titleRect.size.width, titleRect.size.height);
   
   
   NSString *strEpisodeInfo = [NSString stringWithFormat:@"S%@-E%@",[sources safeNumberObjectForKey:@"season"],[sources safeNumberObjectForKey:@"episode"]];
@@ -104,7 +104,20 @@
                                                                  attributes:@{NSFontAttributeName:self.lblContent.font}
                                                                     context:nil];
   
-  self.lblContent.frame = CGRectMake(isIPad?60:10, self.imagePreview.bottom+20, contentRect.size.width, contentRect.size.height);
+  self.lblContent.frame = CGRectMake(10, self.imagePreview.bottom+20, contentRect.size.width, contentRect.size.height);
+  
+  
+  if (isIPad) {
+    UIInterfaceOrientation orientation =  [[UIApplication sharedApplication] statusBarOrientation];
+    BOOL isPortrait = (orientation == UIInterfaceOrientationPortrait || orientation == UIInterfaceOrientationPortraitUpsideDown);
+    CGFloat screenWidth = isPortrait?768:1024;
+    
+    self.lblTitle.width = screenWidth-20;
+    self.lblEpisodeInfo.left = isPortrait?200:328;
+    self.lblPublishTime.right = isPortrait?560:688;
+    self.imagePreview.left = (screenWidth-300)/2;
+    self.lblContent.left = isPortrait?60:128;
+  }
   
 }
 /*

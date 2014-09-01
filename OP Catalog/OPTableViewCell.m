@@ -39,7 +39,7 @@
     UIImageView *checkMark = [[UIImageView alloc] initWithFrame:CGRectMake(8, 8, 24, 24)];
     checkMark.image = [UIImage imageNamed:@"icon_checkmark"];
     [self.btnChecked addSubview:checkMark];
-    
+        
     [self.contentView addSubview:self.btnChecked];
   }
   return self;
@@ -67,6 +67,17 @@
   }
   else{
     self.lblTitle.text = [sources safeStringObjectForKey:@"title"];
+  }
+  
+  if (isIPad) {
+    UIInterfaceOrientation orientation =  [[UIApplication sharedApplication] statusBarOrientation];
+
+    if(orientation == UIInterfaceOrientationPortrait || orientation == UIInterfaceOrientationPortraitUpsideDown){
+      self.btnChecked.right = 768-25;
+    }
+    else{
+      self.btnChecked.right = 1024-25;
+    }
   }
 }
 /*

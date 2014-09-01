@@ -44,6 +44,10 @@
   return self;
 }
 
+- (void)viewWillAppear:(BOOL)animated{
+  [self.tableView reloadData];
+}
+
 - (void)viewDidLoad
 {
   [super viewDidLoad];
@@ -196,5 +200,13 @@
                                                                           index:indexPath.row];
   vc.delegate = self;
   [self.navigationController pushViewController:vc animated:YES];
+}
+
+- (void)willAnimateRotationToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation duration:(NSTimeInterval)duration{
+  NSArray* visibleCells = [self.tableView visibleCells];
+  for (OPTableViewCell *cell in visibleCells) {
+    NSIndexPath *indexPath = [self.tableView indexPathForCell:cell];
+    [cell refreshOPTableViewCell:[self.contentArray safeDicObjectAtIndex:indexPath.row] row:indexPath.row];
+  }
 }
 @end
