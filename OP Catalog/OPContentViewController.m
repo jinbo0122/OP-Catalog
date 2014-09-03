@@ -239,70 +239,48 @@
 }
 
 - (void)playEpisodeByStarndard:(NSString *)standard{
-  MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
-  hud.removeFromSuperViewOnHide = YES;
+  NSNumber *vid = [[NSArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"vid" ofType:@"plist"]]
+                   safeNumberObjectAtIndex:self.index];
+  [[NSNotificationCenter defaultCenter] removeObserver:[OPEpisodePlayerVC sharedMPVC]
+                                                  name:MPMoviePlayerPlaybackDidFinishNotification object:[OPEpisodePlayerVC sharedMPVC].moviePlayer];
+  [[NSNotificationCenter defaultCenter] addObserver:self
+                                           selector:@selector(mpDoneButtonClick:)
+                                               name:MPMoviePlayerPlaybackDidFinishNotification
+                                             object:[OPEpisodePlayerVC sharedMPVC].moviePlayer];
   
-  dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-    NSString *movieURL = [[NSArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"url" ofType:@"plist"]]
-                          safeStringObjectAtIndex:self.index];
-    NSString *m3u8 = [self getM3U8ByUrl:movieURL byStandrad:standard];//@"superVid",@"highVid",@"norVid"
-    
-    dispatch_async(dispatch_get_main_queue(), ^{
-      [hud hide:YES];
-      [[NSNotificationCenter defaultCenter] removeObserver:[OPEpisodePlayerVC sharedMPVC]
-                                                      name:MPMoviePlayerPlaybackDidFinishNotification object:[OPEpisodePlayerVC sharedMPVC].moviePlayer];
-      [[NSNotificationCenter defaultCenter] addObserver:self
-                                               selector:@selector(mpDoneButtonClick:)
-                                                   name:MPMoviePlayerPlaybackDidFinishNotification
-                                                 object:[OPEpisodePlayerVC sharedMPVC].moviePlayer];
-      
-      [[OPEpisodePlayerVC sharedMPVC].moviePlayer setContentURL:[NSURL URLWithString:m3u8]];
-      [[OPEpisodePlayerVC sharedMPVC].moviePlayer prepareToPlay];
-      NSDictionary *dic = [NSDictionary readFromPlistFile:@"PlaybackTimeDic"];
-      if (!dic) {
-        dic = [NSDictionary dictionary];
-      }
-      
-      NSTimeInterval initialPlaybackTime = [[dic safeNumberObjectForKey:[[NSNumber numberWithInteger:self.index] stringValue]] doubleValue];
-      
-      if (initialPlaybackTime>0) {
-        [[[UIActionSheet alloc] initWithTitle:@"是否继续播放"
-                             cancelButtonItem:[RIButtonItem itemWithLabel:@"取消播放"]
-                        destructiveButtonItem:nil
-                             otherButtonItems:
-          [RIButtonItem itemWithLabel:@"继续播放" action:^{
-          [[OPEpisodePlayerVC sharedMPVC].moviePlayer play];
-          [[OPEpisodePlayerVC sharedMPVC].moviePlayer setCurrentPlaybackTime:initialPlaybackTime];
-          [self presentMoviePlayerViewControllerAnimated:[OPEpisodePlayerVC sharedMPVC]];
-        }],
-          [RIButtonItem itemWithLabel:@"从头播放" action:^{
-          [[OPEpisodePlayerVC sharedMPVC].moviePlayer play];
-          [self presentMoviePlayerViewControllerAnimated:[OPEpisodePlayerVC sharedMPVC]];
-        }],nil] showInView:self.view];
-      }
-      else{
-        [[OPEpisodePlayerVC sharedMPVC].moviePlayer play];
-        [self presentMoviePlayerViewControllerAnimated:[OPEpisodePlayerVC sharedMPVC]];
-      }
-    });
-  });
+  [[OPEpisodePlayerVC sharedMPVC].moviePlayer setContentURL:[NSURL URLWithString:[self getM3U8ByVid:vid byStandrad:standard]]];
+  [[OPEpisodePlayerVC sharedMPVC].moviePlayer prepareToPlay];
+  NSDictionary *dic = [NSDictionary readFromPlistFile:@"PlaybackTimeDic"];
+  if (!dic) {
+    dic = [NSDictionary dictionary];
+  }
+  
+  NSTimeInterval initialPlaybackTime = [[dic safeNumberObjectForKey:[[NSNumber numberWithInteger:self.index] stringValue]] doubleValue];
+  
+  if (initialPlaybackTime>0) {
+    [[[UIActionSheet alloc] initWithTitle:@"是否继续播放"
+                         cancelButtonItem:[RIButtonItem itemWithLabel:@"取消播放"]
+                    destructiveButtonItem:nil
+                         otherButtonItems:
+      [RIButtonItem itemWithLabel:@"继续播放" action:^{
+      [[OPEpisodePlayerVC sharedMPVC].moviePlayer play];
+      [[OPEpisodePlayerVC sharedMPVC].moviePlayer setCurrentPlaybackTime:initialPlaybackTime];
+      [self presentMoviePlayerViewControllerAnimated:[OPEpisodePlayerVC sharedMPVC]];
+    }],
+      [RIButtonItem itemWithLabel:@"从头播放" action:^{
+      [[OPEpisodePlayerVC sharedMPVC].moviePlayer play];
+      [self presentMoviePlayerViewControllerAnimated:[OPEpisodePlayerVC sharedMPVC]];
+    }],nil] showInView:self.view];
+  }
+  else{
+    [[OPEpisodePlayerVC sharedMPVC].moviePlayer play];
+    [self presentMoviePlayerViewControllerAnimated:[OPEpisodePlayerVC sharedMPVC]];
+  }
 }
 
-- (NSString *)getM3U8ByUrl:(NSString *)movieURL byStandrad:(NSString *)standard{
-  NSMutableString *movieUrlNew = [movieURL mutableCopy];
-  [movieUrlNew insertString:@"pad." atIndex:7];
-  NSURL *url = [NSURL URLWithString:movieUrlNew];
-  
-  NSString *html = [NSString stringWithContentsOfURL:url
-                                            encoding:NSUTF8StringEncoding error:nil];
-  NSRange range = [html rangeOfString:standard];
-  
-  NSString *vidURL = [html substringWithRange:NSMakeRange(range.location, 80)];
-  
-  NSRange m3u8Range = [vidURL rangeOfString:@"m3u8"];
-  
-  NSString *finalURL = [vidURL substringWithRange:NSMakeRange(standard.length+3, m3u8Range.location+m3u8Range.length-standard.length-3)];
-  return finalURL;
+- (NSString *)getM3U8ByVid:(NSNumber *)vid byStandrad:(NSString *)standard{
+
+  return @"";
 }
 
 - (void)dealloc{

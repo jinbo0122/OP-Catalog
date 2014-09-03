@@ -28,6 +28,7 @@
 		4B73A77219B029EF004F65A5 /* OPEpisodePlayerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B73A77119B029EF004F65A5 /* OPEpisodePlayerVC.m */; };
 		4B73A77619B02DC4004F65A5 /* OPNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B73A77519B02DC4004F65A5 /* OPNavigationViewController.m */; };
 		4B73A79219B03661004F65A5 /* url.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4B73A79119B03661004F65A5 /* url.plist */; };
+		4B938DC919B6CFB10068FC20 /* vid.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4B938DC819B6CFB10068FC20 /* vid.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,7 @@
 		4B73A77419B02DC4004F65A5 /* OPNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OPNavigationViewController.h; sourceTree = "<group>"; };
 		4B73A77519B02DC4004F65A5 /* OPNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OPNavigationViewController.m; sourceTree = "<group>"; };
 		4B73A79119B03661004F65A5 /* url.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = url.plist; sourceTree = "<group>"; };
+		4B938DC819B6CFB10068FC20 /* vid.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = vid.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +158,7 @@
 			children = (
 				4B1862C219ADBCC4008C326A /* bg.jpg */,
 				4B1862BC19ADB2DF008C326A /* content.plist */,
+				4B938DC819B6CFB10068FC20 /* vid.plist */,
 				4B73A79119B03661004F65A5 /* url.plist */,
 				4B346BFC19AD94F90034ED25 /* OP Catalog-Info.plist */,
 				4B346BFD19AD94F90034ED25 /* InfoPlist.strings */,
@@ -245,6 +248,7 @@
 				4B1862BD19ADB2DF008C326A /* content.plist in Resources */,
 				4B73A79219B03661004F65A5 /* url.plist in Resources */,
 				4B346BFF19AD94F90034ED25 /* InfoPlist.strings in Resources */,
+				4B938DC919B6CFB10068FC20 /* vid.plist in Resources */,
 				4B346C0719AD94F90034ED25 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
