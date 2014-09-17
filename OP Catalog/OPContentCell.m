@@ -61,7 +61,7 @@
     self.imagePreview = [[UIImageView alloc] initWithFrame:CGRectZero];
     self.imagePreview.layer.masksToBounds = YES;
     self.imagePreview.layer.borderWidth = 0.5;
-    self.imagePreview.layer.borderColor = [UIColor whiteColor].CGColor;
+    self.imagePreview.layer.borderColor = [UIColor lightGrayColor].CGColor;
     self.tapGesture = [[UITapGestureRecognizer alloc] init];
     [self.imagePreview addGestureRecognizer:self.tapGesture];
     self.imagePreview.userInteractionEnabled = YES;

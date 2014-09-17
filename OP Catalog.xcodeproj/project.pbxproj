@@ -64,7 +64,6 @@
 		4B346C0319AD94F90034ED25 /* OPAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OPAppDelegate.h; sourceTree = "<group>"; };
 		4B346C0419AD94F90034ED25 /* OPAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OPAppDelegate.m; sourceTree = "<group>"; };
 		4B346C0619AD94F90034ED25 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		4B346C0D19AD94FA0034ED25 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		4B346C2319AD99AA0034ED25 /* OPTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OPTableViewController.h; sourceTree = "<group>"; };
 		4B346C2419AD99AA0034ED25 /* OPTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OPTableViewController.m; sourceTree = "<group>"; };
 		4B346D5D19AD9C480034ED25 /* ALExtension.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ALExtension.xcodeproj; path = ../../ALExtension/ALExtension.xcodeproj; sourceTree = "<group>"; };
@@ -122,7 +121,6 @@
 				4B346BF419AD94F90034ED25 /* Foundation.framework */,
 				4B346BF619AD94F90034ED25 /* CoreGraphics.framework */,
 				4B346BF819AD94F90034ED25 /* UIKit.framework */,
-				4B346C0D19AD94FA0034ED25 /* XCTest.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
