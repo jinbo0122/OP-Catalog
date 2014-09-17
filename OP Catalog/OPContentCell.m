@@ -14,13 +14,17 @@
   self = [super initWithFrame:frame];
   if (self) {
     // Initialization code
-//    self.lblGeneralTitle = [UILabel initWithFrame:CGRectMake(10, 64+20, 300, 18)
-//                                   bgColor:[UIColor clearColor]
-//                                 textColor:[UIColor whiteColor]
-//                                      text:@""
-//                             textAlignment:NSTextAlignmentCenter
-//                                      font:[UIFont systemFontOfSize:17]
-//                             numberOfLines:0];
+    //    self.lblGeneralTitle = [UILabel initWithFrame:CGRectMake(10, 64+20, 300, 18)
+    //                                   bgColor:[UIColor clearColor]
+    //                                 textColor:[UIColor whiteColor]
+    //                                      text:@""
+    //                             textAlignment:NSTextAlignmentCenter
+    //                                      font:[UIFont systemFontOfSize:17]
+    //                             numberOfLines:0];
+    self.bgScrollView = [[UIScrollView alloc] initWithFrame:CGRectZero];
+    self.bgScrollView.alwaysBounceVertical = YES;
+    [self.contentView addSubview:self.bgScrollView];
+    
     
     self.lblTitle = [UILabel initWithFrame:CGRectZero
                                    bgColor:[UIColor clearColor]
@@ -58,11 +62,11 @@
     self.tapGesture = [[UITapGestureRecognizer alloc] init];
     [self.imagePreview addGestureRecognizer:self.tapGesture];
     self.imagePreview.userInteractionEnabled = YES;
-    [self.contentView addSubview:self.lblContent];
-    [self.contentView addSubview:self.lblTitle];
-    [self.contentView addSubview:self.lblEpisodeInfo];
-    [self.contentView addSubview:self.lblPublishTime];
-    [self.contentView addSubview:self.imagePreview];
+    [self.bgScrollView addSubview:self.lblContent];
+    [self.bgScrollView addSubview:self.lblTitle];
+    [self.bgScrollView addSubview:self.lblEpisodeInfo];
+    [self.bgScrollView addSubview:self.lblPublishTime];
+    [self.bgScrollView addSubview:self.imagePreview];
   }
   return self;
 }
@@ -70,14 +74,14 @@
 
 - (void)refreshContentView:(NSDictionary *)sources{
   
-//  self.lblGeneralTitle.text = [sources safeStringObjectForKey:@"generalTitle"];
+  //  self.lblGeneralTitle.text = [sources safeStringObjectForKey:@"generalTitle"];
   
   self.lblTitle.text = [sources safeStringObjectForKey:@"title"];
   
   CGRect titleRect = [self.lblTitle.text boundingRectWithSize:CGSizeMake(isIPad?self.contentView.width:300, 50)
-                                                                options:NSStringDrawingUsesLineFragmentOrigin
-                                                             attributes:@{NSFontAttributeName:self.lblTitle.font}
-                                                                context:nil];
+                                                      options:NSStringDrawingUsesLineFragmentOrigin
+                                                   attributes:@{NSFontAttributeName:self.lblTitle.font}
+                                                      context:nil];
   self.lblTitle.frame = CGRectMake(10, 10+64,titleRect.size.width, titleRect.size.height);
   
   
@@ -90,9 +94,9 @@
   self.lblPublishTime.text = [@"播出时间:" stringByAppendingString:[NSString timeString:[[sources safeNumberObjectForKey:@"first_aired"] doubleValue]+3600
                                                                              format:MHPrettyDateFormatNoTime]] ;
   self.lblPublishTime.frame = CGRectMake(10, self.lblEpisodeInfo.top,isIPad?550:300, 16);
-
   
-  self.imagePreview.frame = CGRectMake(isIPad?234:10, self.lblPublishTime.bottom+15, 300, 225);
+  
+  self.imagePreview.frame = CGRectMake(isIPad?234:0, self.lblPublishTime.bottom+15, 320, 320*3/4.0);
   
   NSString *url = [[sources safeDicObjectForKey:@"images"] safeStringObjectForKey:@"screen"];
   
@@ -100,9 +104,9 @@
   
   self.lblContent.text = [sources safeStringObjectForKey:@"content"];
   CGRect contentRect = [self.lblContent.text boundingRectWithSize:CGSizeMake(isIPad?648:300, 10000)
-                                                                    options:NSStringDrawingUsesLineFragmentOrigin
-                                                                 attributes:@{NSFontAttributeName:self.lblContent.font}
-                                                                    context:nil];
+                                                          options:NSStringDrawingUsesLineFragmentOrigin
+                                                       attributes:@{NSFontAttributeName:self.lblContent.font}
+                                                          context:nil];
   
   self.lblContent.frame = CGRectMake(10, self.imagePreview.bottom+20, contentRect.size.width, contentRect.size.height);
   
@@ -118,7 +122,22 @@
     self.imagePreview.left = (screenWidth-300)/2;
     self.lblContent.left = isPortrait?60:128;
   }
+  self.bgScrollView.frame = CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height);
+  self.bgScrollView.contentSize = CGSizeMake([UIScreen mainScreen].bounds.size.width, self.lblContent.bottom+10);
   
+  self.bgScrollView.scrollEnabled = self.bgScrollView.contentSize.height>[UIScreen mainScreen].bounds.size.height;
+}
+
+- (BOOL)gestureRecognizer:(UIPanGestureRecognizer *)gestureRecognizer
+shouldRecognizeSimultaneouslyWithGestureRecognizer:(UISwipeGestureRecognizer *)otherGestureRecognizer
+{
+  BOOL result = [gestureRecognizer isKindOfClass:[UIPanGestureRecognizer class]]
+  &&([otherGestureRecognizer isKindOfClass:[UIPanGestureRecognizer class]]);
+  
+  if (result) {
+    DDLogVerbose(@"simulated");
+  }
+  return result;
 }
 /*
  // Only override drawRect: if you perform custom drawing.

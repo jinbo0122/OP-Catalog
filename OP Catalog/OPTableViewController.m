@@ -87,8 +87,11 @@
     }
   }
   if ([self.tableView numberOfRowsInSection:0]>maxCheckIndex) {
-    [self.tableView scrollToRowAtIndexPath:[NSIndexPath indexPathForRow:maxCheckIndex inSection:0]
-                          atScrollPosition:UITableViewScrollPositionTop animated:NO];
+    __weak typeof(self)wSelf = self;
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+      [wSelf.tableView scrollToRowAtIndexPath:[NSIndexPath indexPathForRow:maxCheckIndex inSection:0]
+                            atScrollPosition:UITableViewScrollPositionTop animated:NO];
+    });
   }
 }
 
