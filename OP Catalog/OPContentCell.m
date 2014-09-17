@@ -59,6 +59,9 @@
                                    numberOfLines:1];
     
     self.imagePreview = [[UIImageView alloc] initWithFrame:CGRectZero];
+    self.imagePreview.layer.masksToBounds = YES;
+    self.imagePreview.layer.borderWidth = 0.5;
+    self.imagePreview.layer.borderColor = [UIColor whiteColor].CGColor;
     self.tapGesture = [[UITapGestureRecognizer alloc] init];
     [self.imagePreview addGestureRecognizer:self.tapGesture];
     self.imagePreview.userInteractionEnabled = YES;
@@ -96,13 +99,28 @@
   self.lblPublishTime.frame = CGRectMake(10, self.lblEpisodeInfo.top,isIPad?550:300, 16);
   
   
-  self.imagePreview.frame = CGRectMake(isIPad?234:0, self.lblPublishTime.bottom+15, 320, 320*3/4.0);
+  self.imagePreview.frame = CGRectMake(isIPad?234:0, self.lblPublishTime.bottom+15, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.width*9/16.0);
   
   NSString *url = [[sources safeDicObjectForKey:@"images"] safeStringObjectForKey:@"screen"];
   
-  [self.imagePreview setImageWithURL:[NSURL URLWithString:url]];
+  
+  __weak typeof(self) wSelf = self;
+  [self.imagePreview setImageWithURL:[NSURL URLWithString:url]
+                           completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType) {
+                             if (!error) {
+                               wSelf.imagePreview.height = [UIScreen mainScreen].bounds.size.width * image.size.height/image.size.width;
+                               wSelf.lblContent.top = wSelf.imagePreview.bottom+20;
+                               wSelf.bgScrollView.frame = CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height);
+                               wSelf.bgScrollView.contentSize = CGSizeMake([UIScreen mainScreen].bounds.size.width, wSelf.lblContent.bottom+10);
+                               
+                               wSelf.bgScrollView.scrollEnabled = wSelf.bgScrollView.contentSize.height>[UIScreen mainScreen].bounds.size.height;
+                             }
+  }];
   
   self.lblContent.text = [sources safeStringObjectForKey:@"content"];
+  
+  NSString *content = [sources safeStringObjectForKey:@"content"];
+  self.lblContent.text = content.length==0?[sources safeStringObjectForKey:@"overview"]:content;
   CGRect contentRect = [self.lblContent.text boundingRectWithSize:CGSizeMake(isIPad?648:300, 10000)
                                                           options:NSStringDrawingUsesLineFragmentOrigin
                                                        attributes:@{NSFontAttributeName:self.lblContent.font}

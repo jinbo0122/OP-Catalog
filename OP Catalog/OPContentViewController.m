@@ -72,29 +72,6 @@
                                                 }];
 }
 
-//- (void)requestEpisodes{
-//  if (_season>17) {
-//    NSArray * paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-//    NSString * documentsDirectory = [paths objectAtIndex:0];
-//    NSString * path = [documentsDirectory stringByAppendingPathComponent:@"episodes.plist"];
-//    [_episodesArray writeToFile:path atomically:YES];
-//    return;
-//  }
-//
-//  [[OPNetworkEngine shareInstance]
-//   requestOPSeason:_season
-//   CompleteHandle:
-//   ^(NSDictionary *resultDic) {
-//     [_episodesArray addObjectsFromArray:(NSArray *)resultDic];
-//     _season++;
-//     [self requestEpisodes];
-//   }
-//   errorHandler:
-//   ^(NSError *error) {
-//
-//   }];
-//}
-
 - (void)didReceiveMemoryWarning
 {
   [super didReceiveMemoryWarning];

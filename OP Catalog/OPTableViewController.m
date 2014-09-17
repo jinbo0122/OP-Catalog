@@ -12,7 +12,9 @@
 
 #define OPCheckArray @"OPCheckArray"
 
-@interface OPTableViewController ()
+@interface OPTableViewController (){
+  NSInteger _season;
+}
 @end
 
 @implementation OPTableViewController
@@ -76,6 +78,36 @@
 
   
   [self scrollToCurrentEpisode];
+  
+  _season = 17;
+  [self requestEpisodes];
+}
+
+- (void)requestEpisodes{
+  
+  __weak typeof(self)wSelf = self;
+  
+  [[OPNetworkEngine shareInstance]
+   requestOPSeason:_season
+   CompleteHandle:
+   ^(NSDictionary *resultDic) {
+     NSArray *array = (NSArray *)resultDic;
+     if (array.count>0) {
+       NSMutableArray *mutaArray = [_contentArray mutableCopy];
+       
+       NSArray *addArray = [array subarrayWithRange:NSMakeRange(30, array.count-30)];
+       
+       [mutaArray addObjectsFromArray:addArray];
+       _contentArray = [NSArray arrayWithArray:mutaArray];
+       _season++;
+       [wSelf.tableView reloadData];
+       [wSelf requestEpisodes];
+     }
+   }
+   errorHandler:
+   ^(NSError *error) {
+
+   }];
 }
 
 - (void)scrollToCurrentEpisode{
