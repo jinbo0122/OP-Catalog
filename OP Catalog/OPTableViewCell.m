@@ -22,7 +22,7 @@
     [self.contentView addSubview:self.lblIndex];
     
     
-    self.lblTitle = [[UILabel alloc] initWithFrame:CGRectMake(self.lblIndex.right+5, 0,isIPad?630:200, 60)];
+    self.lblTitle = [[UILabel alloc] initWithFrame:CGRectMake(self.lblIndex.right+5, 0,[UIScreen mainScreen].bounds.size.width-120, 60)];
     self.lblTitle.backgroundColor = [UIColor clearColor];
     self.lblTitle.textColor = [UIColor whiteColor];
     self.lblTitle.font = [UIFont systemFontOfSize:16];
@@ -78,6 +78,9 @@
     else{
       self.btnChecked.right = 1024-25;
     }
+  }
+  else{
+    self.btnChecked.right = [UIScreen mainScreen].bounds.size.width - 10;
   }
 }
 /*
