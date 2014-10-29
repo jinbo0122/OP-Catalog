@@ -25,11 +25,11 @@
   if (self) {
     // Custom initialization
     NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"content" ofType:@"plist"];
-    self.contentArray = [[NSArray alloc] initWithContentsOfFile:plistPath];
+    self.contentArray = [[NSMutableArray alloc] initWithContentsOfFile:plistPath];
     
     self.checkArray = [NSMutableArray array];
     
-    for (NSInteger i=0; i<[self.contentArray count]; i++) {
+    for (NSInteger i=0; i<1000; i++) {
       [self.checkArray addObject:[NSNumber numberWithBool:NO]];
     }
     
@@ -39,7 +39,6 @@
         [self.checkArray replaceObjectAtIndex:index.integerValue withObject:[NSNumber numberWithBool:YES]];
       }
     }
-    
     [[UINavigationBar appearance] setBarTintColor:[UIColor whiteColor]];
     [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
   }
@@ -79,6 +78,26 @@
   
   [self scrollToCurrentEpisode];
   
+  
+  for (NSInteger i=589; i<self.contentArray.count; i++) {
+    NSMutableDictionary *dict = [[self.contentArray safeDicObjectAtIndex:i] mutableCopy];
+    NSString *generalTitle = @"";
+    if (i==589) {
+      generalTitle = @"美食的俘虏×海贼王×七龙珠";
+    }
+    else if (i>589&& i<625){
+      generalTitle = @"庞克哈萨德篇";
+    }
+    else if (i>=625 &&i<628){
+      generalTitle = @"宠物果实能力者篇";
+    }
+    else{
+      generalTitle = @"德雷斯罗萨篇";
+    }
+    [dict setSafeObject:generalTitle forKey:@"generalTitle"];
+    [self.contentArray safeReplaceObjectAtIndex:i withObject:dict];
+  }
+  
   _season = 17;
   [self requestEpisodes];
 }
@@ -95,11 +114,25 @@
      if (array.count>0) {
        NSMutableArray *mutaArray = [_contentArray mutableCopy];
        
-       NSArray *addArray = [array subarrayWithRange:NSMakeRange(30, array.count-30)];
+       NSInteger location = 39;
+       NSArray *addArray = [array subarrayWithRange:NSMakeRange(location, array.count-location)];
        
        [mutaArray addObjectsFromArray:addArray];
-       _contentArray = [NSArray arrayWithArray:mutaArray];
+       _contentArray = [NSMutableArray arrayWithArray:mutaArray];
        _season++;
+       
+       for (NSInteger i=666; i<self.contentArray.count; i++) {
+         NSMutableDictionary *dict = [[self.contentArray safeDicObjectAtIndex:i] mutableCopy];
+         NSString *generalTitle = _season==17?@"德雷斯罗萨篇":@"new";
+         [dict setSafeObject:generalTitle forKey:@"generalTitle"];
+         [wSelf.contentArray safeReplaceObjectAtIndex:i withObject:dict];
+       }
+       
+       NSArray *paths=NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask,YES);
+       NSString *plistPath1 = [paths objectAtIndex:0];
+       NSString *filename=[plistPath1 stringByAppendingPathComponent:@"content.plist"];
+       [_contentArray writeToFile:filename atomically:YES];
+
        [wSelf.tableView reloadData];
        [wSelf requestEpisodes];
      }

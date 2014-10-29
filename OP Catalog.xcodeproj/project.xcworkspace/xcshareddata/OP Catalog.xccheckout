@@ -16,7 +16,7 @@
 		<string>https://github.com/jinbo0122/ALExtension.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>OP Catalog.xcodeproj/project.xcworkspace</string>
+	<string>OP Catalog.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>3E48D1402F40C603D7753A49EEF92B375D2B65D9</key>

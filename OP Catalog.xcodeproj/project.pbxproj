@@ -14,6 +14,7 @@
 		4B1862C919ADC841008C326A /* OPContentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B1862C819ADC841008C326A /* OPContentCell.m */; };
 		4B1862CC19ADCA2C008C326A /* OPTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B1862CB19ADCA2C008C326A /* OPTableViewCell.m */; };
 		4B1862CF19ADECAC008C326A /* OPNetworkEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B1862CE19ADECAC008C326A /* OPNetworkEngine.m */; };
+		4B1D079D19E7E2B9004613DA /* country_sms.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4B1D079C19E7E2B9004613DA /* country_sms.plist */; };
 		4B346BF519AD94F90034ED25 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B346BF419AD94F90034ED25 /* Foundation.framework */; };
 		4B346BF719AD94F90034ED25 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B346BF619AD94F90034ED25 /* CoreGraphics.framework */; };
 		4B346BF919AD94F90034ED25 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B346BF819AD94F90034ED25 /* UIKit.framework */; };
@@ -53,6 +54,7 @@
 		4B1862CB19ADCA2C008C326A /* OPTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OPTableViewCell.m; sourceTree = "<group>"; };
 		4B1862CD19ADECAC008C326A /* OPNetworkEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OPNetworkEngine.h; sourceTree = "<group>"; };
 		4B1862CE19ADECAC008C326A /* OPNetworkEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OPNetworkEngine.m; sourceTree = "<group>"; };
+		4B1D079C19E7E2B9004613DA /* country_sms.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = country_sms.plist; sourceTree = "<group>"; };
 		4B346BF119AD94F90034ED25 /* OP Catalog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OP Catalog.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B346BF419AD94F90034ED25 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4B346BF619AD94F90034ED25 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -134,6 +136,7 @@
 				4B346D5D19AD9C480034ED25 /* ALExtension.xcodeproj */,
 				4B73A77419B02DC4004F65A5 /* OPNavigationViewController.h */,
 				4B73A77519B02DC4004F65A5 /* OPNavigationViewController.m */,
+				4B1D079C19E7E2B9004613DA /* country_sms.plist */,
 				4B346C2319AD99AA0034ED25 /* OPTableViewController.h */,
 				4B346C2419AD99AA0034ED25 /* OPTableViewController.m */,
 				4B1862CA19ADCA2C008C326A /* OPTableViewCell.h */,
@@ -203,6 +206,11 @@
 				CLASSPREFIX = PD;
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Albert Lee";
+				TargetAttributes = {
+					4B346BF019AD94F90034ED25 = {
+						DevelopmentTeam = 9WY7225KU7;
+					};
+				};
 			};
 			buildConfigurationList = 4B346BEC19AD94F90034ED25 /* Build configuration list for PBXProject "OP Catalog" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -246,6 +254,7 @@
 				4B1862BD19ADB2DF008C326A /* content.plist in Resources */,
 				4B73A79219B03661004F65A5 /* url.plist in Resources */,
 				4B346BFF19AD94F90034ED25 /* InfoPlist.strings in Resources */,
+				4B1D079D19E7E2B9004613DA /* country_sms.plist in Resources */,
 				4B938DC919B6CFB10068FC20 /* vid.plist in Resources */,
 				4B346C0719AD94F90034ED25 /* Images.xcassets in Resources */,
 			);
@@ -362,6 +371,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Lei Wang (N3DB4XRY52)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "OP Catalog/OP Catalog-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
@@ -378,6 +388,7 @@
 					"-fobjc-arc",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "bff96903-44c7-461d-afe2-6431a528c1f3";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALID_ARCHS = "armv7 armv7s arm64";
 				WRAPPER_EXTENSION = app;
@@ -389,6 +400,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Lei Wang (N3DB4XRY52)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "OP Catalog/OP Catalog-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
@@ -405,6 +417,7 @@
 					"-fobjc-arc",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "bff96903-44c7-461d-afe2-6431a528c1f3";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALID_ARCHS = "armv7 armv7s arm64";
 				WRAPPER_EXTENSION = app;

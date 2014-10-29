@@ -26076,9 +26076,15 @@ With the G-5 marines and Smoker, the group blasts their way into the island and 
 		<key>season</key>
 		<integer>16</integer>
 		<key>title</key>
-		<string>第590集 奔跑吧最强军队阿虏与路飞与悟空&amp;史上最强联合VS海上大食汉( 1小时特别篇)</string>
+		<string>第590集 奔跑吧最强军队阿虏与路飞与……</string>
+		<key>tvdb_id</key>
+		<integer>4552175</integer>
+		<key>url</key>
+		<string>http://trakt.tv/show/one-piece/season/16/episode/12</string>
 	</dict>
 	<dict>
+		<key>content</key>
+		<string>奔跑吧最强军队阿虏与路飞与悟空&amp;史上最强联合VS海上大食汉( 1小时特别篇)</string>
 		<key>episode</key>
 		<integer>12</integer>
 		<key>first_aired</key>
@@ -26087,6 +26093,8 @@ With the G-5 marines and Smoker, the group blasts their way into the island and 
 		<string>2013-04-14T03:30:00-04:00</string>
 		<key>first_aired_utc</key>
 		<integer>1365924600</integer>
+		<key>generalTitle</key>
+		<string>庞克哈萨德篇</string>
 		<key>images</key>
 		<dict>
 			<key>screen</key>
@@ -26112,13 +26120,15 @@ With the G-5 marines and Smoker, the group blasts their way into the island and 
 		<key>season</key>
 		<integer>16</integer>
 		<key>title</key>
-		<string>Chopper Enraged  Master&apos;s Tyrannical Experiments</string>
+		<string>第590集 奔跑吧最强军队阿虏与路飞与……</string>
 		<key>tvdb_id</key>
 		<integer>4552175</integer>
 		<key>url</key>
 		<string>http://trakt.tv/show/one-piece/season/16/episode/12</string>
 	</dict>
 	<dict>
+		<key>content</key>
+		<string>娜美等人从饼干房带出来的孩子们突然感到痛苦而接二连山的倒地。然而，乔巴采集他们的汗液所调查出来的原因，竟是一个让草帽海贼团一行人都大为震惊的真相。原来那些孩子竟然遭人喂食兴奋剂，导致他们的身体产生了异变，这个事实令身为医生的乔巴感到愤怒。同一时间，索隆、山治和布鲁克一同前去寻找消失无踪的武士，没想到两个巨大的黑影正向他们逼近……</string>
 		<key>episode</key>
 		<integer>13</integer>
 		<key>first_aired</key>
@@ -26127,6 +26137,8 @@ With the G-5 marines and Smoker, the group blasts their way into the island and 
 		<string>2013-04-21T03:30:00-04:00</string>
 		<key>first_aired_utc</key>
 		<integer>1366529400</integer>
+		<key>generalTitle</key>
+		<string>庞克哈萨德篇</string>
 		<key>images</key>
 		<dict>
 			<key>screen</key>
@@ -26152,13 +26164,15 @@ With the G-5 marines and Smoker, the group blasts their way into the island and 
 		<key>season</key>
 		<integer>16</integer>
 		<key>title</key>
-		<string>Gang Obliteration! Legendary Hitmen Attack!</string>
+		<string>第591集 乔巴激怒 M残酷的实验</string>
 		<key>tvdb_id</key>
 		<integer>4552176</integer>
 		<key>url</key>
 		<string>http://trakt.tv/show/one-piece/season/16/episode/13</string>
 	</dict>
 	<dict>
+		<key>content</key>
+		<string>为了去找主人，路飞等人正匆匆忙忙赶往研究所。然而在他们不在的期间，留下来守护孩子们的娜美和乔巴却遭到不见踪影的暗杀者袭击。就在路飞察觉到情况有异而连忙赶回去的时候，乔巴和娜美两人正面临穷途末路的危机。两名看不清长相的暗杀者忽然出现，并且杀害了一心以为自己即将得救的茶胡子……</string>
 		<key>episode</key>
 		<integer>14</integer>
 		<key>first_aired</key>
@@ -26167,6 +26181,8 @@ With the G-5 marines and Smoker, the group blasts their way into the island and 
 		<string>2013-04-28T03:30:00-04:00</string>
 		<key>first_aired_utc</key>
 		<integer>1367134200</integer>
+		<key>generalTitle</key>
+		<string>庞克哈萨德篇</string>
 		<key>images</key>
 		<dict>
 			<key>screen</key>
@@ -26192,13 +26208,15 @@ With the G-5 marines and Smoker, the group blasts their way into the island and 
 		<key>season</key>
 		<integer>16</integer>
 		<key>title</key>
-		<string>Save Nami! Luffy&apos;s Snow Mountain Battle</string>
+		<string>第592集 抹杀一伙！传说中的杀手来袭！</string>
 		<key>tvdb_id</key>
 		<integer>4552178</integer>
 		<key>url</key>
 		<string>http://trakt.tv/show/one-piece/season/16/episode/14</string>
 	</dict>
 	<dict>
+		<key>content</key>
+		<string>雪山杀手趁路飞等人离开研究所遗址的空档袭击乔巴和娜美，他们杀了一心等待他们救援的茶胡子，并且掳走了身体变成弗兰奇的娜美。为了救回娜美，路飞和弗兰奇前去追赶不见踪影的暗杀者。然而，设置在雪山上的巧妙陷阱，以及cool　　brothers接二连山施展出来的攻击，在在都让路飞陷入一筹莫展的困境。就在这个紧要关头，罗突然出现，并且采取了一个令人震惊的行动……</string>
 		<key>episode</key>
 		<integer>15</integer>
 		<key>first_aired</key>
@@ -26207,6 +26225,8 @@ With the G-5 marines and Smoker, the group blasts their way into the island and 
 		<string>2013-05-05T03:30:00-04:00</string>
 		<key>first_aired_utc</key>
 		<integer>1367739000</integer>
+		<key>generalTitle</key>
+		<string>庞克哈萨德篇</string>
 		<key>images</key>
 		<dict>
 			<key>screen</key>
@@ -26232,13 +26252,15 @@ With the G-5 marines and Smoker, the group blasts their way into the island and 
 		<key>season</key>
 		<integer>16</integer>
 		<key>title</key>
-		<string>Formation! The Pirate Alliance Luffy-Law!</string>
+		<string>第593集 拯救娜美！路飞雪山之战</string>
 		<key>tvdb_id</key>
 		<integer>4552179</integer>
 		<key>url</key>
 		<string>http://trakt.tv/show/one-piece/season/16/episode/15</string>
 	</dict>
 	<dict>
+		<key>content</key>
+		<string>罗从雪山杀手的手中救下了娜美，并且表示自己有计策可以让四皇之一垮台，于是他号召路飞一起打倒四皇，这个令人震惊的提议让娜美等人心生强烈的不安，纷纷劝阻路飞答应罗的要求。然而，就在这个时候，路飞所回复的答案，不只是伙伴，就连罗也同样感到惊讶。而同一时间，凯撒一手主导的史上最邪恶的计划也正准备要开始。</string>
 		<key>episode</key>
 		<integer>16</integer>
 		<key>first_aired</key>
@@ -26247,6 +26269,8 @@ With the G-5 marines and Smoker, the group blasts their way into the island and 
 		<string>2013-05-12T03:30:00-04:00</string>
 		<key>first_aired_utc</key>
 		<integer>1368343800</integer>
+		<key>generalTitle</key>
+		<string>庞克哈萨德篇</string>
 		<key>images</key>
 		<dict>
 			<key>screen</key>
@@ -26272,13 +26296,15 @@ With the G-5 marines and Smoker, the group blasts their way into the island and 
 		<key>season</key>
 		<integer>16</integer>
 		<key>title</key>
-		<string>Capture Master ! The Pirate Alliance&apos;s Operation Begins!</string>
+		<string>第594集 组成！路飞·罗 海贼同盟！</string>
 		<key>tvdb_id</key>
 		<integer>4559214</integer>
 		<key>url</key>
 		<string>http://trakt.tv/show/one-piece/season/16/episode/16</string>
 	</dict>
 	<dict>
+		<key>content</key>
+		<string>罗向路飞提出联手的要求，尽管大家怀疑罗的用意，但路飞仍然答应了和哈特海贼团结为同盟一事。另一方面，凯撒创造出了史上最邪恶的武器，就在其可怕的真面目逐渐明朗的时候，为了要顺利抓到凯撒，草帽海贼团一行人也展开了行动。然而，路飞所采取的行动却让事情转往意想不到的方向发展……</string>
 		<key>episode</key>
 		<integer>17</integer>
 		<key>first_aired</key>
@@ -26287,6 +26313,8 @@ With the G-5 marines and Smoker, the group blasts their way into the island and 
 		<string>2013-05-19T03:30:00-04:00</string>
 		<key>first_aired_utc</key>
 		<integer>1368948600</integer>
+		<key>generalTitle</key>
+		<string>庞克哈萨德篇</string>
 		<key>images</key>
 		<dict>
 			<key>screen</key>
@@ -26312,13 +26340,15 @@ With the G-5 marines and Smoker, the group blasts their way into the island and 
 		<key>season</key>
 		<integer>16</integer>
 		<key>title</key>
-		<string>Destruction Crisis - The Monster of Death Flies in</string>
+		<string>第595集 抓住M！海贼同盟作战开始!!</string>
 		<key>tvdb_id</key>
 		<integer>4565054</integer>
 		<key>url</key>
 		<string>http://trakt.tv/show/one-piece/season/16/episode/17</string>
 	</dict>
 	<dict>
+		<key>content</key>
+		<string>路飞决定和罗所率领的红心海贼团结盟，于是答应按照罗的计划行事，因此他和弗兰奇、罗宾前去研究所绑架凯撒。他们在研究所前和斯摩格所率领的海军G5展开了战斗，激战到最后，就在大家以为终于得以进入研究所的时候，凯撒的死亡武器史莱姆却突然接二连三的从天而降，让众人陷入了恐惧与混乱……</string>
 		<key>episode</key>
 		<integer>18</integer>
 		<key>first_aired</key>
@@ -26327,6 +26357,8 @@ With the G-5 marines and Smoker, the group blasts their way into the island and 
 		<string>2013-05-26T03:30:00-04:00</string>
 		<key>first_aired_utc</key>
 		<integer>1369553400</integer>
+		<key>generalTitle</key>
+		<string>庞克哈萨德篇</string>
 		<key>images</key>
 		<dict>
 			<key>screen</key>
@@ -26352,13 +26384,15 @@ With the G-5 marines and Smoker, the group blasts their way into the island and 
 		<key>season</key>
 		<integer>16</integer>
 		<key>title</key>
-		<string>Big Battle ! Caesar Activates his True Ability!</string>
+		<string>第596集 全灭危机 死亡怪物飞来</string>
 		<key>tvdb_id</key>
 		<integer>4565055</integer>
 		<key>url</key>
 		<string>http://trakt.tv/show/one-piece/season/16/episode/18</string>
 	</dict>
 	<dict>
+		<key>content</key>
+		<string>路飞答应和罗所率领的红心海贼团结为同盟，因此草帽海贼团在罗的指示下兵分三路。山治等人前去寻找武士的身体，没想到却遇到以剧毒污染湖泊的史莱姆……另一方面，路飞和凯撒库朗展开了激烈的对决，双方都互不相让，激战到最后，就在大家以为终于能抓到凯撒的时候，瓦斯果实所拥有的可怕力量终于展现在众人眼前……</string>
 		<key>episode</key>
 		<integer>19</integer>
 		<key>first_aired</key>
@@ -26367,6 +26401,8 @@ With the G-5 marines and Smoker, the group blasts their way into the island and 
 		<string>2013-06-02T03:30:00-04:00</string>
 		<key>first_aired_utc</key>
 		<integer>1370158200</integer>
+		<key>generalTitle</key>
+		<string>庞克哈萨德篇</string>
 		<key>images</key>
 		<dict>
 			<key>screen</key>
@@ -26392,13 +26428,15 @@ With the G-5 marines and Smoker, the group blasts their way into the island and 
 		<key>season</key>
 		<integer>16</integer>
 		<key>title</key>
-		<string>The Samurai that Cuts the Fire! Kin&apos;emon of Foxfire</string>
+		<string>第597集 大激战 凯撒真正的能力发动！</string>
 		<key>tvdb_id</key>
 		<integer>4565056</integer>
 		<key>url</key>
 		<string>http://trakt.tv/show/one-piece/season/16/episode/19</string>
 	</dict>
 	<dict>
+		<key>content</key>
+		<string>路飞等人为了绑架凯撒而来到研究所外，就在路飞以为抓到凯撒时，却莫名其妙的倒地不起。担心路飞而前去查看情况的罗宾和弗兰奇也陆续不支倒地……。另一方面，山治从充满剧毒的湖泊平安归来，然而没有多久，他们又被史莱姆团团包围，陷入了无法逃脱的危机之中，在如此令人绝望的情况下，武士将发挥他真正的力量……</string>
 		<key>episode</key>
 		<integer>20</integer>
 		<key>first_aired</key>
@@ -26407,6 +26445,8 @@ With the G-5 marines and Smoker, the group blasts their way into the island and 
 		<string>2013-06-09T03:30:00-04:00</string>
 		<key>first_aired_utc</key>
 		<integer>1370763000</integer>
+		<key>generalTitle</key>
+		<string>庞克哈萨德篇</string>
 		<key>images</key>
 		<dict>
 			<key>screen</key>
@@ -26421,24 +26461,26 @@ With the G-5 marines and Smoker, the group blasts their way into the island and 
 			<key>hated</key>
 			<integer>0</integer>
 			<key>loved</key>
-			<integer>40</integer>
+			<integer>39</integer>
 			<key>percentage</key>
 			<integer>82</integer>
 			<key>votes</key>
-			<integer>40</integer>
+			<integer>39</integer>
 		</dict>
 		<key>screen</key>
 		<string>http://slurm.trakt.us/images/episodes/310-16-20.9.jpg</string>
 		<key>season</key>
 		<integer>16</integer>
 		<key>title</key>
-		<string>Shock! Identity of Vergo, the Mysterious Man</string>
+		<string>第598集 切开火海的武士！狐火锦卫门！</string>
 		<key>tvdb_id</key>
 		<integer>4565057</integer>
 		<key>url</key>
 		<string>http://trakt.tv/show/one-piece/season/16/episode/20</string>
 	</dict>
 	<dict>
+		<key>content</key>
+		<string>突然出现、并且以压倒性的力量狠狠折磨罗的神秘男子，其令人颤栗的真实身份带来了巨大冲击。就在这个时候，隐藏在凯撒和这名神秘男子背后的巨大敌人身影终于即将揭晓，原来他竟然就是G5基地的负责人维尔戈中将，同时亦是在另一名神秘人物的命令下加入海兵、替凯撒绑架小孩做掩饰的人……</string>
 		<key>episode</key>
 		<integer>21</integer>
 		<key>first_aired</key>
@@ -26447,6 +26489,8 @@ With the G-5 marines and Smoker, the group blasts their way into the island and 
 		<string>2013-06-16T03:30:00-04:00</string>
 		<key>first_aired_utc</key>
 		<integer>1371367800</integer>
+		<key>generalTitle</key>
+		<string>庞克哈萨德篇</string>
 		<key>images</key>
 		<dict>
 			<key>screen</key>
@@ -26461,24 +26505,26 @@ With the G-5 marines and Smoker, the group blasts their way into the island and 
 			<key>hated</key>
 			<integer>0</integer>
 			<key>loved</key>
-			<integer>38</integer>
+			<integer>37</integer>
 			<key>percentage</key>
 			<integer>82</integer>
 			<key>votes</key>
-			<integer>38</integer>
+			<integer>37</integer>
 		</dict>
 		<key>screen</key>
 		<string>http://slurm.trakt.us/images/episodes/310-16-21.9.jpg</string>
 		<key>season</key>
 		<integer>16</integer>
 		<key>title</key>
-		<string>Protect the Children! Reach of Master&apos;s Evil Hand!</string>
+		<string>第599集 冲击！神秘男人维尔戈真正的身份！</string>
 		<key>tvdb_id</key>
 		<integer>4586338</integer>
 		<key>url</key>
 		<string>http://trakt.tv/show/one-piece/season/16/episode/21</string>
 	</dict>
 	<dict>
+		<key>content</key>
+		<string>王下七武海多佛朗明哥之名的出现带来了极大的冲击，原来维尔戈竟是奉多佛朗明哥之命加入海军，然后一路从基层升至中将。而就在这个时候带着一群孩子、处于压倒性不利状况的娜美等人，却因为瓦斯果实可怕的能力被逼到比原来更加令人一筹莫展的绝境。另一方面，终于找到武士身体的索隆等人正被史莱姆追赶……</string>
 		<key>episode</key>
 		<integer>22</integer>
 		<key>first_aired</key>
@@ -26487,6 +26533,8 @@ With the G-5 marines and Smoker, the group blasts their way into the island and 
 		<string>2013-06-23T03:30:00-04:00</string>
 		<key>first_aired_utc</key>
 		<integer>1371972600</integer>
+		<key>generalTitle</key>
+		<string>庞克哈萨德篇</string>
 		<key>images</key>
 		<dict>
 			<key>screen</key>
@@ -26505,24 +26553,26 @@ Caesar is about to give Smiley the big giant candy which is a weapon called Shin
 			<key>hated</key>
 			<integer>0</integer>
 			<key>loved</key>
-			<integer>39</integer>
+			<integer>38</integer>
 			<key>percentage</key>
 			<integer>80</integer>
 			<key>votes</key>
-			<integer>39</integer>
+			<integer>38</integer>
 		</dict>
 		<key>screen</key>
 		<string>http://slurm.trakt.us/images/episodes/310-16-22.9.jpg</string>
 		<key>season</key>
 		<integer>16</integer>
 		<key>title</key>
-		<string>New World&apos;s Severe Earthquake ! Caesar&apos;s Nightmare Experiment</string>
+		<string>第600集 保护孩子们！主人的魔爪逼近</string>
 		<key>tvdb_id</key>
 		<integer>4590146</integer>
 		<key>url</key>
 		<string>http://trakt.tv/show/one-piece/season/16/episode/22</string>
 	</dict>
 	<dict>
+		<key>content</key>
+		<string>罗与凯撒之间交换了一个契约，原来当初罗为了留在庞克哈萨德岛，将自己的心脏交给凯撒以获得他的信任，并且获得莫奈的心脏作为交换，当这个秘密公诸于众的时候，一个巨大的物体出现在被史莱姆追赶的索隆和山治等人的面前，而那个巨大物体正是宣告凯撒令人恐惧的计划即将开始的象征……</string>
 		<key>episode</key>
 		<integer>23</integer>
 		<key>first_aired</key>
@@ -26531,6 +26581,8 @@ Caesar is about to give Smiley the big giant candy which is a weapon called Shin
 		<string>2013-06-30T03:30:00-04:00</string>
 		<key>first_aired_utc</key>
 		<integer>1372577400</integer>
+		<key>generalTitle</key>
+		<string>庞克哈萨德篇</string>
 		<key>images</key>
 		<dict>
 			<key>screen</key>
@@ -26545,24 +26597,26 @@ Caesar is about to give Smiley the big giant candy which is a weapon called Shin
 			<key>hated</key>
 			<integer>0</integer>
 			<key>loved</key>
-			<integer>34</integer>
+			<integer>32</integer>
 			<key>percentage</key>
 			<integer>84</integer>
 			<key>votes</key>
-			<integer>34</integer>
+			<integer>32</integer>
 		</dict>
 		<key>screen</key>
 		<string>http://slurm.trakt.us/images/episodes/310-16-23.9.jpg</string>
 		<key>season</key>
 		<integer>16</integer>
 		<key>title</key>
-		<string>The Deadliest Weapon of Mass Destruction in History! Shinokuni!</string>
+		<string>第601集 震惊新世界 凯撒恶梦般的实验</string>
 		<key>tvdb_id</key>
 		<integer>4590147</integer>
 		<key>url</key>
 		<string>http://trakt.tv/show/one-piece/season/16/episode/23</string>
 	</dict>
 	<dict>
+		<key>content</key>
+		<string>凯撒最强的毒气武器过去曾经让庞克哈萨德摇身一变，成为一个死亡世界。由于上次实验依然有人生还，因此凯撒特地增强了某种效果，誓言要让研究所外无一生还者。那样武器现在正陆续将人们吞噬，让整座岛再次化为地狱，同时也正逐渐逼近路飞等人。藏身在研究所的乔巴听到了一切，却不知该如何救出大家，就在这时一张纸条丢到他面前……</string>
 		<key>episode</key>
 		<integer>24</integer>
 		<key>first_aired</key>
@@ -26571,6 +26625,8 @@ Caesar is about to give Smiley the big giant candy which is a weapon called Shin
 		<string>2013-07-07T03:30:00-04:00</string>
 		<key>first_aired_utc</key>
 		<integer>1373182200</integer>
+		<key>generalTitle</key>
+		<string>庞克哈萨德篇</string>
 		<key>images</key>
 		<dict>
 			<key>screen</key>
@@ -26587,24 +26643,26 @@ Law then decided to set his plan into motion and orders Franky to blow a firebal
 			<key>hated</key>
 			<integer>1</integer>
 			<key>loved</key>
-			<integer>39</integer>
+			<integer>37</integer>
 			<key>percentage</key>
 			<integer>84</integer>
 			<key>votes</key>
-			<integer>40</integer>
+			<integer>38</integer>
 		</dict>
 		<key>screen</key>
 		<string>http://slurm.trakt.us/images/episodes/310-16-24.9.jpg</string>
 		<key>season</key>
 		<integer>16</integer>
 		<key>title</key>
-		<string>The Counterattack Begins! Luffy and Law&apos;s Great Escape</string>
+		<string>第602集 史上最邪恶的杀戳武器！死亡国度</string>
 		<key>tvdb_id</key>
 		<integer>4590148</integer>
 		<key>url</key>
 		<string>http://trakt.tv/show/one-piece/season/16/episode/24</string>
 	</dict>
 	<dict>
+		<key>content</key>
+		<string>当新世界各地的焦点都集中于此，杀戮武器死亡国度终于逼近路飞等人的眼前。就在草帽海贼团差点全军覆没的时候，罗所凝定的起死回生作战计划即将就要展开。原来罗早将海楼石锁链和普通锁链调包，并且要弗兰奇攻击军舰好制造出烟雾挡住影像电话虫的书面，于是路飞等人终于顺利脱逃。另一方面，娜美和乌索普在茶胡子的协助下，也正往研究所的方向赶去，但是他们却在半路上看见一个奇怪的影子……</string>
 		<key>episode</key>
 		<integer>25</integer>
 		<key>first_aired</key>
@@ -26613,6 +26671,8 @@ Law then decided to set his plan into motion and orders Franky to blow a firebal
 		<string>2013-07-14T03:30:00-04:00</string>
 		<key>first_aired_utc</key>
 		<integer>1373787000</integer>
+		<key>generalTitle</key>
+		<string>庞克哈萨德篇</string>
 		<key>images</key>
 		<dict>
 			<key>screen</key>
@@ -26627,24 +26687,26 @@ Law then decided to set his plan into motion and orders Franky to blow a firebal
 			<key>hated</key>
 			<integer>2</integer>
 			<key>loved</key>
-			<integer>39</integer>
+			<integer>38</integer>
 			<key>percentage</key>
-			<integer>81</integer>
+			<integer>82</integer>
 			<key>votes</key>
-			<integer>41</integer>
+			<integer>40</integer>
 		</dict>
 		<key>screen</key>
 		<string>http://slurm.trakt.us/images/episodes/310-16-25.9.jpg</string>
 		<key>season</key>
 		<integer>16</integer>
 		<key>title</key>
-		<string>The Aim is Building R! The Pirate Alliance&apos;s Great Assault!</string>
+		<string>第603集 反击开始！路飞·罗全部逃出</string>
 		<key>tvdb_id</key>
 		<integer>4607763</integer>
 		<key>url</key>
 		<string>http://trakt.tv/show/one-piece/season/16/episode/25</string>
 	</dict>
 	<dict>
+		<key>content</key>
+		<string>罗早将海楼石锁链和普通锁链调包，并且要弗兰奇攻击军舰好制造出烟雾挡住影像电话虫的书面好让大家顺利逃脱。而娜美和山治等人也在躲避毒气追赶的半路上相遇。草帽海贼团一行人逃过死亡国度，终于平安无事的会合了。但是，他们现在唯一一个逃脱口就只剩下R栋的门。在如此严苛的条件下，一群人终于点燃了反击的狼烟……</string>
 		<key>episode</key>
 		<integer>26</integer>
 		<key>first_aired</key>
@@ -26653,6 +26715,8 @@ Law then decided to set his plan into motion and orders Franky to blow a firebal
 		<string>2013-07-21T03:30:00-04:00</string>
 		<key>first_aired_utc</key>
 		<integer>1374391800</integer>
+		<key>generalTitle</key>
+		<string>庞克哈萨德篇</string>
 		<key>images</key>
 		<dict>
 			<key>screen</key>
@@ -26667,24 +26731,26 @@ Law then decided to set his plan into motion and orders Franky to blow a firebal
 			<key>hated</key>
 			<integer>0</integer>
 			<key>loved</key>
-			<integer>39</integer>
+			<integer>37</integer>
 			<key>percentage</key>
 			<integer>82</integer>
 			<key>votes</key>
-			<integer>39</integer>
+			<integer>37</integer>
 		</dict>
 		<key>screen</key>
 		<string>http://slurm.trakt.us/images/episodes/310-16-26.9.jpg</string>
 		<key>season</key>
 		<integer>16</integer>
 		<key>title</key>
-		<string>Tashigi&apos;s Tears - G5&apos;s Suicidal Breakthrough Strategy</string>
+		<string>第604集 目标R塔！海贼同盟势如破竹！</string>
 		<key>tvdb_id</key>
 		<integer>4607764</integer>
 		<key>url</key>
 		<string>http://trakt.tv/show/one-piece/season/16/episode/26</string>
 	</dict>
 	<dict>
+		<key>content</key>
+		<string>在关闭的研究所中，路飞等人拼了命的从紧逼在后的死亡国度的威胁之下逃脱。如果不能通过前方的们，就只有死路一条。而为了不负斯摩格所脱，达斯琪决定无论如何都要让G5的成员先进入即将关闭的门。在这样的情况下，G5展现出海军的骄傲，他们为了让殿后疏散他们的达斯琪进入门后，不惜牺牲自己的性命，将达斯琪抛出去给门里的队友……</string>
 		<key>episode</key>
 		<integer>27</integer>
 		<key>first_aired</key>
@@ -26693,6 +26759,8 @@ Law then decided to set his plan into motion and orders Franky to blow a firebal
 		<string>2013-07-28T03:30:00-04:00</string>
 		<key>first_aired_utc</key>
 		<integer>1374996600</integer>
+		<key>generalTitle</key>
+		<string>庞克哈萨德篇</string>
 		<key>images</key>
 		<dict>
 			<key>screen</key>
@@ -26707,24 +26775,26 @@ Law then decided to set his plan into motion and orders Franky to blow a firebal
 			<key>hated</key>
 			<integer>1</integer>
 			<key>loved</key>
-			<integer>35</integer>
+			<integer>34</integer>
 			<key>percentage</key>
 			<integer>81</integer>
 			<key>votes</key>
-			<integer>36</integer>
+			<integer>35</integer>
 		</dict>
 		<key>screen</key>
 		<string>http://slurm.trakt.us/images/episodes/310-16-27.9.jpg</string>
 		<key>season</key>
 		<integer>16</integer>
 		<key>title</key>
-		<string>Vice Admiral&apos;s Betrayal! Demon Bamboo Vergo</string>
+		<string>第605集 达斯琪的眼泪 G5誓死的突破作战</string>
 		<key>tvdb_id</key>
 		<integer>4607765</integer>
 		<key>url</key>
 		<string>http://trakt.tv/show/one-piece/season/16/episode/27</string>
 	</dict>
 	<dict>
+		<key>content</key>
+		<string>才拼上性命通过大门没有多久，海兵G5就遭到了维尔戈的袭击。看到被过去信赖的长官陆续打倒的伙伴，达斯琪不禁流下了眼泪。就在这个时候，草帽小子一伙人的那个男人出现了，他从维尔戈的手中救下了达斯琪，并且和维尔戈展开战斗。另一方面，顺利拿到药物成份和镇定剂的乔巴正到处乱窜急着找到那些孩子们……</string>
 		<key>episode</key>
 		<integer>28</integer>
 		<key>first_aired</key>
@@ -26733,6 +26803,8 @@ Law then decided to set his plan into motion and orders Franky to blow a firebal
 		<string>2013-08-11T03:30:00-04:00</string>
 		<key>first_aired_utc</key>
 		<integer>1376206200</integer>
+		<key>generalTitle</key>
+		<string>庞克哈萨德篇</string>
 		<key>images</key>
 		<dict>
 			<key>screen</key>
@@ -26747,24 +26819,26 @@ Law then decided to set his plan into motion and orders Franky to blow a firebal
 			<key>hated</key>
 			<integer>0</integer>
 			<key>loved</key>
-			<integer>40</integer>
+			<integer>38</integer>
 			<key>percentage</key>
-			<integer>86</integer>
+			<integer>87</integer>
 			<key>votes</key>
-			<integer>40</integer>
+			<integer>38</integer>
 		</dict>
 		<key>screen</key>
 		<string>http://slurm.trakt.us/images/episodes/310-16-28.9.jpg</string>
 		<key>season</key>
 		<integer>16</integer>
 		<key>title</key>
-		<string>Incandescent Fierce Battle  Luffy vs. Caesar</string>
+		<string>第606集 叛徒中将！鬼竹维尔戈</string>
 		<key>tvdb_id</key>
 		<integer>4622753</integer>
 		<key>url</key>
 		<string>http://trakt.tv/show/one-piece/season/16/episode/28</string>
 	</dict>
 	<dict>
+		<key>content</key>
+		<string>路飞与凯撒的再次战斗终于开始。面对凯撒以曾打倒草帽海贼团一行人的瓦斯果实能力紧紧相逼，路飞使出浑身解数全力反击，两人之间的战况显得越来越激烈。然而，就在路飞准备给凯撒重重一击的时候，莫奈却出手救了凯撒，原来莫奈竟是奉Joker之命而保全凯撒的性命。另一方面，山治从维尔戈的手中救了达斯琪，并且和维尔戈展开战斗……</string>
 		<key>episode</key>
 		<integer>29</integer>
 		<key>first_aired</key>
@@ -26773,6 +26847,8 @@ Law then decided to set his plan into motion and orders Franky to blow a firebal
 		<string>2013-08-18T03:30:00-04:00</string>
 		<key>first_aired_utc</key>
 		<integer>1376811000</integer>
+		<key>generalTitle</key>
+		<string>庞克哈萨德篇</string>
 		<key>images</key>
 		<dict>
 			<key>screen</key>
@@ -26787,24 +26863,26 @@ Law then decided to set his plan into motion and orders Franky to blow a firebal
 			<key>hated</key>
 			<integer>0</integer>
 			<key>loved</key>
-			<integer>37</integer>
+			<integer>35</integer>
 			<key>percentage</key>
-			<integer>82</integer>
+			<integer>83</integer>
 			<key>votes</key>
-			<integer>37</integer>
+			<integer>35</integer>
 		</dict>
 		<key>screen</key>
 		<string>http://slurm.trakt.us/images/episodes/310-16-29.9.jpg</string>
 		<key>season</key>
 		<integer>16</integer>
 		<key>title</key>
-		<string>The Mastermind in the Shadows! Doflamingo Moves!</string>
+		<string>第607集 白热化激战 路飞VS凯撒</string>
 		<key>tvdb_id</key>
 		<integer>4631951</integer>
 		<key>url</key>
 		<string>http://trakt.tv/show/one-piece/season/16/episode/29</string>
 	</dict>
 	<dict>
+		<key>content</key>
+		<string>潜入SAD制造室的罗，终于就要执行将会撼动整个新世界的作战计划。然而，就在这个时候，得知罗的举动，在幕后操控庞克哈萨德、王下七武海最邪恶的男人终于打破沉默，那个男人便是唐吉诃德·多佛朗明哥。他透过维尔戈的联络遥控庞克哈萨德岛上的一切，并且要维尔戈将罗杀死。另一方面，娜美等人正急着一边躲避龙的攻击，一边寻找孩子们……</string>
 		<key>episode</key>
 		<integer>30</integer>
 		<key>first_aired</key>
@@ -26813,6 +26891,8 @@ Law then decided to set his plan into motion and orders Franky to blow a firebal
 		<string>2013-08-25T03:30:00-04:00</string>
 		<key>first_aired_utc</key>
 		<integer>1377415800</integer>
+		<key>generalTitle</key>
+		<string>庞克哈萨德篇</string>
 		<key>images</key>
 		<dict>
 			<key>screen</key>
@@ -26827,24 +26907,26 @@ Law then decided to set his plan into motion and orders Franky to blow a firebal
 			<key>hated</key>
 			<integer>2</integer>
 			<key>loved</key>
-			<integer>38</integer>
+			<integer>36</integer>
 			<key>percentage</key>
-			<integer>80</integer>
+			<integer>81</integer>
 			<key>votes</key>
-			<integer>40</integer>
+			<integer>38</integer>
 		</dict>
 		<key>screen</key>
 		<string>http://slurm.trakt.us/images/episodes/310-16-30.9.jpg</string>
 		<key>season</key>
 		<integer>16</integer>
 		<key>title</key>
-		<string>Luffy Dies from Exposure?! The Spine-chilling Snow Woman Monet!</string>
+		<string>第608集 黑暗的幕后！多佛朗明哥开始行动！</string>
 		<key>tvdb_id</key>
 		<integer>4631952</integer>
 		<key>url</key>
 		<string>http://trakt.tv/show/one-piece/season/16/episode/30</string>
 	</dict>
 	<dict>
+		<key>content</key>
+		<string>莫奈为了阻止路飞去追凯撒而挡住了他的去路。莫奈是吃下雪雪果实的能力者，在其能力的愚弄之下，路飞最后被困在层层堆叠的大雪之中，并且因此而导致他的体力以极快的速度逐渐流逝。就在这个时候，罗也即将面临到空前的危机。另一方面，想尽办法阻止孩子们前往饼干房的乔巴最后仍是不敌孩子们发狂的攻击……</string>
 		<key>episode</key>
 		<integer>31</integer>
 		<key>first_aired</key>
@@ -26853,6 +26935,8 @@ Law then decided to set his plan into motion and orders Franky to blow a firebal
 		<string>2013-09-01T03:30:00-04:00</string>
 		<key>first_aired_utc</key>
 		<integer>1378020600</integer>
+		<key>generalTitle</key>
+		<string>庞克哈萨德篇</string>
 		<key>images</key>
 		<dict>
 			<key>screen</key>
@@ -26867,24 +26951,26 @@ Law then decided to set his plan into motion and orders Franky to blow a firebal
 			<key>hated</key>
 			<integer>2</integer>
 			<key>loved</key>
-			<integer>44</integer>
+			<integer>42</integer>
 			<key>percentage</key>
-			<integer>81</integer>
+			<integer>82</integer>
 			<key>votes</key>
-			<integer>46</integer>
+			<integer>44</integer>
 		</dict>
 		<key>screen</key>
 		<string>http://slurm.trakt.us/images/episodes/310-16-31.9.jpg</string>
 		<key>season</key>
 		<integer>16</integer>
 		<key>title</key>
-		<string>Fist Fight! Two Vice Admirals Fight</string>
+		<string>第609集 路飞冻死！？恐怖的雪女莫奈！</string>
 		<key>tvdb_id</key>
 		<integer>4631953</integer>
 		<key>url</key>
 		<string>http://trakt.tv/show/one-piece/season/16/episode/31</string>
 	</dict>
 	<dict>
+		<key>content</key>
+		<string>斯摩格对部下们惨遭蹂躏的愤怒彻底爆发，而全身缠绕着武装色霸气的维尔戈亦向他节节进逼。赌上海军的气魄与骄傲，斯摩格和维尔戈两人之间的白热化战斗显得越来越激烈。另一方面，娜美等人在乔巴的指引之下来到了饼干房，发现莫查正一个人与那些发了狂的孩子们对持，就在这时，雪女莫奈出现了，然而莫查却不知道莫奈跟凯撒也是同当……</string>
 		<key>episode</key>
 		<integer>32</integer>
 		<key>first_aired</key>
@@ -26893,6 +26979,8 @@ Law then decided to set his plan into motion and orders Franky to blow a firebal
 		<string>2013-09-08T03:30:00-04:00</string>
 		<key>first_aired_utc</key>
 		<integer>1378625400</integer>
+		<key>generalTitle</key>
+		<string>庞克哈萨德篇</string>
 		<key>images</key>
 		<dict>
 			<key>screen</key>
@@ -26907,24 +26995,26 @@ Law then decided to set his plan into motion and orders Franky to blow a firebal
 			<key>hated</key>
 			<integer>2</integer>
 			<key>loved</key>
-			<integer>44</integer>
+			<integer>42</integer>
 			<key>percentage</key>
 			<integer>79</integer>
 			<key>votes</key>
-			<integer>46</integer>
+			<integer>44</integer>
 		</dict>
 		<key>screen</key>
 		<string>http://slurm.trakt.us/images/episodes/310-16-32.9.jpg</string>
 		<key>season</key>
 		<integer>16</integer>
 		<key>title</key>
-		<string>The Small Dragon! Momonosuke Appears</string>
+		<string>第610集 碰撞的拳头！两名中将的战斗！</string>
 		<key>tvdb_id</key>
 		<integer>4631954</integer>
 		<key>url</key>
 		<string>http://trakt.tv/show/one-piece/season/16/episode/32</string>
 	</dict>
 	<dict>
+		<key>content</key>
+		<string>莫奈曾说C栋地下深处是无法逃脱之地，她为了阻止路飞去追凯撒而不断出招拖延时间，最后将路飞打落C栋地下深处的大垃圾桶。没想到在陷入穷途末路之绝境的路飞面前出现的竟然是一只小小的龙。路飞在无意间和这只自称是武士，并且经历过重重不可思议命运的小龙相遇，进而促使他展开了行动……</string>
 		<key>episode</key>
 		<integer>33</integer>
 		<key>first_aired</key>
@@ -26933,6 +27023,8 @@ Law then decided to set his plan into motion and orders Franky to blow a firebal
 		<string>2013-09-15T03:30:00-04:00</string>
 		<key>first_aired_utc</key>
 		<integer>1379230200</integer>
+		<key>generalTitle</key>
+		<string>庞克哈萨德篇</string>
 		<key>images</key>
 		<dict>
 			<key>screen</key>
@@ -26947,24 +27039,26 @@ Law then decided to set his plan into motion and orders Franky to blow a firebal
 			<key>hated</key>
 			<integer>3</integer>
 			<key>loved</key>
-			<integer>38</integer>
+			<integer>36</integer>
 			<key>percentage</key>
 			<integer>80</integer>
 			<key>votes</key>
-			<integer>41</integer>
+			<integer>39</integer>
 		</dict>
 		<key>screen</key>
 		<string>http://slurm.trakt.us/images/episodes/310-16-33.9.jpg</string>
 		<key>season</key>
 		<integer>16</integer>
 		<key>title</key>
-		<string>Deadly Combat in Snowstorm  The Straw Hats vs. the Snow Woman</string>
+		<string>第611集 小龙！桃之助现身！</string>
 		<key>tvdb_id</key>
 		<integer>4651222</integer>
 		<key>url</key>
 		<string>http://trakt.tv/show/one-piece/season/16/episode/33</string>
 	</dict>
 	<dict>
+		<key>content</key>
+		<string>索隆遭到能自由操控雪的莫奈任意摆饰，他一边承受来自雪女莫奈的攻击，一边设法让娜美等人成功逃脱。没想到就在这个时候，莫奈却变身为一个可怕的怪物，进而使得战况突然直转而下，于是一行人逐渐被逼入了走投无路的绝境。另一方面，布鲁克和乌索普受罗宾之托前去寻找海楼石手铐，而武士则是急着去找他的儿子桃之助……</string>
 		<key>episode</key>
 		<integer>34</integer>
 		<key>first_aired</key>
@@ -26973,6 +27067,8 @@ Law then decided to set his plan into motion and orders Franky to blow a firebal
 		<string>2013-09-22T03:30:00-04:00</string>
 		<key>first_aired_utc</key>
 		<integer>1379835000</integer>
+		<key>generalTitle</key>
+		<string>庞克哈萨德篇</string>
 		<key>images</key>
 		<dict>
 			<key>screen</key>
@@ -26987,24 +27083,26 @@ Law then decided to set his plan into motion and orders Franky to blow a firebal
 			<key>hated</key>
 			<integer>1</integer>
 			<key>loved</key>
-			<integer>47</integer>
+			<integer>45</integer>
 			<key>percentage</key>
 			<integer>86</integer>
 			<key>votes</key>
-			<integer>48</integer>
+			<integer>46</integer>
 		</dict>
 		<key>screen</key>
 		<string>http://slurm.trakt.us/images/episodes/310-16-34.9.jpg</string>
 		<key>season</key>
 		<integer>16</integer>
 		<key>title</key>
-		<string>Showing Off His Techniques! Zoro&apos;s Formidable One-Sword Style!</string>
+		<string>第612集 暴风雪中的死斗 草帽一伙VS雪女</string>
 		<key>tvdb_id</key>
 		<integer>4655574</integer>
 		<key>url</key>
 		<string>http://trakt.tv/show/one-piece/season/16/episode/34</string>
 	</dict>
 	<dict>
+		<key>content</key>
+		<string>面对挟带着强大的雪雪果实的能力袭来的莫奈，达斯琪使出霸气拼了命的正面迎战。但是，没想到最后却受困于莫奈强韧的尖牙，就在达斯琪的肩膀即将被莫奈咬碎之际，索隆那有如猛兽般的本能突然觉醒了。另一方面，前去寻找海楼石手铐和桃之助的布鲁克、乌索普和武士却在一个房间里找到了另外一群孩子……</string>
 		<key>episode</key>
 		<integer>35</integer>
 		<key>first_aired</key>
@@ -27013,6 +27111,8 @@ Law then decided to set his plan into motion and orders Franky to blow a firebal
 		<string>2013-09-29T03:30:00-04:00</string>
 		<key>first_aired_utc</key>
 		<integer>1380439800</integer>
+		<key>generalTitle</key>
+		<string>庞克哈萨德篇</string>
 		<key>images</key>
 		<dict>
 			<key>screen</key>
@@ -27029,24 +27129,26 @@ Luffy and Momonosuke manage to escape from the garbage chute. At the top, they a
 			<key>hated</key>
 			<integer>3</integer>
 			<key>loved</key>
-			<integer>44</integer>
+			<integer>42</integer>
 			<key>percentage</key>
 			<integer>80</integer>
 			<key>votes</key>
-			<integer>47</integer>
+			<integer>45</integer>
 		</dict>
 		<key>screen</key>
 		<string>http://slurm.trakt.us/images/episodes/310-16-35.9.jpg</string>
 		<key>season</key>
 		<integer>16</integer>
 		<key>title</key>
-		<string>I&apos;ll Protect My Friends! Mocha&apos;s Desperate Escape</string>
+		<string>第613集 奥义炸裂！索隆最强的一刀流！</string>
 		<key>tvdb_id</key>
 		<integer>4655575</integer>
 		<key>url</key>
 		<string>http://trakt.tv/show/one-piece/season/16/episode/35</string>
 	</dict>
 	<dict>
+		<key>content</key>
+		<string>莫查努力谨守自己答应乔巴的约定，抱着糖果拼了命的往前跑，不让那些孩子吃到糖果，但是，已经失控的孩子们却将她团团包围。就在糖果即将落入那些孩子们的手中时，她所采取的令人大为震惊的举动让乔巴忍不住发出了悲痛的喊叫声。原来她竟然将所有糖果都往自己的嘴里塞，一旁的孩子们也被她这个举动给吓呆了……</string>
 		<key>episode</key>
 		<integer>36</integer>
 		<key>first_aired</key>
@@ -27055,6 +27157,8 @@ Luffy and Momonosuke manage to escape from the garbage chute. At the top, they a
 		<string>2013-10-06T03:30:00-04:00</string>
 		<key>first_aired_utc</key>
 		<integer>1381044600</integer>
+		<key>generalTitle</key>
+		<string>庞克哈萨德篇</string>
 		<key>images</key>
 		<dict>
 			<key>screen</key>
@@ -27069,24 +27173,26 @@ Luffy and Momonosuke manage to escape from the garbage chute. At the top, they a
 			<key>hated</key>
 			<integer>0</integer>
 			<key>loved</key>
-			<integer>46</integer>
+			<integer>45</integer>
 			<key>percentage</key>
 			<integer>86</integer>
 			<key>votes</key>
-			<integer>46</integer>
+			<integer>45</integer>
 		</dict>
 		<key>screen</key>
 		<string>http://slurm.trakt.us/images/episodes/310-16-36.9.jpg</string>
 		<key>season</key>
 		<integer>16</integer>
 		<key>title</key>
-		<string>Brownbeard&apos;s Bitterness! Luffy&apos;s Anger Attack</string>
+		<string>第614集 保护朋友！莫查拼命逃走</string>
 		<key>tvdb_id</key>
 		<integer>4655576</integer>
 		<key>url</key>
 		<string>http://trakt.tv/show/one-piece/season/16/episode/36</string>
 	</dict>
 	<dict>
+		<key>content</key>
+		<string>茶胡子准备将凯撒残酷的真面目告知庞克哈萨德岛上的士兵们，并且要他们立刻从岛上逃离。没想到凯撒却夺走他的发言权，将他玩弄于股掌之间，把真相掩盖了起来。他对茶胡子所说的事一概不承认，最后甚至命令士兵们开枪对茶胡子展开射击。看到凯撒露出胜利狂妄笑容的模样，路飞心中的愤怒终于到达了顶点……</string>
 		<key>episode</key>
 		<integer>37</integer>
 		<key>first_aired</key>
@@ -27095,6 +27201,8 @@ Luffy and Momonosuke manage to escape from the garbage chute. At the top, they a
 		<string>2013-10-13T03:30:00-04:00</string>
 		<key>first_aired_utc</key>
 		<integer>1381649400</integer>
+		<key>generalTitle</key>
+		<string>庞克哈萨德篇</string>
 		<key>images</key>
 		<dict>
 			<key>screen</key>
@@ -27111,24 +27219,26 @@ Vergo beats Smoker but Smoker manages to retrieve Law&apos;s heart and gives it 
 			<key>hated</key>
 			<integer>0</integer>
 			<key>loved</key>
-			<integer>47</integer>
+			<integer>45</integer>
 			<key>percentage</key>
 			<integer>90</integer>
 			<key>votes</key>
-			<integer>47</integer>
+			<integer>45</integer>
 		</dict>
 		<key>screen</key>
 		<string>http://slurm.trakt.us/images/episodes/310-16-37.9.jpg</string>
 		<key>season</key>
 		<integer>16</integer>
 		<key>title</key>
-		<string>Shocking Conclusion! White Hunter vs. Vergo!</string>
+		<string>第615集 茶胡子的悲痛！路飞愤怒的一击</string>
 		<key>tvdb_id</key>
 		<integer>4675336</integer>
 		<key>url</key>
 		<string>http://trakt.tv/show/one-piece/season/16/episode/37</string>
 	</dict>
 	<dict>
+		<key>content</key>
+		<string>完全不把强大的瓦斯果实的攻击放在眼里，路飞充满愤怒的拳头逐渐将凯撒逼入绝境。但是，同一时间，斯摩格在全身被强大的武装色霸气围绕的维尔戈面前，却被逼入压倒性的不利处境,因而面临败北的危机。就在这个时候，斯摩格想起自己还欠罗一个人情，于是在明知敌不过维尔戈的情况下，仍执意使用自己的能力和他战斗……</string>
 		<key>episode</key>
 		<integer>38</integer>
 		<key>first_aired</key>
@@ -27137,6 +27247,8 @@ Vergo beats Smoker but Smoker manages to retrieve Law&apos;s heart and gives it 
 		<string>2013-10-20T03:30:00-04:00</string>
 		<key>first_aired_utc</key>
 		<integer>1382254200</integer>
+		<key>generalTitle</key>
+		<string>庞克哈萨德篇</string>
 		<key>images</key>
 		<dict>
 			<key>screen</key>
@@ -27151,24 +27263,26 @@ Vergo beats Smoker but Smoker manages to retrieve Law&apos;s heart and gives it 
 			<key>hated</key>
 			<integer>0</integer>
 			<key>loved</key>
-			<integer>48</integer>
+			<integer>46</integer>
 			<key>percentage</key>
 			<integer>88</integer>
 			<key>votes</key>
-			<integer>48</integer>
+			<integer>46</integer>
 		</dict>
 		<key>screen</key>
 		<string>http://slurm.trakt.us/images/episodes/310-16-38.9.jpg</string>
 		<key>season</key>
 		<integer>16</integer>
 		<key>title</key>
-		<string>Caesar Defeated! The Strongest Grizzly Magnum</string>
+		<string>第616集 冲击的对决！斯摩格对维尔戈</string>
 		<key>tvdb_id</key>
 		<integer>4678056</integer>
 		<key>url</key>
 		<string>http://trakt.tv/show/one-piece/season/16/episode/38</string>
 	</dict>
 	<dict>
+		<key>content</key>
+		<string>罗的一击使得形势一下子逆转。他一刀将浑身缠绕着武装色霸气的维尔戈砍成两半，并且将研究所毁了。这样的发展让草帽海贼团一行人加快了他们逃脱的脚步。但是，愤怒已经达到顶点的凯撒却使出敌我不分、毁灭一切、最狠毒的攻击对路飞直袭而来。他将毒气化为自己的力量，甚至不顾自己的部下，打算把实验进行到底……</string>
 		<key>episode</key>
 		<integer>39</integer>
 		<key>first_aired</key>
@@ -27177,6 +27291,8 @@ Vergo beats Smoker but Smoker manages to retrieve Law&apos;s heart and gives it 
 		<string>2013-10-27T03:30:00-04:00</string>
 		<key>first_aired_utc</key>
 		<integer>1382859000</integer>
+		<key>generalTitle</key>
+		<string>庞克哈萨德篇</string>
 		<key>images</key>
 		<dict>
 			<key>screen</key>
@@ -27191,24 +27307,26 @@ Vergo beats Smoker but Smoker manages to retrieve Law&apos;s heart and gives it 
 			<key>hated</key>
 			<integer>1</integer>
 			<key>loved</key>
-			<integer>46</integer>
+			<integer>44</integer>
 			<key>percentage</key>
-			<integer>82</integer>
+			<integer>83</integer>
 			<key>votes</key>
-			<integer>47</integer>
+			<integer>45</integer>
 		</dict>
 		<key>screen</key>
 		<string>http://slurm.trakt.us/images/episodes/310-16-39.9.jpg</string>
 		<key>season</key>
 		<integer>16</integer>
 		<key>title</key>
-		<string>Invasion! The Assassin From Dressrosa</string>
+		<string>第617集 打倒凯撒！最强的灰熊枪</string>
 		<key>tvdb_id</key>
 		<integer>4686657</integer>
 		<key>url</key>
 		<string>http://trakt.tv/show/one-piece/season/16/episode/39</string>
 	</dict>
 	<dict>
+		<key>content</key>
+		<string>草帽海贼团一行人好不容易从杀戮武器死亡国度的威胁下逃过一劫，目前正带着他们救出的那些孩子们前往R栋。而另一方面，路飞则击败了凯撒，这个爆炸性的消息瞬间传遍了整个新世界。然而，就在这个时候，多佛朗明哥所派出的杀手正从上空接近庞克哈萨德。一场全新的战斗即将就要掀起一阵狂风暴雨……</string>
 		<key>episode</key>
 		<integer>40</integer>
 		<key>first_aired</key>
@@ -27217,6 +27335,8 @@ Vergo beats Smoker but Smoker manages to retrieve Law&apos;s heart and gives it 
 		<string>2013-11-03T03:30:00-05:00</string>
 		<key>first_aired_utc</key>
 		<integer>1383467400</integer>
+		<key>generalTitle</key>
+		<string>庞克哈萨德篇</string>
 		<key>images</key>
 		<dict>
 			<key>screen</key>
@@ -27231,24 +27351,26 @@ Vergo beats Smoker but Smoker manages to retrieve Law&apos;s heart and gives it 
 			<key>hated</key>
 			<integer>0</integer>
 			<key>loved</key>
-			<integer>47</integer>
+			<integer>44</integer>
 			<key>percentage</key>
 			<integer>85</integer>
 			<key>votes</key>
-			<integer>47</integer>
+			<integer>44</integer>
 		</dict>
 		<key>screen</key>
 		<string>http://slurm.trakt.us/images/episodes/310-16-40.9.jpg</string>
 		<key>season</key>
 		<integer>16</integer>
 		<key>title</key>
-		<string>Rampage! The Invincible Franky Shogun</string>
+		<string>第618集 袭来！德雷斯罗萨的刺客</string>
 		<key>tvdb_id</key>
 		<integer>4686658</integer>
 		<key>url</key>
 		<string>http://trakt.tv/show/one-piece/season/16/episode/40</string>
 	</dict>
 	<dict>
+		<key>content</key>
+		<string>在崩塌进入倒数计时的R栋里，路飞只是一心一意的等待伙伴们再次齐聚。另一方面，从路飞给予的打击中醒来的凯撒意识到自己手中还握有斯摩格的心脏，于是决定就算要死，也要将斯摩格一起拖下水。而就在这个时候，Baby-5和巴法罗也凭藉强大的恶魔果实能力袭来，弗兰奇将军只身一人挡在他们面前……</string>
 		<key>episode</key>
 		<integer>41</integer>
 		<key>first_aired</key>
@@ -27257,6 +27379,8 @@ Vergo beats Smoker but Smoker manages to retrieve Law&apos;s heart and gives it 
 		<string>2013-11-10T03:30:00-05:00</string>
 		<key>first_aired_utc</key>
 		<integer>1384072200</integer>
+		<key>generalTitle</key>
+		<string>庞克哈萨德篇</string>
 		<key>images</key>
 		<dict>
 			<key>screen</key>
@@ -27269,26 +27393,28 @@ Vergo beats Smoker but Smoker manages to retrieve Law&apos;s heart and gives it 
 		<key>ratings</key>
 		<dict>
 			<key>hated</key>
-			<integer>2</integer>
+			<integer>1</integer>
 			<key>loved</key>
-			<integer>44</integer>
+			<integer>42</integer>
 			<key>percentage</key>
 			<integer>80</integer>
 			<key>votes</key>
-			<integer>46</integer>
+			<integer>43</integer>
 		</dict>
 		<key>screen</key>
 		<string>http://slurm.trakt.us/images/episodes/310-16-41.9.jpg</string>
 		<key>season</key>
 		<integer>16</integer>
 		<key>title</key>
-		<string>Desperate Situation! Punk Hazard&apos;s Big Explosion</string>
+		<string>第619集 大爆发！无敌的弗兰奇将军</string>
 		<key>tvdb_id</key>
 		<integer>4686659</integer>
 		<key>url</key>
 		<string>http://trakt.tv/show/one-piece/season/16/episode/41</string>
 	</dict>
 	<dict>
+		<key>content</key>
+		<string>凯撒以为自己手上的心脏是斯摩格所有，不料那却是莫奈的心脏。由于为了多佛朗明哥而不惜牺牲自己性命的莫奈之故，庞克哈萨德现在正面临毁灭的危机。路飞被一阵刺眼的闪光笼罩，目前仍在漫长的隧道中前进的草帽海贼团一行人，将遭逢冲击性的结局。另一方面，多佛朗明哥派出的刺客Baby-5和巴法罗正为了带走凯撒而和弗兰奇进行战斗……</string>
 		<key>episode</key>
 		<integer>42</integer>
 		<key>first_aired</key>
@@ -27297,6 +27423,8 @@ Vergo beats Smoker but Smoker manages to retrieve Law&apos;s heart and gives it 
 		<string>2013-11-17T03:30:00-05:00</string>
 		<key>first_aired_utc</key>
 		<integer>1384677000</integer>
+		<key>generalTitle</key>
+		<string>庞克哈萨德篇</string>
 		<key>images</key>
 		<dict>
 			<key>screen</key>
@@ -27313,24 +27441,26 @@ Meanwhile, far away from Punk Hazard, Doflamingo is still flying toward Punk Haz
 			<key>hated</key>
 			<integer>2</integer>
 			<key>loved</key>
-			<integer>46</integer>
+			<integer>43</integer>
 			<key>percentage</key>
-			<integer>82</integer>
+			<integer>83</integer>
 			<key>votes</key>
-			<integer>48</integer>
+			<integer>45</integer>
 		</dict>
 		<key>screen</key>
 		<string>http://slurm.trakt.us/images/episodes/310-16-42.9.jpg</string>
 		<key>season</key>
 		<integer>16</integer>
 		<key>title</key>
-		<string>Capture Caesar - General Cannon Blast</string>
+		<string>第620集 穷途末路　PUNK HAZARD大爆炸</string>
 		<key>tvdb_id</key>
 		<integer>4702923</integer>
 		<key>url</key>
 		<string>http://trakt.tv/show/one-piece/season/16/episode/42</string>
 	</dict>
 	<dict>
+		<key>content</key>
+		<string>原本幸存下来的莫奈正要按下毁灭按钮之际，却因凯撒误认心脏主人而死。察觉情况有异的多佛朗明哥遂急忙赶往庞克哈萨德岛。多佛朗明哥的黑影逐渐接近的期间，Baby-5与巴法罗和弗兰奇之间的凯撒争夺战越发白热化。就在Baby-5的利刃贯穿弗兰奇将军无敌的装甲时，弗兰奇将军利用最强的秘密武器展开了一场绝地大反攻……</string>
 		<key>episode</key>
 		<integer>43</integer>
 		<key>first_aired</key>
@@ -27339,6 +27469,8 @@ Meanwhile, far away from Punk Hazard, Doflamingo is still flying toward Punk Haz
 		<string>2013-11-24T03:30:00-05:00</string>
 		<key>first_aired_utc</key>
 		<integer>1385281800</integer>
+		<key>generalTitle</key>
+		<string>庞克哈萨德篇</string>
 		<key>images</key>
 		<dict>
 			<key>screen</key>
@@ -27353,24 +27485,26 @@ Meanwhile, far away from Punk Hazard, Doflamingo is still flying toward Punk Haz
 			<key>hated</key>
 			<integer>1</integer>
 			<key>loved</key>
-			<integer>51</integer>
+			<integer>48</integer>
 			<key>percentage</key>
 			<integer>81</integer>
 			<key>votes</key>
-			<integer>52</integer>
+			<integer>49</integer>
 		</dict>
 		<key>screen</key>
 		<string>http://slurm.trakt.us/images/episodes/310-16-43.9.jpg</string>
 		<key>season</key>
 		<integer>16</integer>
 		<key>title</key>
-		<string>Emotional Meeting! Momonosuke and Kin&apos;emon</string>
+		<string>第621集 抓住凯撒 将军加农炮炸裂</string>
 		<key>tvdb_id</key>
 		<integer>4702924</integer>
 		<key>url</key>
 		<string>http://trakt.tv/show/one-piece/season/16/episode/43</string>
 	</dict>
 	<dict>
+		<key>content</key>
+		<string>草帽海贼团终于在激战中获胜，并且成功的抓到了凯撒。而弗兰奇也成功将多佛朗明哥派来的刺客Baby-5和巴法罗双双击败。原本打算遵守约定，带孩子们回家的娜美被达斯琪的诚意感动，决定将孩子们交给海军。于是身上负伤却幸运幸存下来的人们，纷纷着手准备乘船离开庞克哈萨德。就在这个时候，在成为死亡国度牺牲品的锦卫门身上却发生了令人震惊的奇际……</string>
 		<key>episode</key>
 		<integer>44</integer>
 		<key>first_aired</key>
@@ -27379,6 +27513,8 @@ Meanwhile, far away from Punk Hazard, Doflamingo is still flying toward Punk Haz
 		<string>2013-12-01T03:30:00-05:00</string>
 		<key>first_aired_utc</key>
 		<integer>1385886600</integer>
+		<key>generalTitle</key>
+		<string>庞克哈萨德篇</string>
 		<key>images</key>
 		<dict>
 			<key>screen</key>
@@ -27391,26 +27527,28 @@ Meanwhile, far away from Punk Hazard, Doflamingo is still flying toward Punk Haz
 		<key>ratings</key>
 		<dict>
 			<key>hated</key>
-			<integer>2</integer>
+			<integer>1</integer>
 			<key>loved</key>
-			<integer>44</integer>
+			<integer>42</integer>
 			<key>percentage</key>
-			<integer>82</integer>
+			<integer>83</integer>
 			<key>votes</key>
-			<integer>46</integer>
+			<integer>43</integer>
 		</dict>
 		<key>screen</key>
 		<string>http://slurm.trakt.us/images/episodes/310-16-44.9.jpg</string>
 		<key>season</key>
 		<integer>16</integer>
 		<key>title</key>
-		<string>Regretful Departure - Leaving Punk Hazard</string>
+		<string>第622集 感动的再会 桃之助与锦卫门</string>
 		<key>tvdb_id</key>
 		<integer>4702925</integer>
 		<key>url</key>
 		<string>http://trakt.tv/show/one-piece/season/16/episode/44</string>
 	</dict>
 	<dict>
+		<key>content</key>
+		<string>尽管罗警告路飞多佛朗明哥可能很快就会追来，但路飞仍决定要和大家一起开宴会。欢乐的宴会结束之后，启程的时刻也终于来临了。告别了费尽千辛万苦才救出的孩子们，以及一同并肩作战的海军G5，路飞发出了准备出航的呐喊。但是，就在这时，多佛朗明哥的魔爪也正在一步步逼近。他在途中发现身体不见的巴法罗和Baby-5，而罗的声音从一旁的电话虫中传了出来……</string>
 		<key>episode</key>
 		<integer>45</integer>
 		<key>first_aired</key>
@@ -27419,6 +27557,8 @@ Meanwhile, far away from Punk Hazard, Doflamingo is still flying toward Punk Haz
 		<string>2013-12-08T03:30:00-05:00</string>
 		<key>first_aired_utc</key>
 		<integer>1386491400</integer>
+		<key>generalTitle</key>
+		<string>庞克哈萨德篇</string>
 		<key>images</key>
 		<dict>
 			<key>screen</key>
@@ -27433,24 +27573,26 @@ Meanwhile, far away from Punk Hazard, Doflamingo is still flying toward Punk Haz
 			<key>hated</key>
 			<integer>2</integer>
 			<key>loved</key>
-			<integer>45</integer>
+			<integer>42</integer>
 			<key>percentage</key>
-			<integer>83</integer>
+			<integer>84</integer>
 			<key>votes</key>
-			<integer>47</integer>
+			<integer>44</integer>
 		</dict>
 		<key>screen</key>
 		<string>http://slurm.trakt.us/images/episodes/310-16-45.9.jpg</string>
 		<key>season</key>
 		<integer>16</integer>
 		<key>title</key>
-		<string>G-5&apos;s Annihilation! Doflamingo&apos;s Assault!</string>
+		<string>第623集 惜别的时刻 从PUNK HAZARD起航！</string>
 		<key>tvdb_id</key>
 		<integer>4702926</integer>
 		<key>url</key>
 		<string>http://trakt.tv/show/one-piece/season/16/episode/45</string>
 	</dict>
 	<dict>
+		<key>content</key>
+		<string>在前往下一座岛的途中，罗用电话虫和多佛朗明哥通话，并且威胁他放弃王下七武海的位子，之后又公开了打倒四皇的作战计划，令草帽海贼团一行人以及锦卫门父子大为震惊。另一方面，在庞克哈萨德，多佛朗明哥突然从天而降，无情的将海军G5推向了绝望的深渊。并且将斯摩格打成重伤，就在斯摩格陷入危机的时候，一个意想不到的人出现了……</string>
 		<key>episode</key>
 		<integer>46</integer>
 		<key>first_aired</key>
@@ -27459,6 +27601,8 @@ Meanwhile, far away from Punk Hazard, Doflamingo is still flying toward Punk Haz
 		<string>2013-12-15T03:30:00-05:00</string>
 		<key>first_aired_utc</key>
 		<integer>1387096200</integer>
+		<key>generalTitle</key>
+		<string>庞克哈萨德篇</string>
 		<key>images</key>
 		<dict>
 			<key>screen</key>
@@ -27473,24 +27617,26 @@ Meanwhile, far away from Punk Hazard, Doflamingo is still flying toward Punk Haz
 			<key>hated</key>
 			<integer>1</integer>
 			<key>loved</key>
-			<integer>48</integer>
+			<integer>45</integer>
 			<key>percentage</key>
 			<integer>85</integer>
 			<key>votes</key>
-			<integer>49</integer>
+			<integer>46</integer>
 		</dict>
 		<key>screen</key>
 		<string>http://slurm.trakt.us/images/episodes/310-16-46.9.jpg</string>
 		<key>season</key>
 		<integer>16</integer>
 		<key>title</key>
-		<string>Tension! Aokiji vs. Doflamingo</string>
+		<string>第624集 G5全灭！多佛朗明哥突袭</string>
 		<key>tvdb_id</key>
 		<integer>4732212</integer>
 		<key>url</key>
 		<string>http://trakt.tv/show/one-piece/season/16/episode/46</string>
 	</dict>
 	<dict>
+		<key>content</key>
+		<string>青雉库赞在斯摩格陷入危机之际英勇现身。前海军最高战力对上拥有黑暗势力的王下七武海，一股紧张感弥漫在这两个压倒性的强者之间。就在这个时候，青雉所说的一句话却掀起了波澜……另一方面，在罗的要求下，草帽海贼团一行人正在前往德雷斯罗萨的途中，而原本就要前往德雷斯罗萨的武士锦卫门也与他们同行……</string>
 		<key>episode</key>
 		<integer>47</integer>
 		<key>first_aired</key>
@@ -27499,6 +27645,8 @@ Meanwhile, far away from Punk Hazard, Doflamingo is still flying toward Punk Haz
 		<string>2013-12-22T03:30:00-05:00</string>
 		<key>first_aired_utc</key>
 		<integer>1387701000</integer>
+		<key>generalTitle</key>
+		<string>庞克哈萨德篇</string>
 		<key>images</key>
 		<dict>
 			<key>screen</key>
@@ -27511,26 +27659,28 @@ Meanwhile, far away from Punk Hazard, Doflamingo is still flying toward Punk Haz
 		<key>ratings</key>
 		<dict>
 			<key>hated</key>
-			<integer>4</integer>
+			<integer>3</integer>
 			<key>loved</key>
-			<integer>39</integer>
+			<integer>36</integer>
 			<key>percentage</key>
-			<integer>77</integer>
+			<integer>78</integer>
 			<key>votes</key>
-			<integer>43</integer>
+			<integer>39</integer>
 		</dict>
 		<key>screen</key>
 		<string>http://slurm.trakt.us/images/episodes/310-16-47.9.jpg</string>
 		<key>season</key>
 		<integer>16</integer>
 		<key>title</key>
-		<string>Caesar has Disappeared! The Pirate Alliance Sallies</string>
+		<string>第625集 紧张！青雉对多佛朗明哥</string>
 		<key>tvdb_id</key>
 		<integer>4737138</integer>
 		<key>url</key>
 		<string>http://trakt.tv/show/one-piece/season/16/episode/47</string>
 	</dict>
 	<dict>
+		<key>content</key>
+		<string>向德雷斯罗萨勇往直前的草帽海贼团一行人遭到神秘敌人的突袭，让凯撒被对方劫走。但是，为了夺回凯撒而展开追踪的路飞与罗却遇到出乎意料的强敌，并且因而陷入了苦战，就在这个时候，一场令人惊讶的重逢正等着他们。原来在海上对他们发动攻击的竟是过去曾和路飞等人在阿拉巴斯坦见过面的功夫海牛所率领的海兽……</string>
 		<key>episode</key>
 		<integer>48</integer>
 		<key>first_aired</key>
@@ -27539,6 +27689,8 @@ Meanwhile, far away from Punk Hazard, Doflamingo is still flying toward Punk Haz
 		<string>2014-01-05T03:30:00-05:00</string>
 		<key>first_aired_utc</key>
 		<integer>1388910600</integer>
+		<key>generalTitle</key>
+		<string>庞克哈萨德篇</string>
 		<key>images</key>
 		<dict>
 			<key>screen</key>
@@ -27551,26 +27703,28 @@ Meanwhile, far away from Punk Hazard, Doflamingo is still flying toward Punk Haz
 		<key>ratings</key>
 		<dict>
 			<key>hated</key>
-			<integer>6</integer>
+			<integer>5</integer>
 			<key>loved</key>
-			<integer>39</integer>
+			<integer>37</integer>
 			<key>percentage</key>
-			<integer>72</integer>
+			<integer>74</integer>
 			<key>votes</key>
-			<integer>45</integer>
+			<integer>42</integer>
 		</dict>
 		<key>screen</key>
 		<string>http://slurm.trakt.us/images/episodes/310-16-48.9.jpg</string>
 		<key>season</key>
 		<integer>16</integer>
 		<key>title</key>
-		<string>Luffy Dies in the Sea!? The Collapse of the Pirate Alliance</string>
+		<string>第626集 消失的凯撒 海贼同盟出击</string>
 		<key>tvdb_id</key>
 		<integer>4737139</integer>
 		<key>url</key>
 		<string>http://trakt.tv/show/one-piece/season/16/episode/48</string>
 	</dict>
 	<dict>
+		<key>content</key>
+		<string>路飞和罗因为宠物果实的能力而被布里德给抓住了，两人虽然试着反击，但是却反而陷入布里德设下的巧妙陷阱，最后被迫赌上自己的性命和对方作战，他们两人的激战将会掀起具有冲击性的高潮。无法眼睁睁看着路飞和罗自相残杀的海牛拼命向布里德求情，没想到布里德却答应了海牛的请求，取而代之的是，命令海牛出手将两人杀掉……</string>
 		<key>episode</key>
 		<integer>49</integer>
 		<key>first_aired</key>
@@ -27579,6 +27733,8 @@ Meanwhile, far away from Punk Hazard, Doflamingo is still flying toward Punk Haz
 		<string>2014-01-12T03:30:00-05:00</string>
 		<key>first_aired_utc</key>
 		<integer>1389515400</integer>
+		<key>generalTitle</key>
+		<string>庞克哈萨德篇</string>
 		<key>images</key>
 		<dict>
 			<key>screen</key>
@@ -27591,26 +27747,28 @@ Meanwhile, far away from Punk Hazard, Doflamingo is still flying toward Punk Haz
 		<key>ratings</key>
 		<dict>
 			<key>hated</key>
-			<integer>3</integer>
+			<integer>2</integer>
 			<key>loved</key>
-			<integer>43</integer>
+			<integer>40</integer>
 			<key>percentage</key>
-			<integer>79</integer>
+			<integer>80</integer>
 			<key>votes</key>
-			<integer>46</integer>
+			<integer>42</integer>
 		</dict>
 		<key>screen</key>
 		<string>http://slurm.trakt.us/images/episodes/310-16-49.9.jpg</string>
 		<key>season</key>
 		<integer>16</integer>
 		<key>title</key>
-		<string>A Major Turnaround! Luffy&apos;s Angry Iron Fist Strikes!</string>
+		<string>第627集 路飞海底死斗！？海贼同盟解体</string>
 		<key>tvdb_id</key>
 		<integer>4767035</integer>
 		<key>url</key>
 		<string>http://trakt.tv/show/one-piece/season/16/episode/49</string>
 	</dict>
 	<dict>
+		<key>content</key>
+		<string>沉入海底的路飞和罗,生还的机率低得令人绝望。在忍无可忍之下，乔巴和海牛只凭两人之力挺身反抗布里德，而他们的命运也即将走向尽头,就在这个时候，超乎想像的奇际发生了。原本被打入海中的罗和路飞竟然毫发无伤的出现在布里德面前，原来罗早已看穿布里德宠物果实的破绽，因此一直假装受到控制，实则等待夺回凯撒的时机……</string>
 		<key>episode</key>
 		<integer>1</integer>
 		<key>first_aired</key>
@@ -27619,6 +27777,8 @@ Meanwhile, far away from Punk Hazard, Doflamingo is still flying toward Punk Haz
 		<string>2014-01-19T03:30:00-05:00</string>
 		<key>first_aired_utc</key>
 		<integer>1390120200</integer>
+		<key>generalTitle</key>
+		<string>庞克哈萨德篇</string>
 		<key>images</key>
 		<dict>
 			<key>screen</key>
@@ -27633,24 +27793,26 @@ Meanwhile, far away from Punk Hazard, Doflamingo is still flying toward Punk Haz
 			<key>hated</key>
 			<integer>1</integer>
 			<key>loved</key>
-			<integer>44</integer>
+			<integer>39</integer>
 			<key>percentage</key>
-			<integer>82</integer>
+			<integer>83</integer>
 			<key>votes</key>
-			<integer>45</integer>
+			<integer>40</integer>
 		</dict>
 		<key>screen</key>
 		<string>http://slurm.trakt.us/images/episodes/310-17-1.9.jpg</string>
 		<key>season</key>
 		<integer>17</integer>
 		<key>title</key>
-		<string>Startling! The Big News Shakes Up The New World!</string>
+		<string>第628集 大逆转！爆裂路飞的愤怒铁拳</string>
 		<key>tvdb_id</key>
 		<integer>4772870</integer>
 		<key>url</key>
 		<string>http://trakt.tv/show/one-piece/season/17/episode/1</string>
 	</dict>
 	<dict>
+		<key>content</key>
+		<string>多佛朗明哥退出七武海的消息瞬间就席卷了整个世界。就在大家以为一切都按照罗的计划顺利进行的时候，多佛朗明哥所下的一步意外之棋，却又让事情朝着意想不到的方向发展。他除了退出七武海之外，还放弃了德雷斯罗萨的王位。另一方面，路飞等人也按照罗的计划前往德雷斯罗萨，同时准备在附近的岛屿交还凯撒……</string>
 		<key>episode</key>
 		<integer>2</integer>
 		<key>first_aired</key>
@@ -27659,6 +27821,8 @@ Meanwhile, far away from Punk Hazard, Doflamingo is still flying toward Punk Haz
 		<string>2014-01-26T03:30:00-05:00</string>
 		<key>first_aired_utc</key>
 		<integer>1390725000</integer>
+		<key>generalTitle</key>
+		<string>德雷斯罗萨篇</string>
 		<key>images</key>
 		<dict>
 			<key>screen</key>
@@ -27673,24 +27837,26 @@ Meanwhile, far away from Punk Hazard, Doflamingo is still flying toward Punk Haz
 			<key>hated</key>
 			<integer>3</integer>
 			<key>loved</key>
-			<integer>43</integer>
+			<integer>40</integer>
 			<key>percentage</key>
 			<integer>78</integer>
 			<key>votes</key>
-			<integer>46</integer>
+			<integer>43</integer>
 		</dict>
 		<key>screen</key>
 		<string>http://slurm.trakt.us/images/episodes/310-17-2.9.jpg</string>
 		<key>season</key>
 		<integer>17</integer>
 		<key>title</key>
-		<string>Adventure! The Country of Love and Passion, Dressrosa</string>
+		<string>第629集 激震！撼动新世界的大新闻</string>
 		<key>tvdb_id</key>
 		<integer>4772871</integer>
 		<key>url</key>
 		<string>http://trakt.tv/show/one-piece/season/17/episode/2</string>
 	</dict>
 	<dict>
+		<key>content</key>
+		<string>就在多佛朗明哥使出的下一招再次掀起风波的时候，草帽海贼团一行人终于抵达了德雷斯罗萨。在那里等待着他们的是充满吸引力的舞娘和新的强者，以及不寻常的景象，这一切的一切都让路飞等人感到惊讶不已。原本要按照罗的计划兵分三路的路飞等人，因为受到德雷斯罗萨岛上特有的料理香气吸引而来到城中……</string>
 		<key>episode</key>
 		<integer>3</integer>
 		<key>first_aired</key>
@@ -27699,6 +27865,8 @@ Meanwhile, far away from Punk Hazard, Doflamingo is still flying toward Punk Haz
 		<string>2014-02-02T03:30:00-05:00</string>
 		<key>first_aired_utc</key>
 		<integer>1391329800</integer>
+		<key>generalTitle</key>
+		<string>德雷斯罗萨篇</string>
 		<key>images</key>
 		<dict>
 			<key>screen</key>
@@ -27713,24 +27881,26 @@ Meanwhile, far away from Punk Hazard, Doflamingo is still flying toward Punk Haz
 			<key>hated</key>
 			<integer>1</integer>
 			<key>loved</key>
-			<integer>47</integer>
+			<integer>44</integer>
 			<key>percentage</key>
 			<integer>82</integer>
 			<key>votes</key>
-			<integer>48</integer>
+			<integer>45</integer>
 		</dict>
 		<key>screen</key>
 		<string>http://slurm.trakt.us/images/episodes/310-17-3.9.jpg</string>
 		<key>season</key>
 		<integer>17</integer>
 		<key>title</key>
-		<string>Swirling Madness - Corrida Colosseum</string>
+		<string>第630集 冒险 爱与热情的国度 德雷斯罗萨</string>
 		<key>tvdb_id</key>
 		<integer>4772872</integer>
 		<key>url</key>
 		<string>http://trakt.tv/show/one-piece/season/17/episode/3</string>
 	</dict>
 	<dict>
+		<key>content</key>
+		<string>草帽海贼团一行人终于来到了德雷斯罗萨，他们按照罗的计划兵分三路，路飞等人因受到岛上特殊香气的吸引而来到了城中的一家小酒馆。酒馆里一名失明的男人发挥了令草帽海贼团一行人大为震惊的真正实力。而就在这个时候，斗牛竞技场中也集结了来自新世界各地的强者，以令人惊讶的优胜奖品为赌注，一场世纪大对决即将就要开始了……</string>
 		<key>episode</key>
 		<integer>4</integer>
 		<key>first_aired</key>
@@ -27739,6 +27909,8 @@ Meanwhile, far away from Punk Hazard, Doflamingo is still flying toward Punk Haz
 		<string>2014-02-09T03:30:00-05:00</string>
 		<key>first_aired_utc</key>
 		<integer>1391934600</integer>
+		<key>generalTitle</key>
+		<string>德雷斯罗萨篇</string>
 		<key>images</key>
 		<dict>
 			<key>screen</key>
@@ -27753,26 +27925,28 @@ Meanwhile, Luffy and Franky arrive at the Colosseum, to take the Mera Mera No Mi
 		<key>ratings</key>
 		<dict>
 			<key>hated</key>
-			<integer>2</integer>
+			<integer>1</integer>
 			<key>loved</key>
-			<integer>42</integer>
+			<integer>40</integer>
 			<key>percentage</key>
-			<integer>79</integer>
+			<integer>80</integer>
 			<key>votes</key>
-			<integer>44</integer>
+			<integer>41</integer>
 		</dict>
 		<key>screen</key>
 		<string>http://slurm.trakt.us/images/episodes/310-17-4.9.jpg</string>
 		<key>season</key>
 		<integer>17</integer>
 		<key>title</key>
-		<string>Dangerous Love - Dancing Girl Violet</string>
+		<string>第631集 狂热漩涡！斗牛竞技场</string>
 		<key>tvdb_id</key>
 		<integer>4772873</integer>
 		<key>url</key>
 		<string>http://trakt.tv/show/one-piece/season/17/episode/4</string>
 	</dict>
 	<dict>
+		<key>content</key>
+		<string>在斗牛竞技场中，围绕着烧烧果实而展开的战斗全貌即将清晰。另一方面，索隆为了抓偷走秋水的小偷而一路狂奔，山治和武士等人也跟了上去。就在这个时候，山治却与一位长相极为妖艳、跳着多佛朗明哥舞蹈的绝世美女仿佛命中注定般的邂逅，他们两人之间的危险恋爱逃亡行动,将会掀起一阵新的波澜……</string>
 		<key>episode</key>
 		<integer>5</integer>
 		<key>first_aired</key>
@@ -27781,6 +27955,8 @@ Meanwhile, Luffy and Franky arrive at the Colosseum, to take the Mera Mera No Mi
 		<string>2014-02-16T03:30:00-05:00</string>
 		<key>first_aired_utc</key>
 		<integer>1392539400</integer>
+		<key>generalTitle</key>
+		<string>德雷斯罗萨篇</string>
 		<key>images</key>
 		<dict>
 			<key>screen</key>
@@ -27797,24 +27973,26 @@ Luffy defeats Spartan after he tried to punch him several times. Luffy was about
 			<key>hated</key>
 			<integer>0</integer>
 			<key>loved</key>
-			<integer>45</integer>
+			<integer>43</integer>
 			<key>percentage</key>
 			<integer>80</integer>
 			<key>votes</key>
-			<integer>45</integer>
+			<integer>43</integer>
 		</dict>
 		<key>screen</key>
 		<string>http://slurm.trakt.us/images/episodes/310-17-5.9.jpg</string>
 		<key>season</key>
 		<integer>17</integer>
 		<key>title</key>
-		<string>A Formidable, Unknown Warrior! Here Comes Lucy!</string>
+		<string>第632集 危险的恋情！舞娘紫罗兰</string>
 		<key>tvdb_id</key>
 		<integer>4795409</integer>
 		<key>url</key>
 		<string>http://trakt.tv/show/one-piece/season/17/episode/5</string>
 	</dict>
 	<dict>
+		<key>content</key>
+		<string>得知斗牛竞技场竞技秀的奖品是艾斯的烧烧果实，路飞立刻决定参加比赛。在海贼、杀手和犯罪者等新世界赫赫有名的猛将们聚集的竞技场，其中还包括了对他恨得牙痒痒的海贼贵公子卡文迪许。路飞隐瞒自己的真实身份，以一个无名战士的名义潜入其中。当围绕着烧烧果实打转的阴谋越演越烈，路飞也开始大展身手……</string>
 		<key>episode</key>
 		<integer>6</integer>
 		<key>first_aired</key>
@@ -27823,6 +28001,8 @@ Luffy defeats Spartan after he tried to punch him several times. Luffy was about
 		<string>2014-02-23T03:30:00-05:00</string>
 		<key>first_aired_utc</key>
 		<integer>1393144200</integer>
+		<key>generalTitle</key>
+		<string>德雷斯罗萨篇</string>
 		<key>images</key>
 		<dict>
 			<key>screen</key>
@@ -27841,24 +28021,26 @@ Meanwhile, the Thunder Soldier takes Franky to a private place so they can discu
 			<key>hated</key>
 			<integer>0</integer>
 			<key>loved</key>
-			<integer>48</integer>
+			<integer>46</integer>
 			<key>percentage</key>
 			<integer>83</integer>
 			<key>votes</key>
-			<integer>48</integer>
+			<integer>46</integer>
 		</dict>
 		<key>screen</key>
 		<string>http://slurm.trakt.us/images/episodes/310-17-6.9.jpg</string>
 		<key>season</key>
 		<integer>17</integer>
 		<key>title</key>
-		<string>The Pirate Prince Cavendish</string>
+		<string>第633集 最强的无名战士 路西登场</string>
 		<key>tvdb_id</key>
 		<integer>4799775</integer>
 		<key>url</key>
 		<string>http://trakt.tv/show/one-piece/season/17/episode/6</string>
 	</dict>
 	<dict>
+		<key>content</key>
+		<string>卡文迪许是前来参加斗牛竞技场竞技秀、过于俊美、悬赏金额过亿的新人。他揭露自己之所以争夺烧烧果实的可怕理由，并且还扬言要将路飞等一干新人全部杀光。就在一群人在竞技场上打得如火如荼的时候，路飞却在一尊铜像前遇见了一位神秘的美女剑斗士蕾贝卡。在蕾贝卡的说明之下，路飞才知道原来那尊铜像是一名传说中的剑斗士……</string>
 		<key>episode</key>
 		<integer>7</integer>
 		<key>first_aired</key>
@@ -27867,6 +28049,8 @@ Meanwhile, the Thunder Soldier takes Franky to a private place so they can discu
 		<string>2014-03-02T03:30:00-05:00</string>
 		<key>first_aired_utc</key>
 		<integer>1393749000</integer>
+		<key>generalTitle</key>
+		<string>德雷斯罗萨篇</string>
 		<key>images</key>
 		<dict>
 			<key>screen</key>
@@ -27881,24 +28065,26 @@ Meanwhile, the Thunder Soldier takes Franky to a private place so they can discu
 			<key>hated</key>
 			<integer>1</integer>
 			<key>loved</key>
-			<integer>41</integer>
+			<integer>40</integer>
 			<key>percentage</key>
 			<integer>80</integer>
 			<key>votes</key>
-			<integer>42</integer>
+			<integer>41</integer>
 		</dict>
 		<key>screen</key>
 		<string>http://slurm.trakt.us/images/episodes/310-17-7.9.jpg</string>
 		<key>season</key>
 		<integer>17</integer>
 		<key>title</key>
-		<string>The Fated Reunion - Bellamy the Hyena</string>
+		<string>第634集 海贼贵公子 卡文迪许</string>
 		<key>tvdb_id</key>
 		<integer>4800450</integer>
 		<key>url</key>
 		<string>http://trakt.tv/show/one-piece/season/17/episode/7</string>
 	</dict>
 	<dict>
+		<key>content</key>
+		<string>为了得到竞技秀的奖品烧烧果实，路飞以化名报名了比赛。就在竞技场的参赛者身份陆陆续续揭晓的时候，又出现了一个为了实现自己的野心而前来争夺烧烧果实之人挡在路飞的面前，那就是曾经在魔谷镇和路飞交过手、与他渊源颇深的那个男人贝拉米。另一方面，娜美等人在桑尼号上却听到了一个古怪的声音……</string>
 		<key>episode</key>
 		<integer>8</integer>
 		<key>first_aired</key>
@@ -27907,6 +28093,8 @@ Meanwhile, the Thunder Soldier takes Franky to a private place so they can discu
 		<string>2014-03-16T03:30:00-04:00</string>
 		<key>first_aired_utc</key>
 		<integer>1394955000</integer>
+		<key>generalTitle</key>
+		<string>德雷斯罗萨篇</string>
 		<key>images</key>
 		<dict>
 			<key>screen</key>
@@ -27921,18 +28109,18 @@ Meanwhile, the Thunder Soldier takes Franky to a private place so they can discu
 			<key>hated</key>
 			<integer>0</integer>
 			<key>loved</key>
-			<integer>47</integer>
+			<integer>44</integer>
 			<key>percentage</key>
 			<integer>84</integer>
 			<key>votes</key>
-			<integer>47</integer>
+			<integer>44</integer>
 		</dict>
 		<key>screen</key>
 		<string>http://slurm.trakt.us/images/episodes/310-17-8.9.jpg</string>
 		<key>season</key>
 		<integer>17</integer>
 		<key>title</key>
-		<string>Supernova! Bartolomeo the Cannibal</string>
+		<string>第635集 命运的再会 鬣狗贝拉米</string>
 		<key>tvdb_id</key>
 		<integer>4800801</integer>
 		<key>url</key>
@@ -27947,6 +28135,8 @@ Meanwhile, the Thunder Soldier takes Franky to a private place so they can discu
 		<string>2014-03-23T03:30:00-04:00</string>
 		<key>first_aired_utc</key>
 		<integer>1395559800</integer>
+		<key>generalTitle</key>
+		<string>德雷斯罗萨篇</string>
 		<key>images</key>
 		<dict>
 			<key>screen</key>
@@ -27989,6 +28179,8 @@ At the Battle Royale, only 30 combatants remain in the ring with the numbers bei
 		<string>2014-03-30T03:30:00-04:00</string>
 		<key>first_aired_utc</key>
 		<integer>1396164600</integer>
+		<key>generalTitle</key>
+		<string>德雷斯罗萨篇</string>
 		<key>images</key>
 		<dict>
 			<key>screen</key>
@@ -28007,11 +28199,11 @@ Meanwhile, Franky is informed by Thunder Soldier that he too is part of an opera
 			<key>hated</key>
 			<integer>1</integer>
 			<key>loved</key>
-			<integer>44</integer>
+			<integer>42</integer>
 			<key>percentage</key>
-			<integer>86</integer>
+			<integer>85</integer>
 			<key>votes</key>
-			<integer>45</integer>
+			<integer>43</integer>
 		</dict>
 		<key>screen</key>
 		<string>http://slurm.trakt.us/images/episodes/310-17-10.9.jpg</string>
@@ -28033,6 +28225,8 @@ Meanwhile, Franky is informed by Thunder Soldier that he too is part of an opera
 		<string>2014-04-06T03:30:00-04:00</string>
 		<key>first_aired_utc</key>
 		<integer>1396769400</integer>
+		<key>generalTitle</key>
+		<string>德雷斯罗萨篇</string>
 		<key>images</key>
 		<dict>
 			<key>screen</key>
@@ -28051,11 +28245,11 @@ The plot shifts to Sanji&apos;s location, where he and Violet arrives at the nex
 			<key>hated</key>
 			<integer>0</integer>
 			<key>loved</key>
-			<integer>44</integer>
+			<integer>42</integer>
 			<key>percentage</key>
 			<integer>85</integer>
 			<key>votes</key>
-			<integer>44</integer>
+			<integer>42</integer>
 		</dict>
 		<key>screen</key>
 		<string>http://slurm.trakt.us/images/episodes/310-17-11.9.jpg</string>
@@ -28077,6 +28271,8 @@ The plot shifts to Sanji&apos;s location, where he and Violet arrives at the nex
 		<string>2014-04-13T03:30:00-04:00</string>
 		<key>first_aired_utc</key>
 		<integer>1397374200</integer>
+		<key>generalTitle</key>
+		<string>德雷斯罗萨篇</string>
 		<key>images</key>
 		<dict>
 			<key>screen</key>
@@ -28097,11 +28293,11 @@ With Violet revealing her true self, Sanji was seen beaten and bloodied before V
 			<key>hated</key>
 			<integer>0</integer>
 			<key>loved</key>
-			<integer>43</integer>
+			<integer>41</integer>
 			<key>percentage</key>
 			<integer>84</integer>
 			<key>votes</key>
-			<integer>43</integer>
+			<integer>41</integer>
 		</dict>
 		<key>screen</key>
 		<string>http://slurm.trakt.us/images/episodes/310-17-12.9.jpg</string>
@@ -28123,6 +28319,8 @@ With Violet revealing her true self, Sanji was seen beaten and bloodied before V
 		<string>2014-04-20T03:30:00-04:00</string>
 		<key>first_aired_utc</key>
 		<integer>1397979000</integer>
+		<key>generalTitle</key>
+		<string>德雷斯罗萨篇</string>
 		<key>images</key>
 		<dict>
 			<key>screen</key>
@@ -28143,11 +28341,11 @@ At the exchange site, Law received a call from Sanji, who attempts to warn Law a
 			<key>hated</key>
 			<integer>1</integer>
 			<key>loved</key>
-			<integer>42</integer>
+			<integer>40</integer>
 			<key>percentage</key>
 			<integer>82</integer>
 			<key>votes</key>
-			<integer>43</integer>
+			<integer>41</integer>
 		</dict>
 		<key>screen</key>
 		<string>http://slurm.trakt.us/images/episodes/310-17-13.9.jpg</string>
@@ -28169,6 +28367,8 @@ At the exchange site, Law received a call from Sanji, who attempts to warn Law a
 		<string>2014-04-27T03:30:00-04:00</string>
 		<key>first_aired_utc</key>
 		<integer>1398583800</integer>
+		<key>generalTitle</key>
+		<string>德雷斯罗萨篇</string>
 		<key>images</key>
 		<dict>
 			<key>screen</key>
@@ -28181,13 +28381,13 @@ At the exchange site, Law received a call from Sanji, who attempts to warn Law a
 		<key>ratings</key>
 		<dict>
 			<key>hated</key>
-			<integer>2</integer>
+			<integer>1</integer>
 			<key>loved</key>
-			<integer>46</integer>
+			<integer>43</integer>
 			<key>percentage</key>
-			<integer>85</integer>
+			<integer>87</integer>
 			<key>votes</key>
-			<integer>48</integer>
+			<integer>44</integer>
 		</dict>
 		<key>screen</key>
 		<string>http://slurm.trakt.us/images/episodes/310-17-14.9.jpg</string>
@@ -28209,6 +28409,8 @@ At the exchange site, Law received a call from Sanji, who attempts to warn Law a
 		<string>2014-05-04T03:30:00-04:00</string>
 		<key>first_aired_utc</key>
 		<integer>1399188600</integer>
+		<key>generalTitle</key>
+		<string>德雷斯罗萨篇</string>
 		<key>images</key>
 		<dict>
 			<key>screen</key>
@@ -28223,11 +28425,11 @@ At the exchange site, Law received a call from Sanji, who attempts to warn Law a
 			<key>hated</key>
 			<integer>1</integer>
 			<key>loved</key>
-			<integer>45</integer>
+			<integer>41</integer>
 			<key>percentage</key>
-			<integer>87</integer>
+			<integer>88</integer>
 			<key>votes</key>
-			<integer>46</integer>
+			<integer>42</integer>
 		</dict>
 		<key>screen</key>
 		<string>http://slurm.trakt.us/images/episodes/310-17-15.9.jpg</string>
@@ -28249,6 +28451,8 @@ At the exchange site, Law received a call from Sanji, who attempts to warn Law a
 		<string>2014-05-11T03:30:00-04:00</string>
 		<key>first_aired_utc</key>
 		<integer>1399793400</integer>
+		<key>generalTitle</key>
+		<string>德雷斯罗萨篇</string>
 		<key>images</key>
 		<dict>
 			<key>screen</key>
@@ -28265,11 +28469,11 @@ In the Colosseum, Bellamy receives a second chance to earn Doflamingo&apos;s fav
 			<key>hated</key>
 			<integer>1</integer>
 			<key>loved</key>
-			<integer>49</integer>
+			<integer>45</integer>
 			<key>percentage</key>
-			<integer>87</integer>
+			<integer>88</integer>
 			<key>votes</key>
-			<integer>50</integer>
+			<integer>46</integer>
 		</dict>
 		<key>screen</key>
 		<string>http://slurm.trakt.us/images/episodes/310-17-16.9.jpg</string>
@@ -28291,6 +28495,8 @@ In the Colosseum, Bellamy receives a second chance to earn Doflamingo&apos;s fav
 		<string>2014-05-18T03:30:00-04:00</string>
 		<key>first_aired_utc</key>
 		<integer>1400398200</integer>
+		<key>generalTitle</key>
+		<string>德雷斯罗萨篇</string>
 		<key>images</key>
 		<dict>
 			<key>screen</key>
@@ -28307,11 +28513,11 @@ The audience and commentator Gatz are a mixture of shock and awe by the power an
 			<key>hated</key>
 			<integer>0</integer>
 			<key>loved</key>
-			<integer>44</integer>
+			<integer>40</integer>
 			<key>percentage</key>
-			<integer>88</integer>
+			<integer>89</integer>
 			<key>votes</key>
-			<integer>44</integer>
+			<integer>40</integer>
 		</dict>
 		<key>screen</key>
 		<string>http://slurm.trakt.us/images/episodes/310-17-17.9.jpg</string>
@@ -28333,6 +28539,8 @@ The audience and commentator Gatz are a mixture of shock and awe by the power an
 		<string>2014-05-25T03:30:00-04:00</string>
 		<key>first_aired_utc</key>
 		<integer>1401003000</integer>
+		<key>generalTitle</key>
+		<string>德雷斯罗萨篇</string>
 		<key>images</key>
 		<dict>
 			<key>screen</key>
@@ -28347,11 +28555,11 @@ The audience and commentator Gatz are a mixture of shock and awe by the power an
 			<key>hated</key>
 			<integer>0</integer>
 			<key>loved</key>
-			<integer>55</integer>
+			<integer>50</integer>
 			<key>percentage</key>
 			<integer>92</integer>
 			<key>votes</key>
-			<integer>55</integer>
+			<integer>50</integer>
 		</dict>
 		<key>screen</key>
 		<string>http://slurm.trakt.us/images/episodes/310-17-18.9.jpg</string>
@@ -28373,6 +28581,8 @@ The audience and commentator Gatz are a mixture of shock and awe by the power an
 		<string>2014-06-01T03:30:00-04:00</string>
 		<key>first_aired_utc</key>
 		<integer>1401607800</integer>
+		<key>generalTitle</key>
+		<string>德雷斯罗萨篇</string>
 		<key>images</key>
 		<dict>
 			<key>screen</key>
@@ -28393,11 +28603,11 @@ At Green Bit, Trafalgar Law is barely holding his defense against Issho and Dofl
 			<key>hated</key>
 			<integer>0</integer>
 			<key>loved</key>
-			<integer>44</integer>
+			<integer>40</integer>
 			<key>percentage</key>
 			<integer>88</integer>
 			<key>votes</key>
-			<integer>44</integer>
+			<integer>40</integer>
 		</dict>
 		<key>screen</key>
 		<string>http://slurm.trakt.us/images/episodes/310-17-19.9.jpg</string>
@@ -28419,6 +28629,8 @@ At Green Bit, Trafalgar Law is barely holding his defense against Issho and Dofl
 		<string>2014-06-08T03:30:00-04:00</string>
 		<key>first_aired_utc</key>
 		<integer>1402212600</integer>
+		<key>generalTitle</key>
+		<string>德雷斯罗萨篇</string>
 		<key>images</key>
 		<dict>
 			<key>screen</key>
@@ -28439,11 +28651,11 @@ Back at the Corrida Colosseum, Jesus Burgess approaches Bartolomeo and Cavendish
 			<key>hated</key>
 			<integer>0</integer>
 			<key>loved</key>
-			<integer>41</integer>
+			<integer>37</integer>
 			<key>percentage</key>
 			<integer>85</integer>
 			<key>votes</key>
-			<integer>41</integer>
+			<integer>37</integer>
 		</dict>
 		<key>screen</key>
 		<string>http://slurm.trakt.us/images/episodes/310-17-20.9.jpg</string>
@@ -28465,6 +28677,8 @@ Back at the Corrida Colosseum, Jesus Burgess approaches Bartolomeo and Cavendish
 		<string>2014-06-15T03:30:00-04:00</string>
 		<key>first_aired_utc</key>
 		<integer>1402817400</integer>
+		<key>generalTitle</key>
+		<string>德雷斯罗萨篇</string>
 		<key>images</key>
 		<dict>
 			<key>screen</key>
@@ -28481,11 +28695,11 @@ After the flashback, Luffy and Chinjao prepares for their final showdown. At the
 			<key>hated</key>
 			<integer>0</integer>
 			<key>loved</key>
-			<integer>45</integer>
+			<integer>40</integer>
 			<key>percentage</key>
 			<integer>92</integer>
 			<key>votes</key>
-			<integer>45</integer>
+			<integer>40</integer>
 		</dict>
 		<key>screen</key>
 		<string>http://slurm.trakt.us/images/episodes/310-17-21.9.jpg</string>
@@ -28507,6 +28721,8 @@ After the flashback, Luffy and Chinjao prepares for their final showdown. At the
 		<string>2014-06-22T03:30:00-04:00</string>
 		<key>first_aired_utc</key>
 		<integer>1403422200</integer>
+		<key>generalTitle</key>
+		<string>德雷斯罗萨篇</string>
 		<key>images</key>
 		<dict>
 			<key>screen</key>
@@ -28521,11 +28737,11 @@ After the flashback, Luffy and Chinjao prepares for their final showdown. At the
 			<key>hated</key>
 			<integer>0</integer>
 			<key>loved</key>
-			<integer>42</integer>
+			<integer>38</integer>
 			<key>percentage</key>
-			<integer>87</integer>
+			<integer>88</integer>
 			<key>votes</key>
-			<integer>42</integer>
+			<integer>38</integer>
 		</dict>
 		<key>screen</key>
 		<string>http://slurm.trakt.us/images/episodes/310-17-22.9.jpg</string>
@@ -28547,6 +28763,8 @@ After the flashback, Luffy and Chinjao prepares for their final showdown. At the
 		<string>2014-06-29T03:30:00-04:00</string>
 		<key>first_aired_utc</key>
 		<integer>1404027000</integer>
+		<key>generalTitle</key>
+		<string>德雷斯罗萨篇</string>
 		<key>images</key>
 		<dict>
 			<key>screen</key>
@@ -28561,13 +28779,13 @@ As Rebecca walks into the arena, she is booed by the audience. Luffy is angered 
 		<key>ratings</key>
 		<dict>
 			<key>hated</key>
-			<integer>2</integer>
+			<integer>1</integer>
 			<key>loved</key>
-			<integer>41</integer>
+			<integer>36</integer>
 			<key>percentage</key>
-			<integer>80</integer>
+			<integer>82</integer>
 			<key>votes</key>
-			<integer>43</integer>
+			<integer>37</integer>
 		</dict>
 		<key>screen</key>
 		<string>http://slurm.trakt.us/images/episodes/310-17-23.9.jpg</string>
@@ -28589,6 +28807,8 @@ As Rebecca walks into the arena, she is booed by the audience. Luffy is angered 
 		<string>2014-07-06T03:30:00-04:00</string>
 		<key>first_aired_utc</key>
 		<integer>1404631800</integer>
+		<key>generalTitle</key>
+		<string>德雷斯罗萨篇</string>
 		<key>images</key>
 		<dict>
 			<key>screen</key>
@@ -28609,11 +28829,11 @@ At the Colosseum, Rebecca is ganged up by five warriors but defeats all of them 
 			<key>hated</key>
 			<integer>2</integer>
 			<key>loved</key>
-			<integer>40</integer>
+			<integer>35</integer>
 			<key>percentage</key>
 			<integer>80</integer>
 			<key>votes</key>
-			<integer>42</integer>
+			<integer>37</integer>
 		</dict>
 		<key>screen</key>
 		<string>http://slurm.trakt.us/images/episodes/310-17-24.9.jpg</string>
@@ -28635,6 +28855,8 @@ At the Colosseum, Rebecca is ganged up by five warriors but defeats all of them 
 		<string>2014-07-13T03:30:00-04:00</string>
 		<key>first_aired_utc</key>
 		<integer>1405236600</integer>
+		<key>generalTitle</key>
+		<string>德雷斯罗萨篇</string>
 		<key>images</key>
 		<dict>
 			<key>screen</key>
@@ -28653,11 +28875,11 @@ On the deformed Thousand Sunny, Brook is apparently aiding Jora in making abstra
 			<key>hated</key>
 			<integer>4</integer>
 			<key>loved</key>
-			<integer>38</integer>
+			<integer>32</integer>
 			<key>percentage</key>
 			<integer>79</integer>
 			<key>votes</key>
-			<integer>42</integer>
+			<integer>36</integer>
 		</dict>
 		<key>screen</key>
 		<string>http://slurm.trakt.us/images/episodes/310-17-25.9.jpg</string>
@@ -28679,6 +28901,8 @@ On the deformed Thousand Sunny, Brook is apparently aiding Jora in making abstra
 		<string>2014-07-20T03:30:00-04:00</string>
 		<key>first_aired_utc</key>
 		<integer>1405841400</integer>
+		<key>generalTitle</key>
+		<string>德雷斯罗萨篇</string>
 		<key>images</key>
 		<dict>
 			<key>screen</key>
@@ -28695,11 +28919,11 @@ At Green Bit, Doflamingo confirms his status as a former World Noble. Law manage
 			<key>hated</key>
 			<integer>1</integer>
 			<key>loved</key>
-			<integer>42</integer>
+			<integer>35</integer>
 			<key>percentage</key>
 			<integer>83</integer>
 			<key>votes</key>
-			<integer>43</integer>
+			<integer>36</integer>
 		</dict>
 		<key>screen</key>
 		<string>http://slurm.trakt.us/images/episodes/310-17-26.9.jpg</string>
@@ -28721,6 +28945,8 @@ At Green Bit, Doflamingo confirms his status as a former World Noble. Law manage
 		<string>2014-08-03T03:30:00-04:00</string>
 		<key>first_aired_utc</key>
 		<integer>1407051000</integer>
+		<key>generalTitle</key>
+		<string>德雷斯罗萨篇</string>
 		<key>images</key>
 		<dict>
 			<key>screen</key>
@@ -28739,11 +28965,11 @@ Once the Straw Hats escaped with Caesar Clown and the Marines heading to Dressro
 			<key>hated</key>
 			<integer>0</integer>
 			<key>loved</key>
-			<integer>40</integer>
+			<integer>28</integer>
 			<key>percentage</key>
-			<integer>84</integer>
+			<integer>85</integer>
 			<key>votes</key>
-			<integer>40</integer>
+			<integer>28</integer>
 		</dict>
 		<key>screen</key>
 		<string>http://slurm.trakt.us/images/episodes/310-17-27.9.jpg</string>
@@ -28765,6 +28991,8 @@ Once the Straw Hats escaped with Caesar Clown and the Marines heading to Dressro
 		<string>2014-08-10T03:30:00-04:00</string>
 		<key>first_aired_utc</key>
 		<integer>1407655800</integer>
+		<key>generalTitle</key>
+		<string>德雷斯罗萨篇</string>
 		<key>images</key>
 		<dict>
 			<key>screen</key>
@@ -28773,21 +29001,17 @@ Once the Straw Hats escaped with Caesar Clown and the Marines heading to Dressro
 		<key>number</key>
 		<integer>28</integer>
 		<key>overview</key>
-		<string>Trafalgar Law and Donquixote Doflamingo begin their duel with a bang on the iron bridge while the escaped Straw Hats are already on their way to Zo. On the ship, Momonosuke talks about how he was traumatized by Doflamingo&apos;s cruelty and was afraid of what he might do to Kanjuro.
-
-Meanwhile on Dressrosa, Violet is seen heading towards the palace on her toy steed. Zoro and Kin&apos;emon are with Bartolomeo who agrees to find Luffy for them only if Zoro gives him an autograph.
-
-At the battle royale, Rebecca is knocking out fighters by tripping them out of the ring without injuring a single one until Rolling Logan confronts her.</string>
+		<string></string>
 		<key>ratings</key>
 		<dict>
 			<key>hated</key>
 			<integer>2</integer>
 			<key>loved</key>
-			<integer>38</integer>
+			<integer>27</integer>
 			<key>percentage</key>
 			<integer>78</integer>
 			<key>votes</key>
-			<integer>40</integer>
+			<integer>29</integer>
 		</dict>
 		<key>screen</key>
 		<string>http://slurm.trakt.us/images/episodes/310-17-28.9.jpg</string>
@@ -28809,32 +29033,30 @@ At the battle royale, Rebecca is knocking out fighters by tripping them out of t
 		<string>2014-08-17T03:30:00-04:00</string>
 		<key>first_aired_utc</key>
 		<integer>1408260600</integer>
+		<key>generalTitle</key>
+		<string>德雷斯罗萨篇</string>
 		<key>images</key>
 		<dict>
 			<key>screen</key>
-			<string>http://slurm.trakt.us/images/episodes/310-17-29.9.jpg</string>
+			<string>http://slurm.trakt.us/images/fanart/310-940.9.jpg</string>
 		</dict>
 		<key>number</key>
 		<integer>29</integer>
 		<key>overview</key>
-		<string>Bartolomeo searches for Luffy while he stumbles upon the infirmary with the losers of Block C. Inside the Colosseum, Sai is being treated along with all of the other injured fighters who never knew Sai was secretly dropped into an underground chamber where all the tournament dropouts and &quot;diseased&quot; toys were thrown. Everyone there has no clue what Doflamingo plans on doing with them.
-
-In the Corrida Colosseum, the crowd accuses Rebecca of running around and avoiding the fight, while Rolling Logan is chasing her, knocking out other contestants in the process. Rebecca is fighting Rolling Logan while the latter tries to break her bones. He eventually grabs her and starts to squeeze her till Acilia shows up to save her and Rebecca manages to overpower Logan and has him fall out of the ring. Acilia then teams up with Rebecca to ensure her chance to reach the finals.
-
-Meanwhile, Luffy tries to get a better view of the screen while discussing the dark nature of Dressrosa with the prisoner-gladiators, when all of a sudden he encounters Bartolomeo.</string>
+		<string></string>
 		<key>ratings</key>
 		<dict>
 			<key>hated</key>
 			<integer>1</integer>
 			<key>loved</key>
-			<integer>38</integer>
+			<integer>21</integer>
 			<key>percentage</key>
-			<integer>82</integer>
+			<integer>81</integer>
 			<key>votes</key>
-			<integer>39</integer>
+			<integer>22</integer>
 		</dict>
 		<key>screen</key>
-		<string>http://slurm.trakt.us/images/episodes/310-17-29.9.jpg</string>
+		<string>http://slurm.trakt.us/images/fanart/310-940.9.jpg</string>
 		<key>season</key>
 		<integer>17</integer>
 		<key>title</key>
@@ -28853,30 +29075,30 @@ Meanwhile, Luffy tries to get a better view of the screen while discussing the d
 		<string>2014-08-24T03:30:00-04:00</string>
 		<key>first_aired_utc</key>
 		<integer>1408865400</integer>
+		<key>generalTitle</key>
+		<string>德雷斯罗萨篇</string>
 		<key>images</key>
 		<dict>
 			<key>screen</key>
-			<string>http://slurm.trakt.us/images/episodes/310-17-30.9.jpg</string>
+			<string>http://slurm.trakt.us/images/fanart/310-940.9.jpg</string>
 		</dict>
 		<key>number</key>
 		<integer>30</integer>
 		<key>overview</key>
-		<string>After some conversation, Ricky reveals himself to be Riku Dold III, the former king of Dressrosa and Rebecca&apos;s grandfather. Many of the fighters in the holding cell show their respect to the former king, and Doflamingo&apos;s role as an agitator and arms dealer in inter-kingdom conflict is discussed. Suddenly, a thread of goo from the ceiling snares Sai and drags him up a tunnel, where Trébol, by unseen means, turns him into a toy and releases him out into the public.
-
-In the flower fields, Gancho reveals to Usopp, Nico Robin and Franky the cruelty of the Donquixote Family from 800 years ago, and how the Dwarfs were slaved up until the rise of the Riku Family. The dwarfs all agree that Doflamingo&apos;s presence is a terrible thing for the country, and that an incident framed King Dold as a villain so he is undeservedly hated by Dressrosa today. Finally, the Thunder Soldier reveals that, before he was a toy, he was Rebecca&apos;s father.</string>
+		<string></string>
 		<key>ratings</key>
 		<dict>
 			<key>hated</key>
-			<integer>2</integer>
+			<integer>1</integer>
 			<key>loved</key>
-			<integer>34</integer>
+			<integer>16</integer>
 			<key>percentage</key>
-			<integer>81</integer>
+			<integer>83</integer>
 			<key>votes</key>
-			<integer>36</integer>
+			<integer>17</integer>
 		</dict>
 		<key>screen</key>
-		<string>http://slurm.trakt.us/images/episodes/310-17-30.9.jpg</string>
+		<string>http://slurm.trakt.us/images/fanart/310-940.9.jpg</string>
 		<key>season</key>
 		<integer>17</integer>
 		<key>title</key>
@@ -28885,396 +29107,6 @@ In the flower fields, Gancho reveals to Usopp, Nico Robin and Franky the cruelty
 		<integer>4963229</integer>
 		<key>url</key>
 		<string>http://trakt.tv/show/one-piece/season/17/episode/30</string>
-	</dict>
-	<dict>
-		<key>episode</key>
-		<integer>31</integer>
-		<key>first_aired</key>
-		<integer>1409481000</integer>
-		<key>first_aired_iso</key>
-		<string>2014-08-31T03:30:00-04:00</string>
-		<key>first_aired_utc</key>
-		<integer>1409470200</integer>
-		<key>images</key>
-		<dict>
-			<key>screen</key>
-			<string>http://slurm.trakt.us/images/episodes/310-17-31.9.jpg</string>
-		</dict>
-		<key>number</key>
-		<integer>31</integer>
-		<key>overview</key>
-		<string>While the fight for block D continues, Thunder Soldier explains to the Straw Hat Pirates how King Riku lost the throne and respect of Dressrosa. Ten years ago Doflamingo appeared in the king&apos;s chambers, asking for a 10 billion Beli ransom, in order to leave the country alone. Riku sent his soldiers to ask of the citizens&apos; money, but while they were willingly trying to help their king, Doflamingo controlled Riku and his soldiers with his ability, and made them attack their own people against their will. In the shadows, Doflamingo and his crew are waiting for the right moment to interfere and act as a saving hero in the eyes of Dressrosa&apos;s confused citizens.</string>
-		<key>ratings</key>
-		<dict>
-			<key>hated</key>
-			<integer>3</integer>
-			<key>loved</key>
-			<integer>35</integer>
-			<key>percentage</key>
-			<integer>79</integer>
-			<key>votes</key>
-			<integer>38</integer>
-		</dict>
-		<key>screen</key>
-		<string>http://slurm.trakt.us/images/episodes/310-17-31.9.jpg</string>
-		<key>season</key>
-		<integer>17</integer>
-		<key>title</key>
-		<string>A Chilling Past! The Secret Behind Dressrosa</string>
-		<key>tvdb_id</key>
-		<integer>4963230</integer>
-		<key>url</key>
-		<string>http://trakt.tv/show/one-piece/season/17/episode/31</string>
-	</dict>
-	<dict>
-		<key>episode</key>
-		<integer>32</integer>
-		<key>first_aired</key>
-		<integer>1410085800</integer>
-		<key>first_aired_iso</key>
-		<string>2014-09-07T03:30:00-04:00</string>
-		<key>first_aired_utc</key>
-		<integer>1410075000</integer>
-		<key>images</key>
-		<dict>
-			<key>screen</key>
-			<string>http://slurm.trakt.us/images/episodes/310-17-32.9.jpg</string>
-		</dict>
-		<key>number</key>
-		<integer>32</integer>
-		<key>overview</key>
-		<string>While Doflamingo continues to control Riku Dold III, his subordinates manage to take control of the castle with the help of an inside spy, who also took princess Viola hostage. With the people&apos;s trust in him in tatters, and his spirit broken, King Riku begs for death. Then, Doflamingo appears with his strongest subordinates and defeats the king and his army, setting the grounds for his takeover of the island.
-
-After telling the Straw Hat Pirates of the tragedies of the past, Thunder Soldier explains that the king is still alive since Viola pledged her service to Doflamingo in exchange for the King&apos;s life. He, also, explained that although the toys of Dressrosa were once people who despised Doflamingo, they still remember who they were, but not each other and that the drive for revolution is still in them.
-
-In the underground chamber, almost all of the fighters were transformed except for Riku and Chinjao, with the latter having mysteriously forgotten that he had grandchildren.
-
-In the colosseum, Luffy meets up with Zoro and Kin&apos;emon with the help of Bartolomeo, although he was nowhere to be seen.</string>
-		<key>ratings</key>
-		<dict>
-			<key>hated</key>
-			<integer>4</integer>
-			<key>loved</key>
-			<integer>28</integer>
-			<key>percentage</key>
-			<integer>75</integer>
-			<key>votes</key>
-			<integer>32</integer>
-		</dict>
-		<key>screen</key>
-		<string>http://slurm.trakt.us/images/episodes/310-17-32.9.jpg</string>
-		<key>season</key>
-		<integer>17</integer>
-		<key>title</key>
-		<string>Nightmare! That One Tragic Evening in Dressrosa</string>
-		<key>tvdb_id</key>
-		<integer>4963638</integer>
-		<key>url</key>
-		<string>http://trakt.tv/show/one-piece/season/17/episode/32</string>
-	</dict>
-	<dict>
-		<key>episode</key>
-		<integer>33</integer>
-		<key>first_aired</key>
-		<integer>1410690600</integer>
-		<key>first_aired_iso</key>
-		<string>2014-09-14T03:30:00-04:00</string>
-		<key>first_aired_utc</key>
-		<integer>1410679800</integer>
-		<key>images</key>
-		<dict>
-			<key>screen</key>
-			<string>http://slurm.trakt.us/images/episodes/310-17-33.9.jpg</string>
-		</dict>
-		<key>number</key>
-		<integer>33</integer>
-		<key>overview</key>
-		<string>As Luffy talks with Zoro and Kinemon, Bellamy begins approaching Luffy, saying he finally found him. Bellamy is about to attack Luffy, but begins having second thoughts. Just then, Dellinger interrupts him, claiming he has orders from Doflamingo to dispose of him, since Bellamy is considered a nuisance.
-
-At the iron bridge, Law and Doflamingo continue their fight, with the latter having the upper hand. Diamante calls to inform his captain about Violet&apos;s betrayal, which Doflamingo had already figured out. He orders Diamante to send Lao G at the entrance of the factory to prevent the Straw Hat Pirates from destroying it, and handle the crowd&apos;s entertainment by himself.
-
-The Marines see through Zoro&apos;s disguise and suspect that Lucy is in fact Straw-Hat Luffy. However, they seem to have no memory of the fighters that have been turned into toys.
-
-The Straw Hat Pirates have a meeting via Den Den Mushi and share their knowledge so far. Sanji and his team decide to head back to Dressrosa and Franky asks permission to assist the Riku army&apos;s revolution, to which Luffy urges him to go all out.
-
-While Admiral Fujitora arrives at the shores of Dressrosa, there is a big ruckus in the city, with explosions and buildings being cut in half. Doflamingo has Law beaten on the ground, right outside the Colosseum. He, then, takes out a pistol and shoots Law three times. </string>
-		<key>ratings</key>
-		<dict>
-			<key>hated</key>
-			<integer>0</integer>
-			<key>loved</key>
-			<integer>39</integer>
-			<key>percentage</key>
-			<integer>90</integer>
-			<key>votes</key>
-			<integer>39</integer>
-		</dict>
-		<key>screen</key>
-		<string>http://slurm.trakt.us/images/episodes/310-17-33.9.jpg</string>
-		<key>season</key>
-		<integer>17</integer>
-		<key>title</key>
-		<string>A Showdown Between the Warlords! Law vs. Doflamingo!</string>
-		<key>tvdb_id</key>
-		<integer>4992339</integer>
-		<key>url</key>
-		<string>http://trakt.tv/show/one-piece/season/17/episode/33</string>
-	</dict>
-	<dict>
-		<key>episode</key>
-		<integer>34</integer>
-		<key>first_aired</key>
-		<integer>1411295400</integer>
-		<key>first_aired_iso</key>
-		<string>2014-09-21T03:30:00-04:00</string>
-		<key>first_aired_utc</key>
-		<integer>1411284600</integer>
-		<key>images</key>
-		<dict>
-			<key>screen</key>
-			<string>http://slurm.trakt.us/images/episodes/310-17-34.9.jpg</string>
-		</dict>
-		<key>number</key>
-		<integer>34</integer>
-		<key>overview</key>
-		<string>Doflamingo lies to the shocked citizens that witnessed him shooting Law, telling them that Law was actually responsible for the morning&apos;s fake news about Doflamingo leaving the throne. When asked by Luffy what he is doing to Law, Doflamingo responds that Law was originally his subordinate and as such, it is his responsibility to &quot;educate&quot; him.
-
-Zoro and Kin&apos;emon attempt to save Law, but before the Marines make a move to stop them, Admiral Fujitora appears, blocking Zoro&apos;s sword and sends him underground, using his Devil Fruit ability. Luffy attempts to help, but is blocked by the Colosseum&apos;s bars, which are made of Seastone. The rest of the crew, who are listening to the events, are shocked to learn that Doflamingo has an admiral on his side. Fujitora and Doflamingo pick up Law and head for the palace, in order to finish their conversation. Zoro tells Luffy to find a way out, as they try to outrun the Marines.
-
-At that point, Sanji&apos;s group is attacked by what appears to be a singing ship, which belongs to the Yonko Big Mom. On the ship are Tamago and Pekoms, who reveal that their goal is Caesar Clown.
-
-The Straw Hat Pirates realize they have to keep their new enemies away from Dressrosa if they want to destroy the factory. Luffy gives the order for the Sunny to head to Zou, Sanji asks permission to return fire to the Yonko&apos;s ship and Franky leads the way for the factory destruction team. Finally, Luffy states in anger that they will head to the palace to save Law and defeat Doflamingo.
-
-Meanwhile, a mysterious figure appears in the Colosseum.</string>
-		<key>ratings</key>
-		<dict>
-			<key>hated</key>
-			<integer>1</integer>
-			<key>loved</key>
-			<integer>40</integer>
-			<key>percentage</key>
-			<integer>87</integer>
-			<key>votes</key>
-			<integer>41</integer>
-		</dict>
-		<key>screen</key>
-		<string>http://slurm.trakt.us/images/episodes/310-17-34.9.jpg</string>
-		<key>season</key>
-		<integer>17</integer>
-		<key>title</key>
-		<string>Two Great Forces Face-off! Straw Hat and Heavenly Yaksha</string>
-		<key>tvdb_id</key>
-		<integer>4992340</integer>
-		<key>url</key>
-		<string>http://trakt.tv/show/one-piece/season/17/episode/34</string>
-	</dict>
-	<dict>
-		<key>episode</key>
-		<integer>35</integer>
-		<key>first_aired</key>
-		<integer>1411900200</integer>
-		<key>first_aired_iso</key>
-		<string>2014-09-28T03:30:00-04:00</string>
-		<key>first_aired_utc</key>
-		<integer>1411889400</integer>
-		<key>images</key>
-		<dict>
-			<key>screen</key>
-			<string>http://slurm.trakt.us/images/episodes/310-17-35.9.jpg</string>
-		</dict>
-		<key>number</key>
-		<integer>35</integer>
-		<key>overview</key>
-		<string>Dellinger continues attacking Bellamy until Bartolomeo saves him, before Dellinger is called by Diamante to guard the Toy House. Thunder Soldier explains &quot;Operation: SOP&quot;, and how there&apos;s an underground trading port where Sugar, the one who makes people into toys, is hiding. As Luffy is looking for the colosseum&apos;s exit, he runs into Bartolomeo and Bellamy, and are shortly approached by Sabo. Promising to retrieve the Mera Mera no Mi, Luffy gives Sabo his disguise so the latter may fight in the colosseum. Bellamy leads Luffy to an exit as Luffy, Kin&apos;emon, and Zoro head to the Flower Field in disguises.</string>
-		<key>ratings</key>
-		<dict>
-			<key>hated</key>
-			<integer>0</integer>
-			<key>loved</key>
-			<integer>36</integer>
-			<key>percentage</key>
-			<integer>89</integer>
-			<key>votes</key>
-			<integer>36</integer>
-		</dict>
-		<key>screen</key>
-		<string>http://slurm.trakt.us/images/episodes/310-17-35.9.jpg</string>
-		<key>season</key>
-		<integer>17</integer>
-		<key>title</key>
-		<string>Luffy, Startled - The Man Who Will Inherit Ace’s Will</string>
-		<key>tvdb_id</key>
-		<integer>4992341</integer>
-		<key>url</key>
-		<string>http://trakt.tv/show/one-piece/season/17/episode/35</string>
-	</dict>
-	<dict>
-		<key>episode</key>
-		<integer>36</integer>
-		<key>first_aired</key>
-		<integer>1412505000</integer>
-		<key>first_aired_iso</key>
-		<string>2014-10-05T03:30:00-04:00</string>
-		<key>first_aired_utc</key>
-		<integer>1412494200</integer>
-		<key>images</key>
-		<dict>
-			<key>screen</key>
-			<string>http://slurm.trakt.us/images/episodes/310-17-36.9.jpg</string>
-		</dict>
-		<key>number</key>
-		<integer>36</integer>
-		<key>overview</key>
-		<string>At the Flower Field, the Dwarf army and the Straw Hat Pirates begin to move out, with Franky taking the front entrance via the toy house while the rest of the army take the secret underground tunnel that leads to the harbor. Franky, remembering Luffy&apos;s orders to go all out, creates a huge ruckus in front of the toy house grabbing the attention of every officer in the Donquixote Pirates. In the ensuing chaos, Senor Pink who is guarding the entrance prepares to face Franky.
-
-In the underground tunnel, the dwarves explains to Usopp of the Donquixote Family and the identities and strengths of the officers who are running the operations. As they reach the end of the tunnel, the army find themselves directly underneath the palace plateau where the huge harbor is located. Unnoticed by anyone, the army prepares to find their target, Sugar who is guarded by Trébol himself. </string>
-		<key>ratings</key>
-		<dict>
-			<key>hated</key>
-			<integer>3</integer>
-			<key>loved</key>
-			<integer>25</integer>
-			<key>percentage</key>
-			<integer>76</integer>
-			<key>votes</key>
-			<integer>28</integer>
-		</dict>
-		<key>screen</key>
-		<string>http://slurm.trakt.us/images/episodes/310-17-36.9.jpg</string>
-		<key>season</key>
-		<integer>17</integer>
-		<key>title</key>
-		<string>Start Operation SOP — Usoland Charges</string>
-		<key>tvdb_id</key>
-		<integer>4992342</integer>
-		<key>url</key>
-		<string>http://trakt.tv/show/one-piece/season/17/episode/36</string>
-	</dict>
-	<dict>
-		<key>episode</key>
-		<integer>37</integer>
-		<key>first_aired</key>
-		<integer>1413109800</integer>
-		<key>first_aired_iso</key>
-		<string>2014-10-12T03:30:00-04:00</string>
-		<key>first_aired_utc</key>
-		<integer>1413099000</integer>
-		<key>images</key>
-		<dict>
-			<key>screen</key>
-			<string>http://slurm.trakt.us/images/episodes/310-17-37.9.jpg</string>
-		</dict>
-		<key>number</key>
-		<integer>37</integer>
-		<key>overview</key>
-		<string>The colosseum D block battle is almost over with nearly 30 fighters remaining with Rebecca among them.
-
-At the Hidden Harbor, Usopp learned from the dwarves that Thunder Soldier left the group in order to assassinate Doflamingo at his palace, leaving Usopp in command of the army much to his disbelief. Though they were nearly caught by some soldiers the dwarves easily subdued them and their clothes were given to Usopp and Robin for disguise.
-
-Near the Harbor elevator, many soldiers were rushing towards the elevator to see the battle between Franky and Senor Pink, unaware that Thunder Soldier and a few dwarves were hiding inside a crate in the lift. Seeing no other way, Thunder Soldier assaults the soldiers in order to hijack the lift. During battle, he recalls his training of Rebecca to teach her battle instinct. He then declares his goal to restore Dressrosa to King Riku&apos;s rule.
-
-At the colosseum, an unexplained event caused every fighter in the arena to fall unconscious one after another. Before anyone could speculate what happened, an unidentified fighter is seen getting up in the arena.</string>
-		<key>ratings</key>
-		<dict>
-			<key>hated</key>
-			<integer>0</integer>
-			<key>loved</key>
-			<integer>25</integer>
-			<key>percentage</key>
-			<integer>80</integer>
-			<key>votes</key>
-			<integer>25</integer>
-		</dict>
-		<key>screen</key>
-		<string>http://slurm.trakt.us/images/episodes/310-17-37.9.jpg</string>
-		<key>season</key>
-		<integer>17</integer>
-		<key>title</key>
-		<string>Hot Emotions — Rebecca vs. Suleiman</string>
-		<key>tvdb_id</key>
-		<integer>5014122</integer>
-		<key>url</key>
-		<string>http://trakt.tv/show/one-piece/season/17/episode/37</string>
-	</dict>
-	<dict>
-		<key>episode</key>
-		<integer>38</integer>
-		<key>first_aired</key>
-		<integer>1413714600</integer>
-		<key>first_aired_iso</key>
-		<string>2014-10-19T03:30:00-04:00</string>
-		<key>first_aired_utc</key>
-		<integer>1413703800</integer>
-		<key>images</key>
-		<dict>
-			<key>screen</key>
-			<string>http://slurm.trakt.us/images/episodes/310-17-38.9.jpg</string>
-		</dict>
-		<key>number</key>
-		<integer>38</integer>
-		<key>overview</key>
-		<string></string>
-		<key>ratings</key>
-		<dict>
-			<key>hated</key>
-			<integer>0</integer>
-			<key>loved</key>
-			<integer>23</integer>
-			<key>percentage</key>
-			<integer>81</integer>
-			<key>votes</key>
-			<integer>23</integer>
-		</dict>
-		<key>screen</key>
-		<string>http://slurm.trakt.us/images/episodes/310-17-38.9.jpg</string>
-		<key>season</key>
-		<integer>17</integer>
-		<key>title</key>
-		<string>Winner Decided!? The End to the D-Block Bash</string>
-		<key>tvdb_id</key>
-		<integer>5014126</integer>
-		<key>url</key>
-		<string>http://trakt.tv/show/one-piece/season/17/episode/38</string>
-	</dict>
-	<dict>
-		<key>episode</key>
-		<integer>39</integer>
-		<key>first_aired</key>
-		<integer>1414319400</integer>
-		<key>first_aired_iso</key>
-		<string>2014-10-26T03:30:00-04:00</string>
-		<key>first_aired_utc</key>
-		<integer>1414308600</integer>
-		<key>images</key>
-		<dict>
-			<key>screen</key>
-			<string>http://slurm.trakt.us/images/episodes/310-17-39.9.jpg</string>
-		</dict>
-		<key>number</key>
-		<integer>39</integer>
-		<key>overview</key>
-		<string></string>
-		<key>ratings</key>
-		<dict>
-			<key>hated</key>
-			<integer>0</integer>
-			<key>loved</key>
-			<integer>13</integer>
-			<key>percentage</key>
-			<integer>81</integer>
-			<key>votes</key>
-			<integer>13</integer>
-		</dict>
-		<key>screen</key>
-		<string>http://slurm.trakt.us/images/episodes/310-17-39.9.jpg</string>
-		<key>season</key>
-		<integer>17</integer>
-		<key>title</key>
-		<string>The Admiral’s Decision — Fujitora VS Doflamingo</string>
-		<key>tvdb_id</key>
-		<integer>5014128</integer>
-		<key>url</key>
-		<string>http://trakt.tv/show/one-piece/season/17/episode/39</string>
 	</dict>
 </array>
 </plist>

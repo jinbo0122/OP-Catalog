@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface OPTableViewController : UITableViewController
-@property (nonatomic, strong)NSArray *contentArray;
+@property (nonatomic, strong)NSMutableArray *contentArray;
 @property (nonatomic, strong)NSMutableArray *checkArray;
 @end
