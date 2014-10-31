@@ -47,6 +47,7 @@
 
 - (void)viewWillAppear:(BOOL)animated{
   [self.tableView reloadData];
+  [self leftBarItem];
 }
 
 - (void)viewDidLoad
@@ -54,7 +55,6 @@
   [super viewDidLoad];
   [self.navigationController.navigationBar setBarTintColor:[UIColor colorWithRGBHex:0x273552]];
   self.title = @"";
-  
   UILabel *titleLabel = [[UILabel alloc] initWithFrame:CGRectZero];
   titleLabel.backgroundColor = [UIColor clearColor];
   titleLabel.textColor = [UIColor whiteColor];
@@ -70,11 +70,8 @@
   self.tableView.backgroundView = tempImageView;
   
   
-  UIBarButtonItem *item =[[UIBarButtonItem alloc] initWithTitle:@"当前"
-                                                          style:UIBarButtonItemStylePlain
-                                                         target:self action:@selector(scrollToCurrentEpisode)];
-  self.navigationItem.rightBarButtonItem = item;
-
+  [self leftBarItem];
+  [self rightBarItem];
   
   [self scrollToCurrentEpisode];
   
@@ -136,6 +133,7 @@
        [wSelf.tableView reloadData];
        [wSelf requestEpisodes];
      }
+     [wSelf leftBarItem];
    }
    errorHandler:
    ^(NSError *error) {
@@ -160,6 +158,40 @@
   }
 }
 
+- (void)leftBarItem{
+  __weak typeof(self)wSelf=self;
+  dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+    NSInteger checkNum = 0;
+    for (NSNumber *number in wSelf.checkArray) {
+      if ([number boolValue]) {
+        checkNum++;
+      }
+    }
+    NSInteger leftNum = wSelf.contentArray.count-checkNum;
+    
+    for (NSInteger i=wSelf.contentArray.count-1; i>wSelf.contentArray.count-50;i--) {
+      NSDictionary *dict = [wSelf.contentArray safeDicObjectAtIndex:i];
+      if ([[dict safeNumberObjectForKey:@"first_aired"] doubleValue]+3600>[[NSDate date] timeIntervalSince1970]) {
+        leftNum--;
+      }
+    }
+    NSString *left = [NSString stringWithFormat:@"【%d】",(int)leftNum];
+    dispatch_async(dispatch_get_main_queue(), ^{
+      UIBarButtonItem *item =[[UIBarButtonItem alloc] initWithTitle:left
+                                                              style:UIBarButtonItemStylePlain
+                                                             target:self action:@selector(scrollToCurrentEpisode)];
+      self.navigationItem.leftBarButtonItem = item;
+    });
+  });
+}
+
+
+- (void)rightBarItem{
+  UIBarButtonItem *item =[[UIBarButtonItem alloc] initWithTitle:@"当前"
+                                                          style:UIBarButtonItemStylePlain
+                                                         target:self action:@selector(scrollToCurrentEpisode)];
+  self.navigationItem.rightBarButtonItem = item;
+}
 
 - (void)didReceiveMemoryWarning
 {
@@ -215,6 +247,7 @@
     [checkArray writeToPlistFileSync:OPCheckArray];
 
   }
+  [self leftBarItem];
 }
 
 #pragma mark - Table view data source

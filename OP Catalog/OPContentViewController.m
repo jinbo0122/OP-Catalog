@@ -52,6 +52,8 @@
   [self.collectionView registerClass:[OPContentCell class] forCellWithReuseIdentifier:@"cellIdentifier"];
   [self.collectionView setBackgroundColor:[UIColor clearColor]];
   self.collectionView.pagingEnabled = YES;
+  self.collectionView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+
   
   [self.view addSubview:self.bgImageView];
   [self.view addSubview:self.collectionView];
@@ -88,7 +90,7 @@
   if (!collectionCell) {
     collectionCell = [[OPContentCell alloc] initWithFrame:self.view.frame];
   }
-  [collectionCell refreshContentView:[self.delegate.contentArray safeDicObjectAtIndex:indexPath.row]];
+  [collectionCell refreshContentView:[self.delegate.contentArray safeDicObjectAtIndex:indexPath.row] index:indexPath.row];
   [collectionCell.tapGesture addTarget:self action:@selector(onPlayTapped:)];
   return collectionCell;
 }
@@ -96,7 +98,7 @@
 - (CGSize)collectionView:(UICollectionView *)collectionView
                   layout:(UICollectionViewLayout*)collectionViewLayout
   sizeForItemAtIndexPath:(NSIndexPath *)indexPath{
-  return CGSizeMake(self.view.width-10, self.view.height);
+  return CGSizeMake(UIScreenWidth-10, UIScreenHeight);
 }
 
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView{
@@ -269,10 +271,15 @@
 - (void)willAnimateRotationToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation duration:(NSTimeInterval)duration{
   self.bgImageView.frame = self.view.bounds;
   NSArray* visibleCells = [self.collectionView visibleCells];
+  
   for (OPContentCell *cell in visibleCells) {
     NSIndexPath *indexPath = [self.collectionView indexPathForCell:cell];
-    [cell refreshContentView:[self.delegate.contentArray safeDicObjectAtIndex:indexPath.row]];
+    [cell refreshContentView:[self.delegate.contentArray safeDicObjectAtIndex:indexPath.row] index:indexPath.row];
   }
+  
+  [self.collectionView reloadData];
+  [self.collectionView scrollToItemAtIndexPath:[NSIndexPath indexPathForRow:self.index inSection:0]
+                              atScrollPosition:UICollectionViewScrollPositionLeft animated:NO];
 }
 /*
  #pragma mark - Navigation

@@ -56,6 +56,8 @@
 
 - (NSUInteger)application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(UIWindow *)window
 {
+  return UIInterfaceOrientationMaskAll;
+
   if (isIPad) {
     return UIInterfaceOrientationMaskAll;
   }

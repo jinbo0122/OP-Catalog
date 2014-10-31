@@ -75,23 +75,24 @@
 }
 
 
-- (void)refreshContentView:(NSDictionary *)sources{
+- (void)refreshContentView:(NSDictionary *)sources index:(NSInteger)index{
   
   //  self.lblGeneralTitle.text = [sources safeStringObjectForKey:@"generalTitle"];
   
   self.lblTitle.text = [sources safeStringObjectForKey:@"title"];
   
-  CGRect titleRect = [self.lblTitle.text boundingRectWithSize:CGSizeMake([UIScreen mainScreen].bounds.size.width-20, 50)
+  CGRect titleRect = [self.lblTitle.text boundingRectWithSize:CGSizeMake(UIScreenWidth-20, 50)
                                                       options:NSStringDrawingUsesLineFragmentOrigin
                                                    attributes:@{NSFontAttributeName:self.lblTitle.font}
                                                       context:nil];
-  self.lblTitle.frame = CGRectMake(([UIScreen mainScreen].bounds.size.width-titleRect.size.width)/2.0, 10+64,titleRect.size.width, titleRect.size.height);
+  self.lblTitle.frame = CGRectMake((UIScreenWidth-titleRect.size.width)/2.0, 10+64,titleRect.size.width, titleRect.size.height);
   
   
-  NSString *strEpisodeInfo = [NSString stringWithFormat:@"S%@-E%@",[sources safeNumberObjectForKey:@"season"],[sources safeNumberObjectForKey:@"episode"]];
+  NSString *strEpisodeInfo = [NSString stringWithFormat:@"S%@-E%@ ~ No.%d",[sources safeNumberObjectForKey:@"season"],
+                              [sources safeNumberObjectForKey:@"episode"],(int)(index+1)];
   
   self.lblEpisodeInfo.text = strEpisodeInfo;
-  self.lblEpisodeInfo.frame = CGRectMake(self.lblTitle.left, self.lblTitle.bottom+10, [UIScreen mainScreen].bounds.size.width-20, 16);
+  self.lblEpisodeInfo.frame = CGRectMake(self.lblTitle.left, self.lblTitle.bottom+10, UIScreenWidth-20, 16);
   
   
   self.lblPublishTime.text = [@"播出时间:" stringByAppendingString:[NSString timeString:[[sources safeNumberObjectForKey:@"first_aired"] doubleValue]+3600
@@ -99,7 +100,9 @@
   self.lblPublishTime.frame = CGRectMake(self.lblTitle.left, self.lblEpisodeInfo.top,self.lblTitle.width, 16);
   
   
-  self.imagePreview.frame = CGRectMake(isIPad?234:0, self.lblPublishTime.bottom+15, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.width*9/16.0);
+  CGFloat imageWidth = MIN(UIScreenWidth, UIScreenHeight);
+  
+  self.imagePreview.frame = CGRectMake((UIScreenWidth-imageWidth)/2.0, self.lblPublishTime.bottom+15, imageWidth, imageWidth*9/16.0);
   
   NSString *url = [[sources safeDicObjectForKey:@"images"] safeStringObjectForKey:@"screen"];
   
@@ -108,12 +111,12 @@
   [self.imagePreview setImageWithURL:[NSURL URLWithString:url]
                            completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType) {
                              if (!error) {
-                               wSelf.imagePreview.height = [UIScreen mainScreen].bounds.size.width * image.size.height/image.size.width;
+                               wSelf.imagePreview.height = imageWidth * image.size.height/image.size.width;
                                wSelf.lblContent.top = wSelf.imagePreview.bottom+20;
-                               wSelf.bgScrollView.frame = CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height);
-                               wSelf.bgScrollView.contentSize = CGSizeMake([UIScreen mainScreen].bounds.size.width, wSelf.lblContent.bottom+10);
+                               wSelf.bgScrollView.frame = CGRectMake(0, 0, UIScreenWidth, UIScreenHeight);
+                               wSelf.bgScrollView.contentSize = CGSizeMake(UIScreenWidth, wSelf.lblContent.bottom+10);
                                
-                               wSelf.bgScrollView.scrollEnabled = wSelf.bgScrollView.contentSize.height>[UIScreen mainScreen].bounds.size.height;
+                               wSelf.bgScrollView.scrollEnabled = wSelf.bgScrollView.contentSize.height>UIScreenHeight;
                              }
   }];
   
@@ -121,29 +124,17 @@
   
   NSString *content = [sources safeStringObjectForKey:@"content"];
   self.lblContent.text = content.length==0?[sources safeStringObjectForKey:@"overview"]:content;
-  CGRect contentRect = [self.lblContent.text boundingRectWithSize:CGSizeMake(isIPad?648:([UIScreen mainScreen].bounds.size.width-20), 10000)
+  CGRect contentRect = [self.lblContent.text boundingRectWithSize:CGSizeMake(UIScreenWidth-20, 10000)
                                                           options:NSStringDrawingUsesLineFragmentOrigin
                                                        attributes:@{NSFontAttributeName:self.lblContent.font}
                                                           context:nil];
   
   self.lblContent.frame = CGRectMake(10, self.imagePreview.bottom+20, contentRect.size.width, contentRect.size.height);
   
+  self.bgScrollView.frame = CGRectMake(0, 0, UIScreenWidth, UIScreenHeight);
+  self.bgScrollView.contentSize = CGSizeMake(UIScreenWidth, self.lblContent.bottom+10);
   
-  if (isIPad) {
-    UIInterfaceOrientation orientation =  [[UIApplication sharedApplication] statusBarOrientation];
-    BOOL isPortrait = (orientation == UIInterfaceOrientationPortrait || orientation == UIInterfaceOrientationPortraitUpsideDown);
-    CGFloat screenWidth = isPortrait?768:1024;
-    
-    self.lblTitle.width = screenWidth-20;
-    self.lblEpisodeInfo.left = isPortrait?200:328;
-    self.lblPublishTime.right = isPortrait?560:688;
-    self.imagePreview.left = (screenWidth-300)/2;
-    self.lblContent.left = isPortrait?60:128;
-  }
-  self.bgScrollView.frame = CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height);
-  self.bgScrollView.contentSize = CGSizeMake([UIScreen mainScreen].bounds.size.width, self.lblContent.bottom+10);
-  
-  self.bgScrollView.scrollEnabled = self.bgScrollView.contentSize.height>[UIScreen mainScreen].bounds.size.height;
+  self.bgScrollView.scrollEnabled = self.bgScrollView.contentSize.height>UIScreenHeight;
 }
 
 - (BOOL)gestureRecognizer:(UIPanGestureRecognizer *)gestureRecognizer
