@@ -58,7 +58,7 @@
   UILabel *titleLabel = [[UILabel alloc] initWithFrame:CGRectZero];
   titleLabel.backgroundColor = [UIColor clearColor];
   titleLabel.textColor = [UIColor whiteColor];
-  titleLabel.text = @"One Piece剧情目录";
+  titleLabel.text = @"One Piece目录";
   titleLabel.textAlignment = NSTextAlignmentCenter;
   titleLabel.font = [UIFont boldSystemFontOfSize:18];
   [titleLabel sizeToFit];
@@ -129,7 +129,7 @@
        NSString *plistPath1 = [paths objectAtIndex:0];
        NSString *filename=[plistPath1 stringByAppendingPathComponent:@"content.plist"];
        [_contentArray writeToFile:filename atomically:YES];
-
+       
        [wSelf.tableView reloadData];
        [wSelf requestEpisodes];
      }
@@ -137,7 +137,7 @@
    }
    errorHandler:
    ^(NSError *error) {
-
+     
    }];
 }
 
@@ -153,7 +153,7 @@
     __weak typeof(self)wSelf = self;
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
       [wSelf.tableView scrollToRowAtIndexPath:[NSIndexPath indexPathForRow:maxCheckIndex inSection:0]
-                            atScrollPosition:UITableViewScrollPositionTop animated:NO];
+                             atScrollPosition:UITableViewScrollPositionTop animated:NO];
     });
   }
 }
@@ -175,22 +175,32 @@
         leftNum--;
       }
     }
-    NSString *left = [NSString stringWithFormat:@"【%d】",(int)leftNum];
+    NSString *left = [NSString stringWithFormat:@"余%d集",(int)leftNum];
     dispatch_async(dispatch_get_main_queue(), ^{
-      UIBarButtonItem *item =[[UIBarButtonItem alloc] initWithTitle:left
-                                                              style:UIBarButtonItemStylePlain
-                                                             target:self action:@selector(scrollToCurrentEpisode)];
-      self.navigationItem.leftBarButtonItem = item;
+      UIBarButtonItem *negativeSpacer = [[UIBarButtonItem alloc]
+                                         initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace
+                                         target:nil action:nil];
+      negativeSpacer.width = -35;
+      self.navigationItem.leftBarButtonItems = @[negativeSpacer, [UIBarButtonItem loadBarButtonItemWithTitle:left
+                                                                                                       color:[UIColor colorWithWhite:1 alpha:0.6]
+                                                                                                        font:[UIFont systemFontOfSize:14]
+                                                                                                      target:self
+                                                                                                      action:@selector(scrollToCurrentEpisode)]];
     });
   });
 }
 
 
 - (void)rightBarItem{
-  UIBarButtonItem *item =[[UIBarButtonItem alloc] initWithTitle:@"当前"
-                                                          style:UIBarButtonItemStylePlain
-                                                         target:self action:@selector(scrollToCurrentEpisode)];
-  self.navigationItem.rightBarButtonItem = item;
+  UIBarButtonItem *negativeSpacer = [[UIBarButtonItem alloc]
+                                     initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace
+                                     target:nil action:nil];
+  negativeSpacer.width = -10;
+  UIBarButtonItem *item =[UIBarButtonItem loadBarButtonItemWithTitle:@"当前"
+                                                               color:[UIColor colorWithWhite:1 alpha:0.6]
+                                                                font:[UIFont systemFontOfSize:14]
+                                                              target:self  action:@selector(scrollToCurrentEpisode)];
+  self.navigationItem.rightBarButtonItems = @[negativeSpacer,item];
 }
 
 - (void)didReceiveMemoryWarning
@@ -245,7 +255,7 @@
   else{
     [checkArray removeObject:[NSNumber numberWithInteger:button.tag]];
     [checkArray writeToPlistFileSync:OPCheckArray];
-
+    
   }
   [self leftBarItem];
 }
@@ -289,7 +299,7 @@
                    forState:UIControlStateNormal];
   cell.btnChecked.tag = indexPath.row;
   [cell.btnChecked addTarget:self action:@selector(onCheckClicked:) forControlEvents:UIControlEventTouchUpInside];
-
+  
   
   return cell;
 }
