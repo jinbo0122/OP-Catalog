@@ -12,6 +12,5 @@
 @property(nonatomic, strong)UILabel *lblIndex;
 @property(nonatomic, strong)UILabel *lblTitle;
 @property(nonatomic, strong)UIButton *btnChecked;
-
-- (void)refreshOPTableViewCell:(NSDictionary *)sources row:(NSInteger)row;
+- (void)refreshOPTableViewCell:(NSDictionary *)sources isChecked:(BOOL)isChecked row:(NSInteger)row;
 @end

@@ -37,12 +37,11 @@
   
   [self setTitleView];
   
-  self.bgImageView = [[UIImageView alloc] initWithFrame:UIInterfaceOrientationIsPortrait([UIApplication sharedApplication].statusBarOrientation)?self.view.bounds:
-                      CGRectMake(0, 0, 1024, 768)];
+  self.bgImageView = [[UIImageView alloc] initWithFrame:UIInterfaceOrientationIsPortrait([UIApplication sharedApplication].statusBarOrientation)?self.view.bounds:CGRectMake(0, 0, 1024, 768)];
   self.bgImageView.image = [UIImage imageNamedNoCache:@"bg"];
   
   UICollectionViewFlowLayout *layout=[[UICollectionViewFlowLayout alloc] init];
-  
+  layout.sectionInset = UIEdgeInsetsMake(0, 0, 0, 10);
   self.collectionView = [[UICollectionView alloc] initWithFrame:self.view.frame
                                            collectionViewLayout:layout];
   [layout setScrollDirection:UICollectionViewScrollDirectionHorizontal];
@@ -82,7 +81,7 @@
 
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
-  return self.delegate.contentArray.count;
+  return self.delegate.model.contentArray.count;
 }
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
   OPContentCell *collectionCell;
@@ -90,7 +89,7 @@
   if (!collectionCell) {
     collectionCell = [[OPContentCell alloc] initWithFrame:self.view.frame];
   }
-  [collectionCell refreshContentView:[self.delegate.contentArray safeDicObjectAtIndex:indexPath.row] index:indexPath.row];
+  [collectionCell refreshContentView:[self.delegate.model.contentArray safeDicObjectAtIndex:indexPath.row] index:indexPath.row];
   [collectionCell.tapGesture addTarget:self action:@selector(onPlayTapped:)];
   return collectionCell;
 }
@@ -112,7 +111,7 @@
   UILabel *titleLabel = [[UILabel alloc] initWithFrame:CGRectZero];
   titleLabel.backgroundColor = [UIColor clearColor];
   titleLabel.textColor = [UIColor whiteColor];
-  titleLabel.text = [[self.delegate.contentArray safeDicObjectAtIndex:self.index] safeStringObjectForKey:@"generalTitle"];
+  titleLabel.text = [[self.delegate.model.contentArray safeDicObjectAtIndex:self.index] safeStringObjectForKey:@"generalTitle"];
   titleLabel.textAlignment = NSTextAlignmentCenter;
   titleLabel.font = [UIFont boldSystemFontOfSize:18];
   [titleLabel sizeToFit];
@@ -120,7 +119,7 @@
 }
 
 - (void)setRightNavigationBarButton{
-  BOOL checked = [[self.delegate.checkArray safeNumberObjectAtIndex:self.index] boolValue];
+  BOOL checked = [[self.delegate.model.checkArray safeNumberObjectAtIndex:self.index] boolValue];
   
   self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:checked?@"icon_page_check_on":@"icon_page_check_off"]
                                                                             style:UIBarButtonItemStylePlain target:self action:@selector(onCheckClicked:)];
@@ -128,10 +127,16 @@
 }
 
 - (void)onCheckClicked:(UIBarButtonItem *)item{
-  BOOL checked = [[self.delegate.checkArray safeNumberObjectAtIndex:self.index] boolValue];
+  BOOL isAired = [[[self.delegate.model.contentArray safeDicObjectAtIndex:self.index] safeNumberObjectForKey:@"first_aired"] doubleValue]+3600<[[NSDate date] timeIntervalSince1970];
+  
+  if(!isAired){
+    return;
+  }
+  
+  BOOL checked = [[self.delegate.model.checkArray safeNumberObjectAtIndex:self.index] boolValue];
   checked = !checked;
   
-  [self.delegate.checkArray replaceObjectAtIndex:self.index withObject:[NSNumber numberWithBool:checked]];
+  [self.delegate.model.checkArray replaceObjectAtIndex:self.index withObject:[NSNumber numberWithBool:checked]];
   
   [self setRightNavigationBarButton];
   
@@ -150,14 +155,14 @@
     [checkArray writeToPlistFileSync:@"OPCheckArray"];
     
     for (NSInteger i=0;i<self.index;i++) {
-      if (![[self.delegate.checkArray safeNumberObjectAtIndex:i] boolValue]) {
+      if (![[self.delegate.model.checkArray safeNumberObjectAtIndex:i] boolValue]) {
         [[[UIActionSheet alloc] initWithTitle:@"是否需要将之前的未看剧集设置为已看？"
                              cancelButtonItem:[RIButtonItem itemWithLabel:@"取消"]
                         destructiveButtonItem:[RIButtonItem itemWithLabel:@"确定" action:^{
           for (NSInteger i=0; i<self.index; i++) {
             if (![checkArray containsObject:[NSNumber numberWithInteger:i]]) {
               [checkArray addObject:[NSNumber numberWithInteger:i]];
-              [self.delegate.checkArray replaceObjectAtIndex:i withObject:[NSNumber numberWithBool:YES]];
+              [self.delegate.model.checkArray replaceObjectAtIndex:i withObject:[NSNumber numberWithBool:YES]];
             }
           }
           [checkArray writeToPlistFileSync:@"OPCheckArray"];
@@ -178,6 +183,7 @@
 
 
 - (void)onPlayTapped:(UITapGestureRecognizer*)tapGesture{
+  return;
   [[[UIActionSheet alloc] initWithTitle:@"请选择画质"
                        cancelButtonItem:[RIButtonItem itemWithLabel:@"取消"]
                   destructiveButtonItem:nil
@@ -274,7 +280,7 @@
   
   for (OPContentCell *cell in visibleCells) {
     NSIndexPath *indexPath = [self.collectionView indexPathForCell:cell];
-    [cell refreshContentView:[self.delegate.contentArray safeDicObjectAtIndex:indexPath.row] index:indexPath.row];
+    [cell refreshContentView:[self.delegate.model.contentArray safeDicObjectAtIndex:indexPath.row] index:indexPath.row];
   }
   
   [self.collectionView reloadData];

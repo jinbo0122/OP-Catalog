@@ -25,6 +25,7 @@
 		4B346C2519AD99AA0034ED25 /* OPTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B346C2419AD99AA0034ED25 /* OPTableViewController.m */; };
 		4B346D6319AD9C590034ED25 /* libALExtension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B346D6219AD9C480034ED25 /* libALExtension.a */; };
 		4B346D7319ADA22E0034ED25 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B346D7219ADA22E0034ED25 /* libsqlite3.dylib */; };
+		4B49F09E1A6F524800C4F36A /* OPContentModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B49F09D1A6F524800C4F36A /* OPContentModel.m */; };
 		4B73A76B19B02591004F65A5 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B73A76A19B02591004F65A5 /* MediaPlayer.framework */; };
 		4B73A77219B029EF004F65A5 /* OPEpisodePlayerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B73A77119B029EF004F65A5 /* OPEpisodePlayerVC.m */; };
 		4B73A77619B02DC4004F65A5 /* OPNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B73A77519B02DC4004F65A5 /* OPNavigationViewController.m */; };
@@ -70,6 +71,9 @@
 		4B346C2419AD99AA0034ED25 /* OPTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OPTableViewController.m; sourceTree = "<group>"; };
 		4B346D5D19AD9C480034ED25 /* ALExtension.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ALExtension.xcodeproj; path = ../../ALExtension/ALExtension.xcodeproj; sourceTree = "<group>"; };
 		4B346D7219ADA22E0034ED25 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		4B49F09C1A6F524800C4F36A /* OPContentModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OPContentModel.h; sourceTree = "<group>"; };
+		4B49F09D1A6F524800C4F36A /* OPContentModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OPContentModel.m; sourceTree = "<group>"; };
+		4B49F0A01A6F53F100C4F36A /* OPDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OPDefine.h; sourceTree = "<group>"; };
 		4B73A76A19B02591004F65A5 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		4B73A77019B029EF004F65A5 /* OPEpisodePlayerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OPEpisodePlayerVC.h; sourceTree = "<group>"; };
 		4B73A77119B029EF004F65A5 /* OPEpisodePlayerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OPEpisodePlayerVC.m; sourceTree = "<group>"; };
@@ -139,6 +143,8 @@
 				4B1D079C19E7E2B9004613DA /* country_sms.plist */,
 				4B346C2319AD99AA0034ED25 /* OPTableViewController.h */,
 				4B346C2419AD99AA0034ED25 /* OPTableViewController.m */,
+				4B49F09C1A6F524800C4F36A /* OPContentModel.h */,
+				4B49F09D1A6F524800C4F36A /* OPContentModel.m */,
 				4B1862CA19ADCA2C008C326A /* OPTableViewCell.h */,
 				4B1862CB19ADCA2C008C326A /* OPTableViewCell.m */,
 				4B1862BF19ADB5B0008C326A /* OPContentViewController.h */,
@@ -165,6 +171,7 @@
 				4B346BFD19AD94F90034ED25 /* InfoPlist.strings */,
 				4B346C0019AD94F90034ED25 /* main.m */,
 				4B346C0219AD94F90034ED25 /* OP Catalog-Prefix.pch */,
+				4B49F0A01A6F53F100C4F36A /* OPDefine.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -273,6 +280,7 @@
 				4B346C0119AD94F90034ED25 /* main.m in Sources */,
 				4B73A77219B029EF004F65A5 /* OPEpisodePlayerVC.m in Sources */,
 				4B1862CF19ADECAC008C326A /* OPNetworkEngine.m in Sources */,
+				4B49F09E1A6F524800C4F36A /* OPContentModel.m in Sources */,
 				4B1862C919ADC841008C326A /* OPContentCell.m in Sources */,
 				4B346C2519AD99AA0034ED25 /* OPTableViewController.m in Sources */,
 				4B73A77619B02DC4004F65A5 /* OPNavigationViewController.m in Sources */,
@@ -371,7 +379,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Lei Wang (N3DB4XRY52)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Jinbo Li (EYXAFV4H78)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "OP Catalog/OP Catalog-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
@@ -388,7 +396,7 @@
 					"-fobjc-arc",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "bff96903-44c7-461d-afe2-6431a528c1f3";
+				PROVISIONING_PROFILE = "57477046-11b9-453f-bd6b-e9d8f6585b4a";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALID_ARCHS = "armv7 armv7s arm64";
 				WRAPPER_EXTENSION = app;
@@ -400,7 +408,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Lei Wang (N3DB4XRY52)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Jinbo Li (EYXAFV4H78)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "OP Catalog/OP Catalog-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
@@ -417,7 +425,7 @@
 					"-fobjc-arc",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "bff96903-44c7-461d-afe2-6431a528c1f3";
+				PROVISIONING_PROFILE = "57477046-11b9-453f-bd6b-e9d8f6585b4a";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALID_ARCHS = "armv7 armv7s arm64";
 				WRAPPER_EXTENSION = app;

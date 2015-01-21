@@ -46,7 +46,7 @@
 }
 
 
-- (void)refreshOPTableViewCell:(NSDictionary *)sources row:(NSInteger)row{
+- (void)refreshOPTableViewCell:(NSDictionary *)sources isChecked:(BOOL)isChecked row:(NSInteger)row{
   NSInteger titleStartIndex = 4;
   
   if (row+1<10) {
@@ -69,9 +69,16 @@
     self.lblTitle.text = [sources safeStringObjectForKey:@"title"];
   }
   
-  self.lblTitle.width = [UIScreen mainScreen].bounds.size.width-130;
+  self.lblTitle.width = UIScreenWidth-130;
   
-  self.btnChecked.right = [UIScreen mainScreen].bounds.size.width - 10;
+  self.btnChecked.right = UIScreenWidth - 10;
+  
+  [self.btnChecked setBackgroundImage:[UIImage imageWithColor:isChecked?[UIColor whiteColor]:[UIColor clearColor] size:self.btnChecked.frame.size] forState:UIControlStateNormal];
+  
+  [self.btnChecked setImage:[UIImage imageNamed:isChecked?@"icon_checkmark_on":@"icon_checkmark_off"]
+                   forState:UIControlStateNormal];
+  self.btnChecked.tag = row;
+
 }
 /*
  // Only override drawRect: if you perform custom drawing.

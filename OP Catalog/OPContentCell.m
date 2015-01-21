@@ -13,14 +13,6 @@
 {
   self = [super initWithFrame:frame];
   if (self) {
-    // Initialization code
-    //    self.lblGeneralTitle = [UILabel initWithFrame:CGRectMake(10, 64+20, 300, 18)
-    //                                   bgColor:[UIColor clearColor]
-    //                                 textColor:[UIColor whiteColor]
-    //                                      text:@""
-    //                             textAlignment:NSTextAlignmentCenter
-    //                                      font:[UIFont systemFontOfSize:17]
-    //                             numberOfLines:0];
     self.bgScrollView = [[UIScrollView alloc] initWithFrame:CGRectZero];
     self.bgScrollView.alwaysBounceVertical = YES;
     [self.contentView addSubview:self.bgScrollView];
@@ -92,23 +84,26 @@
                               [sources safeNumberObjectForKey:@"episode"],(int)(index+1)];
   
   self.lblEpisodeInfo.text = strEpisodeInfo;
-  self.lblEpisodeInfo.frame = CGRectMake(self.lblTitle.left, self.lblTitle.bottom+10, UIScreenWidth-20, 16);
+  
+  CGSize infoSize = [strEpisodeInfo sizeWithAttributes:@{NSFontAttributeName:self.lblEpisodeInfo.font}];
+  self.lblEpisodeInfo.frame = CGRectMake(15, self.lblTitle.bottom+10,infoSize.width, 16);
   
   
   self.lblPublishTime.text = [@"播出时间:" stringByAppendingString:[NSString timeString:[[sources safeNumberObjectForKey:@"first_aired"] doubleValue]+3600
-                                                                             format:MHPrettyDateFormatNoTime]] ;
-  self.lblPublishTime.frame = CGRectMake(self.lblTitle.left, self.lblEpisodeInfo.top,self.lblTitle.width, 16);
+                                                                             format:MHPrettyDateFormatNoTime]];
+  CGSize timeSize = [self.lblPublishTime.text sizeWithAttributes:@{NSFontAttributeName:self.lblPublishTime.font}];
+  self.lblPublishTime.frame = CGRectMake(UIScreenWidth-timeSize.width-15, self.lblEpisodeInfo.top,timeSize.width, 16);
   
   
-  CGFloat imageWidth = MIN(UIScreenWidth, UIScreenHeight);
+  CGFloat imageWidth = MIN(UIScreenWidth-20, UIScreenHeight-20);
   
   self.imagePreview.frame = CGRectMake((UIScreenWidth-imageWidth)/2.0, self.lblPublishTime.bottom+15, imageWidth, imageWidth*9/16.0);
   
-  NSString *url = [[sources safeDicObjectForKey:@"images"] safeStringObjectForKey:@"screen"];
-  
-  
   __weak typeof(self) wSelf = self;
+  NSString *url = [sources safeStringObjectForKey:@"screen"];
   [self.imagePreview setImageWithURL:[NSURL URLWithString:url]
+                    placeholderImage:nil
+                             options:SDWebImageRetryFailed
                            completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType) {
                              if (!error) {
                                wSelf.imagePreview.height = imageWidth * image.size.height/image.size.width;
@@ -118,7 +113,9 @@
                                
                                wSelf.bgScrollView.scrollEnabled = wSelf.bgScrollView.contentSize.height>UIScreenHeight;
                              }
-  }];
+                           }];
+  
+  self.imagePreview.hidden = url.length==0;
   
   self.lblContent.text = [sources safeStringObjectForKey:@"content"];
   

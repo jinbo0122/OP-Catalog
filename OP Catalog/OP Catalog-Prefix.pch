@@ -20,6 +20,7 @@
 #import <MediaPlayer/MediaPlayer.h>
 #import "OPEpisodePlayerVC.h"
 #import "OPNavigationViewController.h"
-
+#import "OPContentModel.h"
+#import "OPDefine.h"
 #define isIPad ([[UIDevice currentDevice] deviceFamily]==UIDeviceFamilyiPad||[[UIDevice currentDevice] platformType]==UIDeviceSimulatoriPad)
 #endif
