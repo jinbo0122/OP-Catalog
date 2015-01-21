@@ -110,7 +110,7 @@
          NSMutableDictionary *episodeInfo = [[wSelf.contentArray safeDicObjectAtIndex:i] mutableCopy];
          NSDictionary *freshInfo = [array safeDicObjectAtIndex:i-wSelf.updateEpisode];
          [episodeInfo setObject:[[[freshInfo safeStringObjectForKey:@"screen"] componentsSeparatedByString:@"?"] safeObjectAtIndex:0] forKey:@"screen"];
-         NSLog(@"%@",[episodeInfo safeStringObjectForKey:@"screen"]);
+//         NSLog(@"%@",[episodeInfo safeStringObjectForKey:@"screen"]);
          [wSelf.contentArray safeReplaceObjectAtIndex:i withObject:episodeInfo];
        }
        wSelf.updateEpisode+=array.count;

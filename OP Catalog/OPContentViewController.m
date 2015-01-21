@@ -45,6 +45,7 @@
   self.collectionView = [[UICollectionView alloc] initWithFrame:self.view.frame
                                            collectionViewLayout:layout];
   [layout setScrollDirection:UICollectionViewScrollDirectionHorizontal];
+  self.automaticallyAdjustsScrollViewInsets = NO;
   
   self.collectionView.dataSource = self;
   self.collectionView.delegate   = self;
@@ -277,12 +278,12 @@
 - (void)willAnimateRotationToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation duration:(NSTimeInterval)duration{
   self.bgImageView.frame = self.view.bounds;
   NSArray* visibleCells = [self.collectionView visibleCells];
-  
+  self.collectionView.frame = self.view.frame;
   for (OPContentCell *cell in visibleCells) {
     NSIndexPath *indexPath = [self.collectionView indexPathForCell:cell];
     [cell refreshContentView:[self.delegate.model.contentArray safeDicObjectAtIndex:indexPath.row] index:indexPath.row];
   }
-  
+  [self.collectionView.collectionViewLayout invalidateLayout];
   [self.collectionView reloadData];
   [self.collectionView scrollToItemAtIndexPath:[NSIndexPath indexPathForRow:self.index inSection:0]
                               atScrollPosition:UICollectionViewScrollPositionLeft animated:NO];

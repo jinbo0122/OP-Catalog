@@ -39,7 +39,7 @@
   UILabel *titleLabel = [[UILabel alloc] initWithFrame:CGRectZero];
   titleLabel.backgroundColor = [UIColor clearColor];
   titleLabel.textColor = [UIColor whiteColor];
-  titleLabel.text = @"One Piece目录";
+  titleLabel.text = @"海贼王追番";
   titleLabel.textAlignment = NSTextAlignmentCenter;
   titleLabel.font = [UIFont boldSystemFontOfSize:18];
   [titleLabel sizeToFit];
