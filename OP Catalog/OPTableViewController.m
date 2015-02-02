@@ -9,7 +9,9 @@
 #import "OPTableViewController.h"
 #import "OPContentViewController.h"
 #import "OPTableViewCell.h"
-@interface OPTableViewController ()<OPContentModelDelegate>
+#import <iAd/iAd.h>
+@interface OPTableViewController ()<OPContentModelDelegate,DMAdViewDelegate>
+@property(nonatomic, strong)DMAdView *bannerView;
 @end
 
 @implementation OPTableViewController
@@ -49,11 +51,22 @@
   UIImageView *tempImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamedNoCache:@"bg"]];
   [tempImageView setFrame:self.tableView.frame];
   self.tableView.backgroundView = tempImageView;
-  
+  self.tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, UIScreenWidth, 50)];
   [self leftBarItem];
   [self rightBarItem];
   [self scrollToCurrentEpisode];
   [self.model requestEpisodes];
+  [self adSetup];
+}
+
+- (void)adSetup{
+  self.bannerView = [[DMAdView alloc]initWithPublisherId:@"56OJxro4uN5ekXo8a1" placementId:@"16TLeYHlApZ7wNUO7R9s7Djz"];
+  self.bannerView.frame = CGRectMake(0, 0, UIScreenWidth, 50);
+  [self.bannerView setBackgroundColor:[UIColor clearColor]];
+  self.bannerView.delegate = self;
+  self.bannerView.rootViewController = self;
+  [self.bannerView loadAd];
+  [self.tableView addSubview: self.bannerView];
 }
 
 - (void)scrollToCurrentEpisode{
@@ -235,11 +248,38 @@
     BOOL isChecked = [[self.model.checkArray safeNumberObjectAtIndex:indexPath.row] boolValue];
     [cell refreshOPTableViewCell:[self.model.contentArray safeDicObjectAtIndex:indexPath.row] isChecked:isChecked row:indexPath.row];
   }
+  [self.bannerView orientationChanged];
+}
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView{
+  self.bannerView.top = self.tableView.contentOffset.y+self.tableView.height-50;
 }
 
 #pragma mark Model Delegate
 - (void)contentModelDidLoadData:(OPContentModel *)model{
   [self.tableView reloadData];
   [self leftBarItem];
+}
+
+#pragma mark - AdViewDelegates
+- (void)dmAdViewSuccessToLoadAd:(DMAdView *)adView{
+  NSLog(@"Ad loaded");
+}
+// 加载广告失败后，回调该方法
+- (void)dmAdViewFailToLoadAd:(DMAdView *)adView withError:(NSError *)error{
+  NSLog(@"Error loading");
+}
+
+// 当将要呈现出 Modal View 时，回调该方法。如打开内置浏览器。
+- (void)dmWillPresentModalViewFromAd:(DMAdView *)adView{
+
+}
+// 当呈现的 Modal View 被关闭后，回调该方法。如内置浏览器被关闭。
+- (void)dmDidDismissModalViewFromAd:(DMAdView *)adView{
+
+}
+// 当因用户的操作（如点击下载类广告，需要跳转到Store），需要离开当前应用时，回调该方法
+- (void)dmApplicationWillEnterBackgroundFromAd:(DMAdView *)adView{
+
 }
 @end

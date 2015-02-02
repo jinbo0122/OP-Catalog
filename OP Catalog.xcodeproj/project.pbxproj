@@ -31,6 +31,21 @@
 		4B73A77619B02DC4004F65A5 /* OPNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B73A77519B02DC4004F65A5 /* OPNavigationViewController.m */; };
 		4B73A79219B03661004F65A5 /* url.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4B73A79119B03661004F65A5 /* url.plist */; };
 		4B938DC919B6CFB10068FC20 /* vid.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4B938DC819B6CFB10068FC20 /* vid.plist */; };
+		4BEE20071A7F364600A67DA5 /* DomobAdSDKBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4BEE20051A7F364600A67DA5 /* DomobAdSDKBundle.bundle */; };
+		4BEE20081A7F364600A67DA5 /* libDomobAdSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BEE20061A7F364600A67DA5 /* libDomobAdSDK.a */; };
+		4BEE200B1A7F368B00A67DA5 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BEE200A1A7F368B00A67DA5 /* SystemConfiguration.framework */; };
+		4BEE200D1A7F369900A67DA5 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BEE200C1A7F369900A67DA5 /* CoreLocation.framework */; };
+		4BEE200F1A7F369F00A67DA5 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BEE200E1A7F369F00A67DA5 /* StoreKit.framework */; };
+		4BEE20111A7F36A400A67DA5 /* PassKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BEE20101A7F36A400A67DA5 /* PassKit.framework */; };
+		4BEE20131A7F36AA00A67DA5 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BEE20121A7F36AA00A67DA5 /* AdSupport.framework */; };
+		4BEE20151A7F3A0C00A67DA5 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BEE20141A7F3A0C00A67DA5 /* libz.dylib */; };
+		4BEE20171A7F3A1C00A67DA5 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BEE20161A7F3A1C00A67DA5 /* CoreMedia.framework */; };
+		4BEE20191A7F3A2200A67DA5 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BEE20181A7F3A2200A67DA5 /* QuartzCore.framework */; };
+		4BEE201B1A7F3A2A00A67DA5 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BEE201A1A7F3A2A00A67DA5 /* CoreText.framework */; };
+		4BEE201D1A7F3A3900A67DA5 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BEE201C1A7F3A3900A67DA5 /* Social.framework */; };
+		4BEE201F1A7F3A4100A67DA5 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BEE201E1A7F3A4100A67DA5 /* EventKit.framework */; };
+		4BEE20211A7F3A4800A67DA5 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BEE20201A7F3A4800A67DA5 /* AVFoundation.framework */; };
+		4BEE20231A7F3A4F00A67DA5 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BEE20221A7F3A4F00A67DA5 /* AudioToolbox.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +96,27 @@
 		4B73A77519B02DC4004F65A5 /* OPNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OPNavigationViewController.m; sourceTree = "<group>"; };
 		4B73A79119B03661004F65A5 /* url.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = url.plist; sourceTree = "<group>"; };
 		4B938DC819B6CFB10068FC20 /* vid.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = vid.plist; sourceTree = "<group>"; };
+		4BEE1FFE1A7F364600A67DA5 /* DMAdView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMAdView.h; sourceTree = "<group>"; };
+		4BEE1FFF1A7F364600A67DA5 /* DMFeedsAdView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMFeedsAdView.h; sourceTree = "<group>"; };
+		4BEE20001A7F364600A67DA5 /* DMInterstitialAdController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMInterstitialAdController.h; sourceTree = "<group>"; };
+		4BEE20011A7F364600A67DA5 /* DMRTSplashAdController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMRTSplashAdController.h; sourceTree = "<group>"; };
+		4BEE20021A7F364600A67DA5 /* DMSplashAdController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMSplashAdController.h; sourceTree = "<group>"; };
+		4BEE20031A7F364600A67DA5 /* DMTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMTools.h; sourceTree = "<group>"; };
+		4BEE20051A7F364600A67DA5 /* DomobAdSDKBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = DomobAdSDKBundle.bundle; sourceTree = "<group>"; };
+		4BEE20061A7F364600A67DA5 /* libDomobAdSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libDomobAdSDK.a; sourceTree = "<group>"; };
+		4BEE200A1A7F368B00A67DA5 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		4BEE200C1A7F369900A67DA5 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		4BEE200E1A7F369F00A67DA5 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		4BEE20101A7F36A400A67DA5 /* PassKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PassKit.framework; path = System/Library/Frameworks/PassKit.framework; sourceTree = SDKROOT; };
+		4BEE20121A7F36AA00A67DA5 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		4BEE20141A7F3A0C00A67DA5 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		4BEE20161A7F3A1C00A67DA5 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		4BEE20181A7F3A2200A67DA5 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		4BEE201A1A7F3A2A00A67DA5 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		4BEE201C1A7F3A3900A67DA5 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		4BEE201E1A7F3A4100A67DA5 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
+		4BEE20201A7F3A4800A67DA5 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		4BEE20221A7F3A4F00A67DA5 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,11 +124,25 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BEE200B1A7F368B00A67DA5 /* SystemConfiguration.framework in Frameworks */,
+				4BEE20231A7F3A4F00A67DA5 /* AudioToolbox.framework in Frameworks */,
+				4BEE20211A7F3A4800A67DA5 /* AVFoundation.framework in Frameworks */,
+				4BEE201F1A7F3A4100A67DA5 /* EventKit.framework in Frameworks */,
+				4BEE201D1A7F3A3900A67DA5 /* Social.framework in Frameworks */,
+				4B346BF719AD94F90034ED25 /* CoreGraphics.framework in Frameworks */,
+				4BEE201B1A7F3A2A00A67DA5 /* CoreText.framework in Frameworks */,
+				4BEE20191A7F3A2200A67DA5 /* QuartzCore.framework in Frameworks */,
+				4BEE20171A7F3A1C00A67DA5 /* CoreMedia.framework in Frameworks */,
+				4B346D7319ADA22E0034ED25 /* libsqlite3.dylib in Frameworks */,
+				4BEE20151A7F3A0C00A67DA5 /* libz.dylib in Frameworks */,
+				4BEE20131A7F36AA00A67DA5 /* AdSupport.framework in Frameworks */,
+				4BEE20111A7F36A400A67DA5 /* PassKit.framework in Frameworks */,
+				4BEE200F1A7F369F00A67DA5 /* StoreKit.framework in Frameworks */,
+				4BEE200D1A7F369900A67DA5 /* CoreLocation.framework in Frameworks */,
 				4B73A76B19B02591004F65A5 /* MediaPlayer.framework in Frameworks */,
 				4B1862C519ADC32B008C326A /* AssetsLibrary.framework in Frameworks */,
-				4B346D7319ADA22E0034ED25 /* libsqlite3.dylib in Frameworks */,
 				4B346D6319AD9C590034ED25 /* libALExtension.a in Frameworks */,
-				4B346BF719AD94F90034ED25 /* CoreGraphics.framework in Frameworks */,
+				4BEE20081A7F364600A67DA5 /* libDomobAdSDK.a in Frameworks */,
 				4B346BF919AD94F90034ED25 /* UIKit.framework in Frameworks */,
 				4B346BF519AD94F90034ED25 /* Foundation.framework in Frameworks */,
 			);
@@ -121,6 +171,19 @@
 		4B346BF319AD94F90034ED25 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4BEE20221A7F3A4F00A67DA5 /* AudioToolbox.framework */,
+				4BEE20201A7F3A4800A67DA5 /* AVFoundation.framework */,
+				4BEE201E1A7F3A4100A67DA5 /* EventKit.framework */,
+				4BEE201C1A7F3A3900A67DA5 /* Social.framework */,
+				4BEE201A1A7F3A2A00A67DA5 /* CoreText.framework */,
+				4BEE20181A7F3A2200A67DA5 /* QuartzCore.framework */,
+				4BEE20161A7F3A1C00A67DA5 /* CoreMedia.framework */,
+				4BEE20141A7F3A0C00A67DA5 /* libz.dylib */,
+				4BEE20121A7F36AA00A67DA5 /* AdSupport.framework */,
+				4BEE20101A7F36A400A67DA5 /* PassKit.framework */,
+				4BEE200E1A7F369F00A67DA5 /* StoreKit.framework */,
+				4BEE200C1A7F369900A67DA5 /* CoreLocation.framework */,
+				4BEE200A1A7F368B00A67DA5 /* SystemConfiguration.framework */,
 				4B73A76A19B02591004F65A5 /* MediaPlayer.framework */,
 				4B1862C419ADC32B008C326A /* AssetsLibrary.framework */,
 				4B346D7219ADA22E0034ED25 /* libsqlite3.dylib */,
@@ -136,6 +199,7 @@
 			children = (
 				4B346C0319AD94F90034ED25 /* OPAppDelegate.h */,
 				4B346C0419AD94F90034ED25 /* OPAppDelegate.m */,
+				4BEE1FFD1A7F364600A67DA5 /* DomobAdSDK */,
 				4B346C0619AD94F90034ED25 /* Images.xcassets */,
 				4B346D5D19AD9C480034ED25 /* ALExtension.xcodeproj */,
 				4B73A77419B02DC4004F65A5 /* OPNavigationViewController.h */,
@@ -182,6 +246,29 @@
 				4B346D6219AD9C480034ED25 /* libALExtension.a */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		4BEE1FFD1A7F364600A67DA5 /* DomobAdSDK */ = {
+			isa = PBXGroup;
+			children = (
+				4BEE1FFE1A7F364600A67DA5 /* DMAdView.h */,
+				4BEE1FFF1A7F364600A67DA5 /* DMFeedsAdView.h */,
+				4BEE20001A7F364600A67DA5 /* DMInterstitialAdController.h */,
+				4BEE20011A7F364600A67DA5 /* DMRTSplashAdController.h */,
+				4BEE20021A7F364600A67DA5 /* DMSplashAdController.h */,
+				4BEE20031A7F364600A67DA5 /* DMTools.h */,
+				4BEE20041A7F364600A67DA5 /* DomobAdSDKBundle */,
+				4BEE20061A7F364600A67DA5 /* libDomobAdSDK.a */,
+			);
+			path = DomobAdSDK;
+			sourceTree = SOURCE_ROOT;
+		};
+		4BEE20041A7F364600A67DA5 /* DomobAdSDKBundle */ = {
+			isa = PBXGroup;
+			children = (
+				4BEE20051A7F364600A67DA5 /* DomobAdSDKBundle.bundle */,
+			);
+			path = DomobAdSDKBundle;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +345,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4B1862C319ADBCC4008C326A /* bg.jpg in Resources */,
+				4BEE20071A7F364600A67DA5 /* DomobAdSDKBundle.bundle in Resources */,
 				4B1862BD19ADB2DF008C326A /* content.plist in Resources */,
 				4B73A79219B03661004F65A5 /* url.plist in Resources */,
 				4B346BFF19AD94F90034ED25 /* InfoPlist.strings in Resources */,
@@ -389,6 +477,10 @@
 				);
 				INFOPLIST_FILE = "OP Catalog/OP Catalog-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DomobAdSDK",
+				);
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
 					"-ObjC",
@@ -418,6 +510,10 @@
 				);
 				INFOPLIST_FILE = "OP Catalog/OP Catalog-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DomobAdSDK",
+				);
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
 					"-ObjC",

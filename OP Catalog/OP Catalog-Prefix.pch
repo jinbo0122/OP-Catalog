@@ -22,5 +22,6 @@
 #import "OPNavigationViewController.h"
 #import "OPContentModel.h"
 #import "OPDefine.h"
+#import "DMAdView.h"
 #define isIPad ([[UIDevice currentDevice] deviceFamily]==UIDeviceFamilyiPad||[[UIDevice currentDevice] platformType]==UIDeviceSimulatoriPad)
 #endif
