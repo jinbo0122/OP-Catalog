@@ -61,7 +61,7 @@
 
 - (void)adSetup{
   self.bannerView = [[DMAdView alloc]initWithPublisherId:@"56OJxro4uN5ekXo8a1" placementId:@"16TLeYHlApZ7wNUO7R9s7Djz"];
-  self.bannerView.frame = CGRectMake(0, 0, UIScreenWidth, 50);
+  self.bannerView.frame = CGRectMake(0, UIScreenHeight-64, UIScreenWidth, 50);
   [self.bannerView setBackgroundColor:[UIColor clearColor]];
   self.bannerView.delegate = self;
   self.bannerView.rootViewController = self;
