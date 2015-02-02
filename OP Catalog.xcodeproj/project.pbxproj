@@ -31,6 +31,7 @@
 		4B73A77619B02DC4004F65A5 /* OPNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B73A77519B02DC4004F65A5 /* OPNavigationViewController.m */; };
 		4B73A79219B03661004F65A5 /* url.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4B73A79119B03661004F65A5 /* url.plist */; };
 		4B938DC919B6CFB10068FC20 /* vid.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4B938DC819B6CFB10068FC20 /* vid.plist */; };
+		4BBCF79A1A7F6B9700B98644 /* libMobClickLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BBCF7981A7F6B9700B98644 /* libMobClickLibrary.a */; };
 		4BEE20071A7F364600A67DA5 /* DomobAdSDKBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4BEE20051A7F364600A67DA5 /* DomobAdSDKBundle.bundle */; };
 		4BEE20081A7F364600A67DA5 /* libDomobAdSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BEE20061A7F364600A67DA5 /* libDomobAdSDK.a */; };
 		4BEE200B1A7F368B00A67DA5 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BEE200A1A7F368B00A67DA5 /* SystemConfiguration.framework */; };
@@ -96,6 +97,8 @@
 		4B73A77519B02DC4004F65A5 /* OPNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OPNavigationViewController.m; sourceTree = "<group>"; };
 		4B73A79119B03661004F65A5 /* url.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = url.plist; sourceTree = "<group>"; };
 		4B938DC819B6CFB10068FC20 /* vid.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = vid.plist; sourceTree = "<group>"; };
+		4BBCF7981A7F6B9700B98644 /* libMobClickLibrary.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libMobClickLibrary.a; sourceTree = "<group>"; };
+		4BBCF7991A7F6B9700B98644 /* MobClick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MobClick.h; sourceTree = "<group>"; };
 		4BEE1FFE1A7F364600A67DA5 /* DMAdView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMAdView.h; sourceTree = "<group>"; };
 		4BEE1FFF1A7F364600A67DA5 /* DMFeedsAdView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMFeedsAdView.h; sourceTree = "<group>"; };
 		4BEE20001A7F364600A67DA5 /* DMInterstitialAdController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMInterstitialAdController.h; sourceTree = "<group>"; };
@@ -133,6 +136,7 @@
 				4BEE201B1A7F3A2A00A67DA5 /* CoreText.framework in Frameworks */,
 				4BEE20191A7F3A2200A67DA5 /* QuartzCore.framework in Frameworks */,
 				4BEE20171A7F3A1C00A67DA5 /* CoreMedia.framework in Frameworks */,
+				4BBCF79A1A7F6B9700B98644 /* libMobClickLibrary.a in Frameworks */,
 				4B346D7319ADA22E0034ED25 /* libsqlite3.dylib in Frameworks */,
 				4BEE20151A7F3A0C00A67DA5 /* libz.dylib in Frameworks */,
 				4BEE20131A7F36AA00A67DA5 /* AdSupport.framework in Frameworks */,
@@ -199,6 +203,7 @@
 			children = (
 				4B346C0319AD94F90034ED25 /* OPAppDelegate.h */,
 				4B346C0419AD94F90034ED25 /* OPAppDelegate.m */,
+				4BBCF7971A7F6B9700B98644 /* UMAnalytics */,
 				4BEE1FFD1A7F364600A67DA5 /* DomobAdSDK */,
 				4B346C0619AD94F90034ED25 /* Images.xcassets */,
 				4B346D5D19AD9C480034ED25 /* ALExtension.xcodeproj */,
@@ -247,6 +252,15 @@
 			);
 			name = Products;
 			sourceTree = "<group>";
+		};
+		4BBCF7971A7F6B9700B98644 /* UMAnalytics */ = {
+			isa = PBXGroup;
+			children = (
+				4BBCF7981A7F6B9700B98644 /* libMobClickLibrary.a */,
+				4BBCF7991A7F6B9700B98644 /* MobClick.h */,
+			);
+			path = UMAnalytics;
+			sourceTree = SOURCE_ROOT;
 		};
 		4BEE1FFD1A7F364600A67DA5 /* DomobAdSDK */ = {
 			isa = PBXGroup;
@@ -480,6 +494,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/DomobAdSDK",
+					"$(PROJECT_DIR)/UMAnalytics",
 				);
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
@@ -513,6 +528,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/DomobAdSDK",
+					"$(PROJECT_DIR)/UMAnalytics",
 				);
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (

@@ -136,7 +136,9 @@
   
   BOOL checked = [[self.delegate.model.checkArray safeNumberObjectAtIndex:self.index] boolValue];
   checked = !checked;
-  
+  if (checked) {
+    [MobClick event:@"op-check-in-content"];
+  }
   [self.delegate.model.checkArray replaceObjectAtIndex:self.index withObject:[NSNumber numberWithBool:checked]];
   
   [self setRightNavigationBarButton];

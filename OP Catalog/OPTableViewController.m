@@ -147,6 +147,9 @@
   BOOL checked = [[self.model.checkArray safeNumberObjectAtIndex:button.tag] boolValue];
   checked = !checked;
   
+  if (checked) {
+    [MobClick event:@"op-check-in-home"];
+  }
   [self.model.checkArray replaceObjectAtIndex:button.tag withObject:[NSNumber numberWithBool:checked]];
   
   [button setBackgroundImage:[UIImage imageWithColor:checked?[UIColor whiteColor]:[UIColor clearColor] size:button.frame.size]

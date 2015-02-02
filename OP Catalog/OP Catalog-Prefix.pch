@@ -23,5 +23,6 @@
 #import "OPContentModel.h"
 #import "OPDefine.h"
 #import "DMAdView.h"
+#import "MobClick.h"
 #define isIPad ([[UIDevice currentDevice] deviceFamily]==UIDeviceFamilyiPad||[[UIDevice currentDevice] platformType]==UIDeviceSimulatoriPad)
 #endif

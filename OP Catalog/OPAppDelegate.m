@@ -16,7 +16,7 @@
   // Override point for customization after application launch.
   
   [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
-  
+  [MobClick startWithAppkey:@"54cf33d3fd98c50b280002cd"];
   self.opTBC = [[OPTableViewController alloc] initWithStyle:UITableViewStylePlain];
   self.nav = [[OPNavigationViewController alloc] initWithRootViewController:self.opTBC];
   self.window.backgroundColor = [UIColor whiteColor];
