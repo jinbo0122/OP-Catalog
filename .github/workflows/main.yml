@@ -1,0 +1,118 @@
+name: Crowdin Action
+description: 'This action allows you to upload and download localization resources with our iOS workspace.'
+on:
+  workflow_dispatch:
+    inputs:
+      operation:
+        description: 'upload / download'
+        required: true
+        default: 'upload'
+
+env:
+  XCODE_VERSION: 13.2.0
+  CROWDIN_PROJECT_ID: ${{ secrets.CROWDIN_PROJECT_ID }}
+  CROWDIN_TOKEN: ${{ secrets.CROWDIN_TOKEN }}
+  DEVELOPER_DIR: /Applications/Xcode_13.2.app/Contents/Developer
+
+jobs:
+  upload:
+    if: github.event_name == 'workflow_dispatch' && github.event.inputs.operation == 'upload'
+    runs-on: macOS-11
+    steps:
+    - name: Setup Xcode
+      uses: maxim-lobanov/setup-xcode@v1
+      with:
+        xcode-version: ${{ env.XCODE_VERSION }}
+    
+    - name: Checkout Source Code
+      uses: actions/checkout@v2
+
+    - name: Setup Ruby
+      uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: 2.6
+        bundler-cache: true
+
+    - name: Carthage Cache
+      id: carthage-cache-iOS
+      uses: actions/cache@v2
+      with:
+        path: Carthage/Build/
+        key: ${{ runner.os }}-iOS-carthage-${{ env.XCODE_VERSION }}-${{ hashFiles('**/Cartfile.resolved') }}
+        restore-keys: |
+          ${{ runner.os }}-iOS-carthage-${{ env.XCODE_VERSION }}-${{ hashFiles('**/Cartfile.resolved') }}
+
+    - name: SPM Cache
+      uses: actions/cache@v2
+      with:
+        path: SourcePackages
+        key: ${{ runner.os }}-iOS-spm-${{ hashFiles('TubiTv.xcworkspace/xcshareddata/swiftpm/Package.resolved') }}
+        restore-keys: |
+          ${{ runner.os }}-iOS-spm-${{ hashFiles('TubiTv.xcworkspace/xcshareddata/swiftpm/Package.resolved') }}
+    
+    - name: Setup
+      run: |
+        gem install bundler:2.1.4
+        bundle config set —-local path 'vendor/bundle' —-local deployment 'true'
+        bundle install --jobs=4 --retry=3
+        bundle exec rake bootstrap
+
+    - name: Install Carthage Dependencies
+      if: steps.carthage-cache-iOS.outputs.cache-hit != 'true'
+      run: |
+        bundle exec rake carthage:bootstrap
+
+    - name: crowdin-action
+      run: |
+        bundle exec rake i18n:upload[${{ env.CROWDIN_TOKEN }},${{ env.CROWDIN_PROJECT_ID }}]
+
+  download:
+    if: github.event_name == 'workflow_dispatch' && github.event.inputs.operation == 'download'
+    runs-on: macOS-11
+    steps:
+    - name: Setup Xcode
+      uses: maxim-lobanov/setup-xcode@v1
+      with:
+        xcode-version: ${{ env.XCODE_VERSION }}
+    
+    - name: Checkout Source Code
+      uses: actions/checkout@v2
+
+    - name: Setup Ruby
+      uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: 2.6
+        bundler-cache: true
+
+    - name: Carthage Cache
+      id: carthage-cache-iOS
+      uses: actions/cache@v2
+      with:
+        path: Carthage/Build/
+        key: ${{ runner.os }}-iOS-carthage-${{ env.XCODE_VERSION }}-${{ hashFiles('**/Cartfile.resolved') }}
+        restore-keys: |
+          ${{ runner.os }}-iOS-carthage-${{ env.XCODE_VERSION }}-${{ hashFiles('**/Cartfile.resolved') }}
+
+    - name: SPM Cache
+      uses: actions/cache@v2
+      with:
+        path: SourcePackages
+        key: ${{ runner.os }}-iOS-spm-${{ hashFiles('TubiTv.xcworkspace/xcshareddata/swiftpm/Package.resolved') }}
+        restore-keys: |
+          ${{ runner.os }}-iOS-spm-${{ hashFiles('TubiTv.xcworkspace/xcshareddata/swiftpm/Package.resolved') }}
+    
+    - name: Setup
+      run: |
+        gem install bundler:2.1.4
+        bundle config set —-local path 'vendor/bundle' —-local deployment 'true'
+        bundle install --jobs=4 --retry=3
+        bundle exec rake bootstrap
+
+    - name: Install Carthage Dependencies
+      if: steps.carthage-cache-iOS.outputs.cache-hit != 'true'
+      run: |
+        bundle exec rake carthage:bootstrap
+
+    - name: crowdin-action
+      run: |
+        bundle exec rake i18n:download[${{ env.CROWDIN_TOKEN }},${{ env.CROWDIN_PROJECT_ID }}]
